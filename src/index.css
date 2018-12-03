@@ -64,7 +64,28 @@ body {
   text-shadow: 2px 2px 3px #454545, 3px 3px 3px #454545, 4px 4px 3px #454545,
     5px 5px 3px #454545, 8px 8px 3px #454545;
 }
+.ops-messi-mobile,
+.ops-ops-mobile {
+  line-height: 16vw;
+  font-size: 18vw;
+}
 
+.side-menu.ui.secondary.vertical.pointing.menu {
+  border: 0;
+}
+.side-menu.ui.secondary.vertical.pointing.menu a.active.item {
+  border: 0;
+}
+/* .side-item::after {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+} */
 .squared,
 .squared > .segment {
   border-radius: 0 !important;
