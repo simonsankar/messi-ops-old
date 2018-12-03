@@ -1,14 +1,72 @@
+@font-face {
+  font-family: HeroicCondensed;
+  src: url(./fonts/HeroicCondensed-Regular.otf);
+}
+@font-face {
+  font-family: HeroicCondensedBold;
+  src: url(./fonts/HeroicCondensed-Bold.otf);
+}
+@font-face {
+  font-family: FuturaMed;
+  src: url(./fonts/FuturaMedium.ttf);
+}
+@font-face {
+  font-family: FuturaBook;
+  src: url(./fonts/FuturaBook.ttf);
+}
+@font-face {
+  font-family: Univers;
+  src: url(./fonts/Univers.woff);
+}
+
+html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  font-family: FuturaBook !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.height-full {
+  min-height: 100vh;
+}
+.navbar-mobile.ui.segment {
+  background-color: #c73d3d;
+}
+.ops {
+  background: linear-gradient(168deg, #c73d3d 50%, #b33a3a 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.ops-container {
+  min-height: calc(100vh - 58px);
+}
+
+.ops-column {
+  position: relative;
+}
+.ops-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ops-messi,
+.ops-ops {
+  text-align: center;
+  font-family: HeroicCondensedBold;
+  font-size: 15vw;
+  line-height: 13vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  transform: rotate(-13deg) skew(-13deg, 0);
+  text-shadow: 2px 2px 3px #454545, 3px 3px 3px #454545, 4px 4px 3px #454545,
+    5px 5px 3px #454545, 8px 8px 3px #454545;
+}
+
+.squared,
+.squared > .segment {
+  border-radius: 0 !important;
+  border: 1px solid #c73d3d !important;
 }

@@ -1,0 +1,19 @@
+.ui.secondary.inverted.pointing.menu,
+.ui.inverted.segment,
+.ui.primary.inverted.segment {
+  border: 0;
+  background-color: #c73d3d;
+}
+
+.ui.secondary.pointing.menu .active.item {
+  border-color: #fff;
+}
+
+.ui.menu .item {
+  color: rgb(255, 255, 255) !important;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.ui.inverted.segment.squared {
+  border: magenta !important;
+}
