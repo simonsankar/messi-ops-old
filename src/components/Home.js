@@ -1,24 +1,27 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 
-import { Container, Grid, Menu, Responsive } from "semantic-ui-react";
+import {
+  Container,
+  Grid,
+  List,
+  Image,
+  Responsive,
+  Rating
+} from "semantic-ui-react";
 
 class Home extends Component {
-  state = { activeItem: "home" };
-
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name });
   render() {
-    const { activeItem } = this.state;
     return (
       <div className="ops">
         <Container>
           <Grid className="ops-container">
-            <Grid.Row>
+            <Grid.Row verticalAlign="middle">
               <Grid.Column
                 className="ops-column"
                 computer={8}
                 tablet={8}
                 mobile={16}
+                verticalAlign="middle"
               >
                 <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
                   <div className="ops-header">
@@ -33,37 +36,78 @@ class Home extends Component {
                   </div>
                 </Responsive>
               </Grid.Column>
-              <Grid.Column
-                computer={8}
-                tablet={8}
-                mobile={16}
-                textAlign="right"
-                verticalAlign="middle"
-              >
-                <Menu
-                  className="side-menu"
-                  pointing
-                  secondary
-                  vertical
-                  floated="right"
-                >
-                  <Menu.Item
-                    className="side-item"
-                    name="home"
-                    active={activeItem === "home"}
-                    onClick={this.handleItemClick}
-                  />
-                  <Menu.Item
-                    name="messages"
-                    active={activeItem === "messages"}
-                    onClick={this.handleItemClick}
-                  />
-                  <Menu.Item
-                    name="friends"
-                    active={activeItem === "friends"}
-                    onClick={this.handleItemClick}
-                  />
-                </Menu>
+              <Grid.Column computer={8} tablet={8} mobile={16}>
+                <Grid>
+                  <Grid.Row columns={2} verticalAlign="middle">
+                    <Grid.Column width={10} textAlign="left">
+                      <div className="ops-img">
+                        <Image
+                          className="filter-image"
+                          // floated="left"
+                          src="https://i.pinimg.com/originals/e4/4e/52/e44e52eb4b35495d011a0072cb76488d.png"
+                          size="medium"
+                        />
+                      </div>
+                    </Grid.Column>
+                    <Grid.Column width={6} textAlign="left">
+                      <List
+                        className="side-list"
+                        animated
+                        verticalAlign="middle"
+                        inverted
+                        size="large"
+                      >
+                        <span>
+                          <strong>2018/2019</strong> - La Liga
+                        </span>
+                        <div className="side-list-dash side-list-dash-long" />
+
+                        <List.Item>
+                          <List.Content>
+                            <List.Header>Goals</List.Header>9
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header>Assists</List.Header>7
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header>Appearances</List.Header>
+                            12
+                          </List.Content>
+                        </List.Item>
+                        <List.Item>
+                          <List.Content>
+                            <List.Header>Positions</List.Header>
+                            RW/CF/CAM
+                          </List.Content>
+                        </List.Item>
+                        <div className="side-list-bar" />
+                        <List.Item>
+                          <List.Content>
+                            <List.Header>Years</List.Header>
+                            31
+                          </List.Content>
+                        </List.Item>
+                        <div className="side-list-dash" />
+                        <List.Item>
+                          <List.Content>
+                            <List.Header>Skills</List.Header>
+                            <Rating
+                              className="skills"
+                              defaultRating={5}
+                              maxRating={5}
+                              disabled
+                            />{" "}
+                            5/5
+                          </List.Content>
+                        </List.Item>
+                      </List>
+                    </Grid.Column>
+                  </Grid.Row>
+                </Grid>
               </Grid.Column>
             </Grid.Row>
           </Grid>

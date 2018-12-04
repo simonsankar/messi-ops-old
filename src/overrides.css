@@ -5,15 +5,21 @@
   background-color: #c73d3d;
 }
 
+.ui.secondary.pointing.menu a.item {
+  transition: all 0.25s ease-in-out;
+}
+
 .ui.secondary.pointing.menu .active.item {
   border-color: #fff;
+  transition: all 0.25s ease-in-out;
+}
+.ui.secondary.pointing.menu .active.item:hover,
+.ui.secondary.pointing.menu a.item:hover {
+  border-color: rgba(255, 255, 255, 0.5);
 }
 
 .ui.menu .item {
   color: rgb(255, 255, 255) !important;
   letter-spacing: 3px;
   text-transform: uppercase;
-}
-.ui.inverted.segment.squared {
-  border: magenta !important;
 }

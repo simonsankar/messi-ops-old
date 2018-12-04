@@ -1,40 +1,40 @@
-import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { withRouter, Link } from "react-router-dom";
 import {
   Button,
   Menu,
   Segment,
   Container,
   Responsive
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 const paths = [
   {
-    name: 'home',
-    path: '/'
+    name: "home",
+    path: "/"
   },
   {
-    name: 'seasons',
-    path: '/seasons'
+    name: "seasons",
+    path: "/seasons"
   },
   {
-    name: 'records',
-    path: '/records'
+    name: "records",
+    path: "/records"
   },
   {
-    name: 'arguments against',
-    path: '/arguments'
+    name: "arguments against",
+    path: "/arguments"
   },
   {
-    name: 'msn',
-    path: '/msn'
+    name: "msn",
+    path: "/msn"
   },
   {
-    name: 'posts',
-    path: '/posts'
+    name: "posts",
+    path: "/posts"
   },
   {
-    name: 'abilities',
-    path: '/abilities'
+    name: "abilities",
+    path: "/abilities"
   }
 ];
 class Naviagtion extends Component {
@@ -82,8 +82,7 @@ class Naviagtion extends Component {
   render() {
     return (
       <Segment.Group size="mini" className="squared">
-        {' '}
-        {/* Desktop */}{' '}
+        {/* Desktop */}
         <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
           <Segment inverted className="squared">
             <Container>
@@ -95,37 +94,36 @@ class Naviagtion extends Component {
                   to="/"
                   name="Messi Ops"
                 />
-                {this.renderMenuItemList()}{' '}
-              </Menu>{' '}
-            </Container>{' '}
-          </Segment>{' '}
-        </Responsive>{' '}
-        {/* Mobile */}{' '}
+                {this.renderMenuItemList()}
+              </Menu>
+            </Container>
+          </Segment>
+        </Responsive>
+        {/* Mobile */}
         <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
           <Segment.Group className="squared">
             <Segment inverted className="squared">
               <Menu size="mini" inverted secondary pointing>
                 <Menu.Item header color="blue">
                   Messi Ops
-                </Menu.Item>{' '}
+                </Menu.Item>
                 <Menu.Item
                   position="right"
                   as={Button}
                   icon="bars"
                   onClick={() => this.toggleShow()}
-                />{' '}
-              </Menu>{' '}
-            </Segment>{' '}
+                />
+              </Menu>
+            </Segment>
             {this.state.show && (
               <Segment className="navbar-mobile fade-in">
                 <Menu size="mini" secondary pointing fluid stackable>
-                  {' '}
-                  {this.renderMenuItemListMobile()}{' '}
-                </Menu>{' '}
+                  {this.renderMenuItemListMobile()}
+                </Menu>
               </Segment>
-            )}{' '}
-          </Segment.Group>{' '}
-        </Responsive>{' '}
+            )}
+          </Segment.Group>
+        </Responsive>
       </Segment.Group>
     );
   }
