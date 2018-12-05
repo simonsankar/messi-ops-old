@@ -28,7 +28,7 @@ const HomeHeader = () => {
                 </div>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <div>
+                <div style={{ marginTop: "20px" }}>
                   <div className="hero-messi hero-messi-mobile">"Messi</div>
                   <div className="hero-ops hero-ops-mobile">Ops"</div>
                 </div>

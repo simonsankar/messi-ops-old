@@ -1,40 +1,40 @@
-import React, { Component } from 'react';
-import { withRouter, Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { withRouter, Link } from "react-router-dom";
 import {
   Button,
   Menu,
   Segment,
   Container,
   Responsive
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 const paths = [
   {
-    name: 'home',
-    path: '/'
+    name: "home",
+    path: "/"
   },
   {
-    name: 'blog',
-    path: '/blog'
+    name: "blog",
+    path: "/blog"
   },
   {
-    name: 'seasons',
-    path: '/seasons'
+    name: "seasons",
+    path: "/seasons"
   },
   {
-    name: 'records',
-    path: '/records'
+    name: "records",
+    path: "/records"
   },
   {
-    name: 'arguments against',
-    path: '/arguments'
+    name: "arguments against",
+    path: "/arguments"
   },
   {
-    name: 'abilities',
-    path: '/abilities'
+    name: "abilities",
+    path: "/abilities"
   },
   {
-    name: 'msn',
-    path: '/msn'
+    name: "msn",
+    path: "/msn"
   }
 ];
 class Naviagtion extends Component {
@@ -83,7 +83,7 @@ class Naviagtion extends Component {
     return (
       <Segment.Group size="mini" className="squared">
         {/* Desktop */}
-        <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
+        <Responsive minWidth={Responsive.onlyTablet.maxWidth}>
           <Segment inverted className="squared">
             <Container>
               <Menu size="tiny" inverted secondary pointing fluid stackable>
@@ -99,8 +99,8 @@ class Naviagtion extends Component {
             </Container>
           </Segment>
         </Responsive>
-        {/* Mobile */}
-        <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
+        {/* Mobile and Tablet*/}
+        <Responsive maxWidth={Responsive.onlyComputer.minWidth}>
           <Segment.Group className="squared">
             <Segment inverted className="squared">
               <Menu size="mini" inverted secondary pointing>
