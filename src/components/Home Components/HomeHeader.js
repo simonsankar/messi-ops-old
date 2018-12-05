@@ -10,27 +10,27 @@ import {
 
 const HomeHeader = () => {
   return (
-    <div className="ops">
+    <div className="hero">
       <Container>
-        <Grid className=" ops-container">
+        <Grid className="hero-container">
           <Grid.Row verticalAlign="middle">
             <Grid.Column
-              className="ops-column"
+              className="hero-column"
               computer={8}
               tablet={8}
               mobile={16}
               verticalAlign="middle"
             >
               <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-                <div className="ops-header">
-                  <div className="ops-messi">"Messi"</div>
-                  <div className="ops-ops">Ops"</div>
+                <div>
+                  <div className="hero-messi">"Messi</div>
+                  <div className="hero-ops">Ops"</div>
                 </div>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <div className="ops-header">
-                  <div className="ops-messi ops-messi-mobile">"Messi"</div>
-                  <div className="ops-ops ops-ops-mobile">Ops"</div>
+                <div>
+                  <div className="hero-messi hero-messi-mobile">"Messi</div>
+                  <div className="hero-ops hero-ops-mobile">Ops"</div>
                 </div>
               </Responsive>
             </Grid.Column>
@@ -38,10 +38,9 @@ const HomeHeader = () => {
               <Grid>
                 <Grid.Row columns={2} verticalAlign="middle">
                   <Grid.Column width={10} textAlign="left">
-                    <div className="ops-img">
+                    <div className="hero-img">
                       <Image
-                        className="filter-image"
-                        // floated="left"
+                        className="hero-image"
                         src="https://i.pinimg.com/originals/e4/4e/52/e44e52eb4b35495d011a0072cb76488d.png"
                         size="medium"
                       />
@@ -49,7 +48,7 @@ const HomeHeader = () => {
                   </Grid.Column>
                   <Grid.Column width={6} textAlign="left">
                     <List
-                      className="side-list"
+                      className="hero-list"
                       animated
                       verticalAlign="middle"
                       inverted
@@ -58,7 +57,7 @@ const HomeHeader = () => {
                       <span>
                         <strong>2018/2019</strong> - La Liga
                       </span>
-                      <div className="side-list-dash side-list-dash-long" />
+                      <div className="hero-list-dash hero-list-dash-long" />
 
                       <List.Item>
                         <List.Content>
@@ -82,19 +81,19 @@ const HomeHeader = () => {
                           RW/CF/CAM
                         </List.Content>
                       </List.Item>
-                      <div className="side-list-bar" />
+                      <div className="hero-list-bar" />
                       <List.Item>
                         <List.Content>
                           <List.Header>Years</List.Header>
                           31
                         </List.Content>
                       </List.Item>
-                      <div className="side-list-dash" />
+                      <div className="hero-list-dash" />
                       <List.Item>
                         <List.Content>
                           <List.Header>Skills</List.Header>
                           <Rating
-                            className="skills"
+                            className="hero-skills"
                             defaultRating={5}
                             maxRating={5}
                             disabled
