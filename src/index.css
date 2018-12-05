@@ -50,7 +50,7 @@ body {
 }
 .ops-img {
   /* border-radius: 3px; */
-  padding: 10px;
+  padding: 5px;
 }
 
 /* .ops-column {
@@ -90,7 +90,7 @@ body {
 .side-list-dash {
   width: 10%;
   height: 2px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
   margin: 4px 0;
 }
 .side-list-dash-long {

@@ -1,40 +1,40 @@
-import React, { Component } from "react";
-import { withRouter, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { withRouter, Link } from 'react-router-dom';
 import {
   Button,
   Menu,
   Segment,
   Container,
   Responsive
-} from "semantic-ui-react";
+} from 'semantic-ui-react';
 const paths = [
   {
-    name: "home",
-    path: "/"
+    name: 'home',
+    path: '/'
   },
   {
-    name: "seasons",
-    path: "/seasons"
+    name: 'blog',
+    path: '/blog'
   },
   {
-    name: "records",
-    path: "/records"
+    name: 'seasons',
+    path: '/seasons'
   },
   {
-    name: "arguments against",
-    path: "/arguments"
+    name: 'records',
+    path: '/records'
   },
   {
-    name: "msn",
-    path: "/msn"
+    name: 'arguments against',
+    path: '/arguments'
   },
   {
-    name: "posts",
-    path: "/posts"
+    name: 'abilities',
+    path: '/abilities'
   },
   {
-    name: "abilities",
-    path: "/abilities"
+    name: 'msn',
+    path: '/msn'
   }
 ];
 class Naviagtion extends Component {

@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-import { Container } from 'semantic-ui-react';
-import Navigation from './components/Navigation';
-import Home from './components/Home';
-import Seasons from './components/Seasons';
+import Navigation from './components/Navigation Components/Navigation';
+import Home from './components/Home Components/Home';
+import Seasons from './components/Seasons Components/Seasons';
 
 class App extends Component {
   render() {
