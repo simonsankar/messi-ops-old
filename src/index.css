@@ -34,16 +34,13 @@ body {
     drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
 }
 
-.height-full {
-  min-height: 100vh;
-}
 .navbar-mobile.ui.segment {
   background-color: #c73d3d;
 }
 .ops {
   background: linear-gradient(168deg, #c73d3d 50%, #b33a3a 50%);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 .ops-container {
   min-height: calc(100vh - 60px);

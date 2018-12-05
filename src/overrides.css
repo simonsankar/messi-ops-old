@@ -1,8 +1,11 @@
 .ui.secondary.inverted.pointing.menu,
 .ui.inverted.segment,
 .ui.primary.inverted.segment {
-  border: 0;
   background-color: #c73d3d;
+}
+.ui.secondary.inverted.pointing.menu {
+  border-width: 2px;
+  border-color: transparent;
 }
 
 .ui.secondary.pointing.menu a.item {

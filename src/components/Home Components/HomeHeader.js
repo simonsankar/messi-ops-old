@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Container,
   Grid,
@@ -6,13 +6,13 @@ import {
   Image,
   Responsive,
   Rating
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 
 const HomeHeader = () => {
   return (
     <div className="ops">
       <Container>
-        <Grid className="ops ops-container">
+        <Grid className=" ops-container">
           <Grid.Row verticalAlign="middle">
             <Grid.Column
               className="ops-column"
@@ -98,7 +98,7 @@ const HomeHeader = () => {
                             defaultRating={5}
                             maxRating={5}
                             disabled
-                          />{' '}
+                          />{" "}
                           5/5
                         </List.Content>
                       </List.Item>
