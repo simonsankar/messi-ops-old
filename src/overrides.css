@@ -25,4 +25,9 @@
   color: rgb(255, 255, 255) !important;
   letter-spacing: 3px;
   text-transform: uppercase;
+  font-family: FuturaMed;
+}
+
+.ui.grid > .divided.row > .column {
+  box-shadow: -1px 0 0 0 rgba(255, 255, 255, 0.1);
 }

@@ -18,23 +18,21 @@
   font-family: Univers;
   src: url(./fonts/Univers.woff);
 }
+@font-face {
+  font-family: PontiacShadow;
+  src: url(./fonts/PontiacInlineShadow.ttf);
+}
+@font-face {
+  font-family: PontiacRegular;
+  src: url(./fonts/PontiacInlineRegular.ttf);
+}
 
 html,
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: FuturaBook !important;
-}
-
-.home {
-  margin-bottom: 13px;
-  background-color: #454545;
-  background-repeat: no-repeat;
-  color: #c5c5c5;
-}
-.home-container {
-  min-height: calc(50vh);
+  font-family: Univers !important;
 }
 
 /* HERO */
@@ -100,6 +98,40 @@ body {
 .hero-skills.ui.rating .active.icon {
   color: rgba(255, 255, 255, 0.5);
 }
+
+/* HOME */
+/* Home container */
+.home {
+  margin-bottom: 13px;
+  background-color: #454545;
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.603);
+  font-size: 17px;
+}
+.home-container {
+  min-height: calc(50vh);
+}
+.home-header {
+  font-family: PontiacShadow;
+  font-size: 25px;
+  line-height: 40px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 5px;
+  z-index: 10;
+  background-color: #454545;
+  padding-right: 10px;
+}
+/* .home-header-line {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -10;
+} */
 
 /* NAVIGATION */
 .navbar-mobile.ui.segment {
