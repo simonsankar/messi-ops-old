@@ -150,7 +150,7 @@ body {
 .post-img {
   filter: grayscale(50%) contrast(90%);
   border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 1px;
 }
 .post-title {
   font-family: Univers !important;

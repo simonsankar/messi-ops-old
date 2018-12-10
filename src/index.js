@@ -1,17 +1,19 @@
-import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import ReactDOM from 'react-dom';
-import 'semantic-ui-css/semantic.min.css';
-import './index.css';
-import './overrides.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom";
+import "semantic-ui-css/semantic.min.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import "./index.css";
+import "./overrides.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change
