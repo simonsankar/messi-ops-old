@@ -137,7 +137,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  content: '';
+  content: "";
   width: 2px;
   height: 100%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -189,13 +189,20 @@ body {
 .seasons-header {
   padding: 1rem 0 !important;
   margin-bottom: 1rem;
-  background: linear-gradient(180deg, #ddd 50%, #eee 50%);
+  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
 }
 .seasons-header > .container > .column > .header {
   font-family: PontiacRegular;
   font-weight: 500;
   font-size: 5rem;
   line-height: 5rem;
+}
+.seasons-details {
+  margin-top: 45px;
+  min-height: 30vh;
+  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
+
+  color: rgba(0, 0, 0, 0.7);
 }
 .squared,
 .squared > .segment {

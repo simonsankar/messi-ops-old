@@ -2,12 +2,16 @@ import React, { Component } from "react";
 
 import { Container, Grid, Card, Image } from "semantic-ui-react";
 import Slider from "react-slick";
-import SeasonsHeader from "./SeasonHeader";
+import SeasonsHeader from "./SeasonsHeader";
+import SeasonsDetails from "./SeasonsDetails";
 
 class Seasons extends Component {
   render() {
     const settings = {
-      dots: false,
+      lazyLoad: true,
+      arrows: false,
+      adaptiveHeight: true,
+      dots: true,
       infinite: false,
       speed: 500,
       slidesToShow: 7,
@@ -128,12 +132,10 @@ class Seasons extends Component {
                   </Card>
                 </Slider>
               </Grid.Column>
-              <Grid.Column mobile={16} tablet={8} computer={6}>
-                Hello
-              </Grid.Column>
             </Grid.Row>
           </Grid>
         </Container>
+        <SeasonsDetails />
       </div>
     );
   }

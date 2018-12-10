@@ -52,3 +52,8 @@
 .slick-initialized .slick-slide {
   padding: 10px;
 }
+.slick-prev:before,
+.slick-next::before {
+  color: #c73d3d;
+  opacity: 1;
+}
