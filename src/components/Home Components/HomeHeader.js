@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Container,
   Grid,
@@ -6,7 +6,7 @@ import {
   Image,
   Responsive,
   Rating
-} from "semantic-ui-react";
+} from 'semantic-ui-react';
 
 const HomeHeader = () => {
   return (
@@ -28,7 +28,7 @@ const HomeHeader = () => {
                 </div>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <div style={{ marginTop: "20px" }}>
+                <div style={{ marginTop: '20px' }}>
                   <div className="hero-messi hero-messi-mobile">"Messi</div>
                   <div className="hero-ops hero-ops-mobile">Ops"</div>
                 </div>
@@ -61,18 +61,18 @@ const HomeHeader = () => {
 
                       <List.Item>
                         <List.Content>
-                          <List.Header>Goals</List.Header>9
+                          <List.Header>Goals</List.Header>11
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <List.Content>
-                          <List.Header>Assists</List.Header>7
+                          <List.Header>Assists</List.Header>8
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <List.Content>
                           <List.Header>Appearances</List.Header>
-                          12
+                          13
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -97,7 +97,7 @@ const HomeHeader = () => {
                             defaultRating={5}
                             maxRating={5}
                             disabled
-                          />{" "}
+                          />{' '}
                           5/5
                         </List.Content>
                       </List.Item>

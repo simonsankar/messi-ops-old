@@ -31,3 +31,8 @@
 .ui.grid > .divided.row > .column {
   box-shadow: -1px 0 0 0 rgba(255, 255, 255, 0.1);
 }
+
+/* list */
+.ui.divided.list > .item {
+  border-top: 2px solid #b33a3a;
+}

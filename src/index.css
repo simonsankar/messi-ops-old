@@ -39,6 +39,14 @@ body {
   font-family: UniversLT !important;
 }
 
+/* FOOTER */
+.footer {
+  background: #a2a2a2;
+  color: #c73d3d;
+}
+.footer-container {
+  height: 20vh;
+}
 /* HERO */
 /* Hero container */
 .hero {
@@ -102,7 +110,6 @@ body {
 .hero-skills.ui.rating .active.icon {
   color: rgba(255, 255, 255, 0.5);
 }
-
 /* HOME */
 /* Home container */
 .home {
@@ -124,31 +131,71 @@ body {
   position: relative;
   margin-bottom: 5px;
   z-index: 10;
-  background-color: #454545;
   padding-right: 10px;
 }
-
-
+.home-header::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
 /* NAVIGATION */
 .navbar-mobile.ui.segment {
   background-color: #c73d3d;
 }
-
 /* POSTS */
-.post-img{
-     filter: grayscale(70%) contrast(60%);
-  border:2px solid rgba(0,0,0,.1);
-  border-radius:3px;
+.post-img {
+  filter: grayscale(50%) contrast(90%);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
 }
-.post-title{
-  font-family:Univers !important;
-  font-size:36px;
-  font-weight:500;
-  line-height:36px;
-  color:rgba(255,255,255,0.5) !important;
+.post-title {
+  font-family: Univers !important;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 36px;
+  color: rgba(255, 255, 255, 0.5) !important;
+  transition: all 0.1s ease-in-out;
 }
-.post-blurb{
-  color:rgba(255,255,255,0.3) !important;
+.post-title:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.post-blurb {
+  color: rgba(255, 255, 255, 0.3) !important;
+  padding-bottom: 5px;
+}
+.post-readmore {
+  color: rgba(255, 255, 255, 0.5);
+  transition: all 0.1s ease-in;
+}
+.post-readmore:hover {
+  text-decoration: underline;
+  color: #b33a3a;
+}
+
+/* SEASONS */
+.seasons {
+  margin-top: -13px;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: #f7f7f7;
+}
+.seasons-container {
+  height: auto;
+}
+.seasons-header {
+  padding: 1rem 0 !important;
+  margin-bottom: 1rem;
+  background: linear-gradient(180deg, #ddd 50%, #eee 50%);
+}
+.seasons-header > .container > .column > .header {
+  font-family: PontiacRegular;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 5rem;
 }
 .squared,
 .squared > .segment {

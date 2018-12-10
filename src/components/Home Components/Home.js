@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
-import HomeHeader from "./HomeHeader";
-import HomeBody from "./HomeBody";
+import HomeHeader from './HomeHeader';
+import HomeBody from './HomeBody';
+import Footer from '../Footer Components/Footer';
 
 class Home extends Component {
   render() {
@@ -9,6 +10,7 @@ class Home extends Component {
       <div>
         <HomeHeader />
         <HomeBody />
+        <Footer />
       </div>
     );
   }

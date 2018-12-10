@@ -10,11 +10,7 @@ const PostItem = ({ post }) => {
         <Grid>
           <Grid.Row columns={2} verticalAlign="middle">
             <Grid.Column width={6}>
-              <Image
-                className="post-img"
-                src="https://assets1.sportsnet.ca/wp-content/uploads/2018/03/messi-1040x572.jpg"
-                fluid
-              />
+              <Image className="post-img" src={post.img} fluid />
             </Grid.Column>
             <Grid.Column width={10}>
               <Link className="post-title" to="/">
