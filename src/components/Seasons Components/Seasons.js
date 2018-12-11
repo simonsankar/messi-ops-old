@@ -9,9 +9,9 @@ class Seasons extends Component {
   render() {
     const settings = {
       lazyLoad: true,
-      arrows: false,
+      arrows: true,
       adaptiveHeight: true,
-      dots: true,
+      dots: false,
       infinite: false,
       speed: 500,
       slidesToShow: 7,
@@ -46,95 +46,97 @@ class Seasons extends Component {
     };
     return (
       <div className="seasons">
-        <SeasonsHeader />
-        <Container className="seasons-container">
-          <Grid>
-            <Grid.Row>
-              <Grid.Column width={16}>
-                <Slider {...settings}>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2004/2005</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2005/2006</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2007/2008</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2008/2009</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2009/2010</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2010/2011</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2011/2012</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2012/2013</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2013/2014</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2014/2014</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2015/2016</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2016/2017</Card.Header>
-                    </Card.Content>
-                  </Card>
-                  <Card>
-                    <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
-                    <Card.Content>
-                      <Card.Header>2017/2018</Card.Header>
-                    </Card.Content>
-                  </Card>
-                </Slider>
-              </Grid.Column>
-            </Grid.Row>
-          </Grid>
-        </Container>
+        <div className="seasons-bar">
+          <SeasonsHeader />
+          <Container className="seasons-container">
+            <Grid>
+              <Grid.Row>
+                <Grid.Column width={16}>
+                  <Slider {...settings}>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2004/2005</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2005/2006</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2007/2008</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2008/2009</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2009/2010</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2010/2011</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2011/2012</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2012/2013</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2013/2014</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2014/2014</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2015/2016</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2016/2017</Card.Header>
+                      </Card.Content>
+                    </Card>
+                    <Card>
+                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Card.Content>
+                        <Card.Header>2017/2018</Card.Header>
+                      </Card.Content>
+                    </Card>
+                  </Slider>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </Container>
+        </div>
         <SeasonsDetails />
       </div>
     );

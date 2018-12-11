@@ -180,16 +180,16 @@ body {
 /* SEASONS */
 .seasons {
   margin-top: -13px;
-  color: rgba(0, 0, 0, 0.7);
-  background-color: #f7f7f7;
+  color: rgba(255, 255, 255, 0.5);
+  background-color: blue;
+}
+.seasons-bar {
+  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
 }
 .seasons-container {
-  height: auto;
 }
 .seasons-header {
   padding: 1rem 0 !important;
-  margin-bottom: 1rem;
-  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
 }
 .seasons-header > .container > .column > .header {
   font-family: PontiacRegular;
@@ -198,11 +198,11 @@ body {
   line-height: 5rem;
 }
 .seasons-details {
-  margin-top: 45px;
-  min-height: 30vh;
-  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
-
-  color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(180deg, #c73d3d 50%, #b33a3a 50%);
+  padding-top: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  height: 60vh;
+  margin: 0;
 }
 .squared,
 .squared > .segment {
