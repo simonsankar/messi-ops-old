@@ -40,12 +40,16 @@
 /* card */
 .ui.card > .content > .header,
 .ui.cards > .card > .content > .header {
-  font-family: UniversLT;
+  font-family: FuturaBook;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
 }
 .ui.card {
-  border-radius: 1px !important;
+  border-radius: 0px !important;
+}
+.ui.card > :last-child,
+.ui.cards > .card > :last-child {
+  border-radius: 0 !important;
 }
 
 /* slick-carousel */

@@ -30,6 +30,10 @@
   font-family: PontiacRegular;
   src: url(./fonts/PontiacInlineRegular.ttf);
 }
+@font-face {
+  font-family: LaLiga;
+  src: url(./fonts/laliga1819.ttf);
+}
 
 html,
 body {
@@ -197,6 +201,49 @@ body {
   height: 60vh;
   margin: 0;
 }
+/* Season Card */
+.seasons-card {
+  cursor: pointer;
+}
+.seasons-card:hover > .seasons-card-overlay {
+  opacity: 1;
+}
+.seasons-card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  font-family: PontiacShadow;
+  color: rgba(255, 255, 255, 0.9);
+}
+.seasons-card-overlay > .number {
+  font-size: 7vw;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.seasons-card-overlay > .name {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  font-size: 3vw;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+.seasons-card-overlay > .year {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  font-size: 1.5vw;
+  text-transform: uppercase;
+  transform: translate(-50%, -50%);
+}
+
 .squared,
 .squared > .segment {
   z-index: 10;
