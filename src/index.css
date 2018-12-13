@@ -231,15 +231,15 @@ body {
   position: absolute;
   top: 30px;
   left: 50%;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
 .seasons-card-overlay > .year {
   position: absolute;
-  bottom: 5px;
+  bottom: 0px;
   left: 50%;
-  font-size: 1.5vw;
+  font-size: 14px;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
