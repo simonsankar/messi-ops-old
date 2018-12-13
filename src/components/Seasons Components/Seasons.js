@@ -94,7 +94,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">06/07</span>
+                        <span className="year">07/08</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -105,7 +105,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">07/08</span>
+                        <span className="year">08/09</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -116,7 +116,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">08/09</span>
+                        <span className="year">09/10</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -127,7 +127,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">09/10</span>
+                        <span className="year">10/11</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -138,7 +138,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">10/11</span>
+                        <span className="year">11/12</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -149,7 +149,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">11/12</span>
+                        <span className="year">12/13</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -160,7 +160,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">12/13</span>
+                        <span className="year">13/14</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -171,7 +171,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">13/14</span>
+                        <span className="year">14/15</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -182,7 +182,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">14/15</span>
+                        <span className="year">15/16</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -193,7 +193,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">15/16</span>
+                        <span className="year">16/17</span>
                       </div>
                     </Card>
                     <Card className="seasons-card">
@@ -204,7 +204,7 @@ class Seasons extends Component {
                       <div className="seasons-card-overlay">
                         <span className="number">10</span>
                         <span className="name">Messi</span>
-                        <span className="year">16/17</span>
+                        <span className="year">17/18</span>
                       </div>
                     </Card>
                   </Slider>
