@@ -75,6 +75,14 @@ body {
   text-shadow: 2px 2px 3px #454545, 3px 3px 3px #454545, 4px 4px 3px #454545,
     5px 5px 3px #454545, 8px 8px 3px #454545;
 }
+.hero-messi-small {
+  line-height: 8rem;
+  font-size: 8rem;
+}
+.hero-ops-small {
+  line-height: 3rem;
+  font-size: 3rem;
+}
 .hero-messi-mobile,
 .hero-ops-mobile {
   line-height: 8rem;

@@ -1,4 +1,6 @@
-import React from 'react';
+import React from "react";
+
+import messi from "../../images/messi-home.png";
 import {
   Container,
   Grid,
@@ -6,7 +8,7 @@ import {
   Image,
   Responsive,
   Rating
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 
 const HomeHeader = () => {
   return (
@@ -28,7 +30,7 @@ const HomeHeader = () => {
                 </div>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <div style={{ marginTop: '20px' }}>
+                <div style={{ marginTop: "20px" }}>
                   <div className="hero-messi hero-messi-mobile">"Messi</div>
                   <div className="hero-ops hero-ops-mobile">Ops"</div>
                 </div>
@@ -39,11 +41,7 @@ const HomeHeader = () => {
                 <Grid.Row columns={2} verticalAlign="middle">
                   <Grid.Column width={10} textAlign="left">
                     <div className="hero-img">
-                      <Image
-                        className="hero-image"
-                        src="https://i.pinimg.com/originals/e4/4e/52/e44e52eb4b35495d011a0072cb76488d.png"
-                        size="medium"
-                      />
+                      <Image className="hero-image" src={messi} size="medium" />
                     </div>
                   </Grid.Column>
                   <Grid.Column width={6} textAlign="left">
@@ -97,7 +95,7 @@ const HomeHeader = () => {
                             defaultRating={5}
                             maxRating={5}
                             disabled
-                          />{' '}
+                          />{" "}
                           5/5
                         </List.Content>
                       </List.Item>
