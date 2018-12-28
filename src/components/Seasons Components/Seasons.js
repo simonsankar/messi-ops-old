@@ -4,6 +4,7 @@ import { Container, Grid, Card, Image } from "semantic-ui-react";
 import Slider from "react-slick";
 import SeasonsHeader from "./SeasonsHeader";
 import SeasonsDetails from "./SeasonsDetails";
+import Footer from "../Footer Components/Footer";
 
 class Seasons extends Component {
   render() {
@@ -214,6 +215,7 @@ class Seasons extends Component {
           </Container>
         </div>
         <SeasonsDetails />
+        <Footer />
       </div>
     );
   }

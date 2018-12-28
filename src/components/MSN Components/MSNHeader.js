@@ -34,10 +34,10 @@ const HomeHeader = () => {
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
                 <div style={{ marginTop: "20px" }}>
-                  <div className="hero-messi hero-messi-mobile">
+                  <div className="hero-messi hero-messi-small-mobile">
                     "Messi. Suarez. Neymar.
                   </div>
-                  <div className="hero-ops hero-ops-mobile">
+                  <div className="hero-ops hero-ops-small-mobile">
                     ..spells danger ..spells goals"
                   </div>
                 </div>
