@@ -210,7 +210,7 @@ body {
   padding: 10px;
 }
 .msn-image {
-  filter: grayscale(60%) drop-shadow(-6px -6px 0px #004d98)
+  filter: grayscale(80%) drop-shadow(-6px -6px 0px #004d98)
     drop-shadow(-6px -6px 0px #a50044)
     drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
 }
