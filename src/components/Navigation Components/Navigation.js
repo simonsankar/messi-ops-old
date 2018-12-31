@@ -80,52 +80,102 @@ class Naviagtion extends Component {
     });
   }
   render() {
-    return (
-      <Segment.Group size="mini" className="squared">
-        {/* Desktop */}
-        <Responsive minWidth={Responsive.onlyTablet.maxWidth}>
-          <Segment inverted className="squared">
-            <Container>
-              <Menu size="tiny" inverted secondary pointing fluid stackable>
-                <Menu.Item
-                  position="left"
-                  key="messi-ops"
-                  as={Link}
-                  to="/"
-                  name="Messi Ops"
-                />
-                {this.renderMenuItemList()}
-              </Menu>
-            </Container>
-          </Segment>
-        </Responsive>
-        {/* Mobile and Tablet*/}
-        <Responsive maxWidth={Responsive.onlyComputer.minWidth}>
-          <Segment.Group className="squared">
-            <Segment inverted className="squared">
-              <Menu size="mini" inverted secondary pointing>
-                <Menu.Item header color="blue">
-                  Messi Ops
-                </Menu.Item>
-                <Menu.Item
-                  position="right"
-                  as={Button}
-                  icon="bars"
-                  onClick={() => this.toggleShow()}
-                />
-              </Menu>
+    const { pathname } = this.props.location;
+    if (pathname === "/msn") {
+      return (
+        <Segment.Group size="mini" className="squared-msn">
+          {/* Desktop */}
+          <Responsive minWidth={Responsive.onlyTablet.maxWidth}>
+            <Segment inverted className="squared-msn">
+              <Container>
+                <Menu size="tiny" inverted secondary pointing fluid stackable>
+                  <Menu.Item
+                    position="left"
+                    key="messi-ops"
+                    as={Link}
+                    to="/"
+                    name="Messi Ops"
+                  />
+                  {this.renderMenuItemList()}
+                </Menu>
+              </Container>
             </Segment>
-            {this.state.show && (
-              <Segment className="navbar-mobile fade-in">
-                <Menu size="mini" secondary pointing fluid stackable>
-                  {this.renderMenuItemListMobile()}
+          </Responsive>
+          {/* Mobile and Tablet*/}
+          <Responsive maxWidth={Responsive.onlyComputer.minWidth}>
+            <Segment.Group className="squared-msn">
+              <Segment inverted className="squared-msn">
+                <Menu size="mini" inverted secondary pointing>
+                  <Menu.Item header color="blue">
+                    Messi Ops
+                  </Menu.Item>
+                  <Menu.Item
+                    position="right"
+                    as={Button}
+                    icon="bars"
+                    onClick={() => this.toggleShow()}
+                  />
                 </Menu>
               </Segment>
-            )}
-          </Segment.Group>
-        </Responsive>
-      </Segment.Group>
-    );
+              {this.state.show && (
+                <Segment className="navbar-mobile fade-in">
+                  <Menu size="mini" secondary pointing fluid stackable>
+                    {this.renderMenuItemListMobile()}
+                  </Menu>
+                </Segment>
+              )}
+            </Segment.Group>
+          </Responsive>
+        </Segment.Group>
+      );
+    } else {
+      return (
+        <Segment.Group size="mini" className="squared">
+          {/* Desktop */}
+          <Responsive minWidth={Responsive.onlyTablet.maxWidth}>
+            <Segment inverted className="squared">
+              <Container>
+                <Menu size="tiny" inverted secondary pointing fluid stackable>
+                  <Menu.Item
+                    position="left"
+                    key="messi-ops"
+                    as={Link}
+                    to="/"
+                    name="Messi Ops"
+                  />
+                  {this.renderMenuItemList()}
+                </Menu>
+              </Container>
+            </Segment>
+          </Responsive>
+          {/* Mobile and Tablet*/}
+          <Responsive maxWidth={Responsive.onlyComputer.minWidth}>
+            <Segment.Group className="squared">
+              <Segment inverted className="squared">
+                <Menu size="mini" inverted secondary pointing>
+                  <Menu.Item header color="blue">
+                    Messi Ops
+                  </Menu.Item>
+                  <Menu.Item
+                    position="right"
+                    as={Button}
+                    icon="bars"
+                    onClick={() => this.toggleShow()}
+                  />
+                </Menu>
+              </Segment>
+              {this.state.show && (
+                <Segment className="navbar-mobile fade-in">
+                  <Menu size="mini" secondary pointing fluid stackable>
+                    {this.renderMenuItemListMobile()}
+                  </Menu>
+                </Segment>
+              )}
+            </Segment.Group>
+          </Responsive>
+        </Segment.Group>
+      );
+    }
   }
 }
 export default withRouter(Naviagtion);

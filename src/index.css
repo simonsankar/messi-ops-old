@@ -51,6 +51,7 @@ body {
 .footer-container {
   height: 20vh;
 }
+
 /* HERO */
 /* Hero container */
 .hero {
@@ -155,10 +156,95 @@ body {
   z-index: 10;
   padding-right: 10px;
 }
+/* MSN */
+/* HERO */
+/* Hero container */
+.msn {
+  margin-bottom: 13px;
+  background: linear-gradient(168deg, #004d98 50%, #a50044 50%);
+  background-repeat: no-repeat;
+}
+.msn-container {
+  min-height: calc(100vh - 60px);
+}
+/* Hero text */
+.msn-title,
+.msn-sub {
+  text-align: center;
+  font-family: HeroicCondensedBold;
+  font-size: 15vw;
+  line-height: 13vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: white;
+  transform: rotate(-13deg) skew(-13deg, 0);
+  text-shadow: 2px 2px 3px #454545, 3px 3px 3px #454545, 4px 4px 3px #454545,
+    5px 5px 3px #454545, 8px 8px 3px #454545;
+}
+/* small */
+.msn-title-small {
+  line-height: 10rem;
+  font-size: 10rem;
+}
+.msn-sub-small {
+  line-height: 3rem;
+  font-size: 3rem;
+}
+.msn-title-small-mobile {
+  line-height: 5rem;
+  font-size: 5rem;
+}
+.msn-sub-small-mobile {
+  line-height: 2rem;
+  font-size: 2rem;
+}
+
+.msn-title-mobile,
+.msn-sub-mobile {
+  line-height: 6rem;
+  font-size: 6rem;
+}
+/* Hero image */
+/*Hero image container*/
+.msn-img {
+  padding: 10px;
+}
+.msn-image {
+  filter: grayscale(60%) drop-shadow(-6px -6px 0px #004d98)
+    drop-shadow(-6px -6px 0px #a50044)
+    drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
+}
+/* Hero list */
+.msn-list,
+.ui.list > .item .header {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: UniversLT !important;
+  padding-bottom: 5px;
+}
+.msn-list-dash {
+  width: 10%;
+  height: 2px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+.msn-list-dash-long {
+  width: 90%;
+}
+.msn-list-bar {
+  height: 7rem;
+  margin-left: 2px;
+  border-left: 2px solid #fff;
+}
+.msn-skills.ui.rating .active.icon {
+  color: rgba(255, 255, 255, 0.5);
+}
 
 /* NAVIGATION */
 .navbar-mobile.ui.segment {
   background-color: #c73d3d;
+}
+.navbar-msn {
+  background-color: #004d98 !important;
 }
 /* POSTS */
 .post-img {
@@ -267,4 +353,20 @@ body {
   z-index: 10;
   border-radius: 0 !important;
   border: 1px solid #c73d3d !important;
+}
+.squared-msn,
+.squared-msn > .segment {
+  z-index: 10;
+  border-radius: 0 !important;
+  border: 1px solid #004d98 !important;
+}
+.squared-msn > .ui.secondary.inverted.pointing.menu,
+.squared-msn > .ui.inverted.segment,
+.squared-msn > .ui.primary.inverted.segment,
+.squared-msn.ui.inverted.segment,
+.squared-msn > .ui.container > .ui.secondary.inverted.pointing.menu {
+  background-color: #004d98 !important;
+}
+.squared-msn > .navbar-mobile.ui.segment {
+  background-color: #004d98 !important;
 }
