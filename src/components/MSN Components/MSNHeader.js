@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import {
   Container,
   Grid,
@@ -6,8 +6,8 @@ import {
   Image,
   Responsive,
   Rating
-} from "semantic-ui-react";
-import msn from "../../images/MSN-splash.png";
+} from 'semantic-ui-react';
+import msn from '../../images/MSN-splash.png';
 
 const HomeHeader = () => {
   return (
@@ -24,20 +24,16 @@ const HomeHeader = () => {
             >
               <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
                 <div>
-                  <div className="msn-title msn-title-small">
-                    "Messi. Suarez. Neymar.
-                  </div>
-                  <div className="msn-sub msn-sub-small">
-                    ..spells danger ..spells goals"
-                  </div>
+                  <div className="msn-title ">"Messi. Suarez. Neymar.</div>
+                  <div className="msn-sub">..spells danger ..spells goals"</div>
                 </div>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <div style={{ marginTop: "20px" }}>
-                  <div className="msn-title msn-title-small-mobile">
+                <div style={{ marginTop: '20px' }}>
+                  <div className="msn-title msn-title-mobile">
                     "Messi. Suarez. Neymar.
                   </div>
-                  <div className="msn-sub msn-sub-small-mobile">
+                  <div className="msn-sub msn-sub-mobile">
                     ..spells danger ..spells goals"
                   </div>
                 </div>

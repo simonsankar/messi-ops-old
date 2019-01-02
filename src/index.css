@@ -43,6 +43,22 @@ body {
   font-family: UniversLT !important;
 }
 
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+body::-webkit-scrollbar-thumb {
+  /* border-radius: 5px; */
+  background: #a2a2a2;
+  transition: color 0.2s ease;
+}
+
 /* FOOTER */
 .footer {
   background-color: #222;
@@ -77,23 +93,6 @@ body {
     5px 5px 3px #454545, 8px 8px 3px #454545;
 }
 /* small */
-.hero-messi-small {
-  line-height: 10rem;
-  font-size: 10rem;
-}
-.hero-ops-small {
-  line-height: 3rem;
-  font-size: 3rem;
-}
-.hero-messi-small-mobile {
-  line-height: 5rem;
-  font-size: 5rem;
-}
-.hero-ops-small-mobile {
-  line-height: 2rem;
-  font-size: 2rem;
-}
-
 .hero-messi-mobile,
 .hero-ops-mobile {
   line-height: 8rem;
@@ -182,21 +181,21 @@ body {
     5px 5px 3px #454545, 8px 8px 3px #454545;
 }
 /* small */
-.msn-title-small {
-  line-height: 10rem;
-  font-size: 10rem;
+.msn-title {
+  line-height: 9.6rem;
+  font-size: 9.6rem;
 }
-.msn-sub-small {
+.msn-sub {
   line-height: 3rem;
   font-size: 3rem;
 }
-.msn-title-small-mobile {
-  line-height: 5rem;
-  font-size: 5rem;
+.msn-title-mobile {
+  line-height: 5rem !important;
+  font-size: 5rem !important;
 }
-.msn-sub-small-mobile {
-  line-height: 2rem;
-  font-size: 2rem;
+.msn-sub-mobile {
+  line-height: 2rem !important;
+  font-size: 2rem !important;
 }
 
 .msn-title-mobile,
@@ -210,7 +209,7 @@ body {
   padding: 10px;
 }
 .msn-image {
-  filter: grayscale(80%) drop-shadow(-6px -6px 0px #004d98)
+  filter: brightness(150%) grayscale(80%) drop-shadow(-6px -6px 0px #004d98)
     drop-shadow(-6px -6px 0px #a50044)
     drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
 }
@@ -277,6 +276,16 @@ body {
   color: #b33a3a;
 }
 
+/* RECORDS */
+.record-item {
+  background-color: #dddddd;
+  height: 400px;
+}
+.record-item-alt {
+  background-color: #e3e3e3;
+  height: 400px;
+}
+
 /* SEASONS */
 .seasons {
   margin-top: -13px;
@@ -284,14 +293,12 @@ body {
   background-color: blue;
 }
 .seasons-bar {
-  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
+  background: linear-gradient(-45deg, #eee 50%, #ddd 50%);
 }
 .seasons-container {
-  background: linear-gradient(-45deg, #ddd 50%, #eee 50%);
+  background: linear-gradient(-45deg, #eee 50%, #ddd 50%);
 }
-.seasons-header {
-  padding: 1rem 0 !important;
-}
+
 .seasons-header > .container > .column > .header {
   font-family: PontiacRegular;
   font-weight: 500;
@@ -299,7 +306,6 @@ body {
   line-height: 5rem;
 }
 .seasons-details {
-  background: linear-gradient(-45deg, #373737 50%, #333 50%);
   padding-top: 25px;
   color: rgba(255, 255, 255, 0.5);
   height: 60vh;
@@ -318,11 +324,11 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
   transition: all 0.3s ease-in-out;
   font-family: PontiacShadow;
-  color: rgba(255, 255, 255, 0.9);
+  color: #333;
 }
 .seasons-card-overlay > .number {
   font-size: 7vw;
@@ -346,6 +352,9 @@ body {
   font-size: 14px;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
+}
+.seasons-img {
+  border: 3px rgba(255, 255, 255, 0.7) solid;
 }
 
 .squared,
