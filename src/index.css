@@ -285,6 +285,9 @@ body::-webkit-scrollbar-thumb {
   background-color: #e3e3e3;
   height: 400px;
 }
+.record-img {
+  border: 3px solid #b33a3a;
+}
 
 /* SEASONS */
 .seasons {
