@@ -25,7 +25,7 @@ export const RecordItem = () => {
           <Grid.Column
             computer={10}
             tablet={12}
-            mobile={10}
+            mobile={16}
             className="record-details"
           >
             <h3 className="record-title">Title of the record</h3>
@@ -41,7 +41,7 @@ export const RecordItem = () => {
               semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             </p>
           </Grid.Column>
-          <Grid.Column computer={3} tablet={4} mobile={6}>
+          <Grid.Column computer={3} tablet={4} mobile={16}>
             <h4 className="record-subtitle">Most goals in a Calendar Year</h4>
             <List divided relaxed as="ol" inverted size="large">
               <List.Item as="li">
@@ -95,7 +95,7 @@ export const RecordItemAlt = () => {
     <div className="record-item record-item-alt">
       <Grid container>
         <Grid.Row>
-          <Grid.Column computer={3} tablet={4} mobile={6}>
+          <Grid.Column computer={3} tablet={4} mobile={16}>
             <h5 className="record-subtitle">Most goals in a Calendar Year</h5>
             <List divided relaxed as="ol" inverted size="large">
               <List.Item as="li">
@@ -130,7 +130,7 @@ export const RecordItemAlt = () => {
           <Grid.Column
             computer={10}
             tablet={12}
-            mobile={10}
+            mobile={16}
             className="record-details"
           >
             <h3 className="record-title">Title of the record</h3>

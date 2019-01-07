@@ -58,6 +58,46 @@ body::-webkit-scrollbar-thumb {
   background: #a2a2a2;
   transition: color 0.2s ease;
 }
+/* Arguments */
+.args-header {
+  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+}
+.args-header > .container > .column > .header {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  font-family: PontiacRegular;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 5rem;
+  padding: 1rem 0;
+  margin-bottom: 14px;
+}
+.args-content {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+/* BLOG */
+.blog-header {
+  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+}
+.blog-header > .container > .column > .header {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  font-family: PontiacRegular;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 5rem;
+  padding: 1rem 0;
+  margin-bottom: 14px;
+}
+.blog-content {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+}
 
 /* CAREER numbers */
 .career {
@@ -318,8 +358,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* RECORDS */
+.records {
+}
+
 .records-header {
-  background: linear-gradient(-80deg, #b33a3a 20%, #222 20%);
+  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
 }
 .records-header > .container > .column > .header {
   color: rgba(255, 255, 255, 0.5);
@@ -330,6 +373,12 @@ body::-webkit-scrollbar-thumb {
   line-height: 5rem;
   padding: 1rem 0;
   margin-bottom: 14px;
+}
+.records-content {
+  padding: 20px 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 .record-item {
   color: rgba(255, 255, 255, 0.8);
@@ -389,7 +438,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #454545;
 }
 .seasons-bar {
-  background: linear-gradient(-80deg, #b33a3a 20%, #222 20%);
+  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
 }
 .seasons-container {
   background: transparent;

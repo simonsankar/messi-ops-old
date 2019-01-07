@@ -1,17 +1,16 @@
 import React, { Component } from "react";
 
 import RecordsHeader from "./RecordsHeader";
-import { RecordItem, RecordItemAlt } from "./RecordItem";
+import RecordsBody from "./RecordsBody";
+import Footer from "../Footer Components/Footer";
 
 class Records extends Component {
   render() {
     return (
       <div className="records">
         <RecordsHeader />
-        <RecordItem />
-        <RecordItemAlt />
-        <RecordItem />
-        <RecordItemAlt />
+        <RecordsBody />
+        <Footer />
       </div>
     );
   }
