@@ -279,7 +279,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0px;
 }
 .post-img-overlay {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 14px;
@@ -318,6 +318,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* RECORDS */
+.records-header {
+  background: linear-gradient(-80deg, #b33a3a 20%, #222 20%);
+}
+.records-header > .container > .column > .header {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  font-family: PontiacRegular;
+  font-weight: 500;
+  font-size: 5rem;
+  line-height: 5rem;
+  padding: 1rem 0;
+  margin-bottom: 14px;
+}
 .record-item {
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 30px;
@@ -373,19 +386,22 @@ body::-webkit-scrollbar-thumb {
 .seasons {
   margin-top: -13px;
   color: rgba(255, 255, 255, 0.5);
-  background-color: blue;
+  background-color: #454545;
 }
 .seasons-bar {
-  background: linear-gradient(-45deg, #eee 50%, #ddd 50%);
+  background: linear-gradient(-80deg, #b33a3a 20%, #222 20%);
 }
 .seasons-container {
-  background: linear-gradient(-45deg, #eee 50%, #ddd 50%);
+  background: transparent;
 }
 .seasons-header > .container > .column > .header {
+  color: rgba(255, 255, 255, 0.5);
   font-family: PontiacRegular;
   font-weight: 500;
   font-size: 5rem;
   line-height: 5rem;
+  padding: 1rem 0;
+  margin-bottom: 14px;
 }
 .seasons-details {
   padding-top: 25px;
@@ -436,7 +452,7 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
 }
 .seasons-img {
-  border: 3px rgba(255, 255, 255, 0.7) solid;
+  /* border: 3px rgba(255, 255, 255, 0.7) solid; */
 }
 .squared,
 .squared > .segment {

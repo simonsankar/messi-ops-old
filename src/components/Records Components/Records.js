@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import { RecordItem, RecordItemAlt } from './RecordItem';
+import RecordsHeader from "./RecordsHeader";
+import { RecordItem, RecordItemAlt } from "./RecordItem";
 
 class Records extends Component {
   render() {
     return (
-      <div>
-        <h1>Records</h1>
+      <div className="records">
+        <RecordsHeader />
         <RecordItem />
         <RecordItemAlt />
         <RecordItem />
