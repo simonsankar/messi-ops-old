@@ -121,6 +121,7 @@ body::-webkit-scrollbar-thumb {
 .career-type {
   font-family: UniversLT;
   font-size: 15px;
+  padding-bottom: 5px;
 }
 .career-stats {
   padding-top: 5px !important;
@@ -142,8 +143,20 @@ body::-webkit-scrollbar-thumb {
   background-color: #222;
   color: rgba(255, 255, 255, 0.5);
 }
+.footer-link {
+  color: #c73d3d;
+}
+.footer-link:hover {
+  color: #b33a3a;
+}
 .footer-container {
-  height: 20vh;
+  height: auto;
+}
+.footer-title {
+  padding-top: 3px;
+  font-family: FuturaBook !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* HERO */

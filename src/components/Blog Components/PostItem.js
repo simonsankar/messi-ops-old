@@ -1,7 +1,7 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import { List, Image, Grid, Responsive } from 'semantic-ui-react';
+import { List, Image, Grid, Responsive } from "semantic-ui-react";
 
 const PostItem = ({ post }) => {
   return (
@@ -9,11 +9,15 @@ const PostItem = ({ post }) => {
       <List.Content>
         <Grid>
           <Grid.Row columns={2} verticalAlign="middle">
-            <Grid.Column width={6}>
+            <Responsive
+              as={Grid.Column}
+              width={6}
+              minWidth={Responsive.onlyComputer.minWidth}
+            >
               <Image className="post-img" src={post.img} fluid />
               <span className="post-img-overlay" />
-            </Grid.Column>
-            <Grid.Column width={10}>
+            </Responsive>
+            <Grid.Column computer={10} tablet={16} mobile={16}>
               <Link className="post-title" to="/">
                 {post.title}
               </Link>
