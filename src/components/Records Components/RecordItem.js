@@ -1,23 +1,33 @@
-import React from 'react';
+import React from "react";
 
-import { Grid, Image, Header, List } from 'semantic-ui-react';
+import { Grid, Image, Responsive, List } from "semantic-ui-react";
 
 export const RecordItem = () => {
   return (
     <div className="record-item">
       <Grid container>
         <Grid.Row divided>
-          <Grid.Column width={3} verticalAlign="middle">
+          <Responsive
+            minWidth={Responsive.onlyComputer.minWidth}
+            as={Grid.Column}
+            computer={3}
+            verticalAlign="middle"
+          >
             <Image
               className="record-img"
               circular
               size="small"
               src={
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
               }
             />
-          </Grid.Column>
-          <Grid.Column width={10} className="record-details">
+          </Responsive>
+          <Grid.Column
+            computer={10}
+            tablet={12}
+            mobile={10}
+            className="record-details"
+          >
             <h3 className="record-title">Title of the record</h3>
             <p className="record-desc">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -31,7 +41,7 @@ export const RecordItem = () => {
               semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             </p>
           </Grid.Column>
-          <Grid.Column width={3}>
+          <Grid.Column computer={3} tablet={4} mobile={6}>
             <h4 className="record-subtitle">Most goals in a Calendar Year</h4>
             <List divided relaxed as="ol" inverted size="large">
               <List.Item as="li">
@@ -85,7 +95,7 @@ export const RecordItemAlt = () => {
     <div className="record-item record-item-alt">
       <Grid container>
         <Grid.Row>
-          <Grid.Column width={3}>
+          <Grid.Column computer={3} tablet={4} mobile={6}>
             <h5 className="record-subtitle">Most goals in a Calendar Year</h5>
             <List divided relaxed as="ol" inverted size="large">
               <List.Item as="li">
@@ -117,7 +127,12 @@ export const RecordItemAlt = () => {
               </List.Item>
             </List>
           </Grid.Column>
-          <Grid.Column width={10} className="record-details">
+          <Grid.Column
+            computer={10}
+            tablet={12}
+            mobile={10}
+            className="record-details"
+          >
             <h3 className="record-title">Title of the record</h3>
             <p className="record-desc">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -131,7 +146,12 @@ export const RecordItemAlt = () => {
               semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
             </p>
           </Grid.Column>
-          <Grid.Column width={3} verticalAlign="middle">
+          <Responsive
+            as={Grid.Column}
+            computer={3}
+            verticalAlign="middle"
+            minWidth={Responsive.onlyComputer.minWidth}
+          >
             <Image
               floated="right"
               verticalAlign="middle"
@@ -139,10 +159,10 @@ export const RecordItemAlt = () => {
               circular
               size="small"
               src={
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
               }
             />
-          </Grid.Column>
+          </Responsive>
         </Grid.Row>
       </Grid>
     </div>
