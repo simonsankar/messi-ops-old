@@ -110,6 +110,12 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   padding-bottom: 0 !important;
   color: rgba(255, 255, 255, 0.7);
+}
+.career-title::after {
+  left: 50%;
+  transform: translateX(50%);
+  content: "";
+  width: 50%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .career-type {
@@ -442,11 +448,12 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   top: -1px;
   left: 0;
-  height: 50%;
+  height: 55%;
   width: 100%;
   background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
 }
 .seasons-container {
+  margin-top: -40px !important;
   background: transparent;
 }
 .seasons-header > .container > .column > .header {
@@ -460,9 +467,9 @@ body::-webkit-scrollbar-thumb {
 }
 .seasons-details {
   position: absolute;
-  top: calc(50% - 2px);
+  top: calc(55% - 2px);
   left: 0;
-  height: calc(50% + 2px);
+  height: calc(45% + 2px);
   width: 100%;
   padding-top: 25px;
   color: rgba(255, 255, 255, 0.5);
