@@ -46,7 +46,19 @@ class Naviagtion extends Component {
   }
   renderMenuItemList() {
     const { pathname } = this.props.location;
-    return paths.map(el => {
+    return paths.map((el, index) => {
+      if (index === 4) {
+        return (
+          <Menu.Item
+            key={el.path}
+            as={Link}
+            to={el.path}
+            name={el.name}
+            active={pathname === el.path}
+            className="debunked"
+          />
+        );
+      }
       return (
         <Menu.Item
           key={el.path}

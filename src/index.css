@@ -119,16 +119,23 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 .career-type {
-  font-family: FuturaBook;
+  font-family: UniversLT;
   font-size: 15px;
 }
 .career-stats {
   padding-top: 5px !important;
+  font-family: FuturaBook;
 }
 .career-value {
   font-size: 40px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.7);
+}
+
+/* Debunked */
+.debunked:hover {
+  text-decoration: line-through !important;
+  border-color: transparent !important;
 }
 /* FOOTER */
 .footer {
@@ -389,8 +396,8 @@ body::-webkit-scrollbar-thumb {
 .record-item {
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 30px;
-  background: linear-gradient(-80deg, #454545 5%, rgba(0, 0, 0, 0) 5%),
-    linear-gradient(-80deg, #c73d3d 5.5%, #454545 5.5%);
+  background: linear-gradient(-45deg, #454545 5%, rgba(0, 0, 0, 0) 5%),
+    linear-gradient(-45deg, #c73d3d 5.5%, #454545 5.5%);
 }
 
 .record-details {
@@ -402,8 +409,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .record-item-alt {
-  background: linear-gradient(-80deg, #333 95%, rgba(0, 0, 0, 0) 95%),
-    linear-gradient(-80deg, #c73d3d 95.5%, #333 95.5%);
+  background: linear-gradient(-45deg, #333 95%, rgba(0, 0, 0, 0) 95%),
+    linear-gradient(-45deg, #c73d3d 95.5%, #333 95.5%);
 }
 .record-item-alt > .record-title {
   float: left;
