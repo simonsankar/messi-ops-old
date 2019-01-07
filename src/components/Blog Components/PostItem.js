@@ -11,6 +11,7 @@ const PostItem = ({ post }) => {
           <Grid.Row columns={2} verticalAlign="middle">
             <Grid.Column width={6}>
               <Image className="post-img" src={post.img} fluid />
+              <span className="post-img-overlay" />
             </Grid.Column>
             <Grid.Column width={10}>
               <Link className="post-title" to="/">

@@ -59,6 +59,31 @@ body::-webkit-scrollbar-thumb {
   transition: color 0.2s ease;
 }
 
+/* CAREER numbers */
+.career {
+  margin: 20px 0 !important;
+}
+.career-title {
+  font-family: FuturaBook;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0 !important;
+  color: rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.career-type {
+  font-family: FuturaBook;
+  font-size: 15px;
+}
+.career-stats {
+  padding-top: 5px !important;
+}
+.career-value {
+  font-size: 40px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
+}
 /* FOOTER */
 .footer {
   background-color: #222;
@@ -155,6 +180,9 @@ body::-webkit-scrollbar-thumb {
   z-index: 10;
   padding-right: 10px;
 }
+.home-header-right {
+  text-align: right;
+}
 /* MSN */
 /* HERO */
 /* Hero container */
@@ -248,8 +276,20 @@ body::-webkit-scrollbar-thumb {
 /* POSTS */
 .post-img {
   filter: grayscale(50%) contrast(90%);
-  border: 2px solid rgba(0, 0, 0, 0.1);
-  border-radius: 1px;
+  border-radius: 0px;
+}
+.post-img-overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 14px;
+  width: 4px;
+  height: 100%;
+  background-color: #c73d3d;
+  transition: all 0.1s ease-in-out;
+}
+.post-img:hover + .post-img-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 .post-title {
   font-family: Univers !important;
@@ -263,6 +303,7 @@ body::-webkit-scrollbar-thumb {
   text-decoration: underline;
   color: rgba(255, 255, 255, 0.7) !important;
 }
+
 .post-blurb {
   color: rgba(255, 255, 255, 0.3) !important;
   padding-bottom: 5px;

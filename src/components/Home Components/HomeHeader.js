@@ -59,7 +59,7 @@ const HomeHeader = () => {
 
                       <List.Item>
                         <List.Content>
-                          <List.Header>Goals</List.Header>15
+                          <List.Header>Goals</List.Header>16
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -70,7 +70,7 @@ const HomeHeader = () => {
                       <List.Item>
                         <List.Content>
                           <List.Header>Appearances</List.Header>
-                          15
+                          16
                         </List.Content>
                       </List.Item>
                       <List.Item>

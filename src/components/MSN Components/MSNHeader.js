@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Container,
-  Grid,
-  List,
-  Image,
-  Responsive,
-  Rating
-} from 'semantic-ui-react';
+import { Container, Grid, Image, Responsive } from 'semantic-ui-react';
 import msn from '../../images/MSN-splash.png';
 
 const HomeHeader = () => {

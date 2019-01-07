@@ -136,6 +136,7 @@ export const RecordItemAlt = () => {
               floated="right"
               verticalAlign="middle"
               className="record-img"
+              circular
               size="small"
               src={
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
