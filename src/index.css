@@ -158,6 +158,12 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+.footer-msn > .footer-link {
+  color: #a50044;
+}
+.footer-msn > .footer-link:hover {
+  color: #c70053;
+}
 
 /* HERO */
 /* Hero container */
