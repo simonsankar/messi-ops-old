@@ -1,6 +1,8 @@
 # Messi Ops
 A web app dedicated to show the pure god tier work of Lionel Messi.
 
+![alt](https://raw.githubusercontent.com/simonsankar/messi-ops/master/Screen.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
