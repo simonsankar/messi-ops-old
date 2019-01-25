@@ -14,7 +14,9 @@ const PostItem = ({ post }) => {
               width={6}
               minWidth={Responsive.onlyComputer.minWidth}
             >
-              <Image className="post-img" src={post.img} fluid />
+              <div className="post-img-container">
+                <Image className="post-img" src={post.img} fluid />
+              </div>
               <span className="post-img-overlay" />
             </Responsive>
             <Grid.Column computer={10} tablet={16} mobile={16}>
