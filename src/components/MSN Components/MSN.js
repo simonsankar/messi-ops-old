@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 import MSNHeader from "./MSNHeader";
-// import MSNBody from "./MSNBody";
+import MSNBody from "./MSNBody";
 import Footer from "../Footer Components/Footer";
 
 class MSN extends Component {
@@ -9,7 +9,7 @@ class MSN extends Component {
     return (
       <div>
         <MSNHeader />
-        {/* <MSNBody /> */}
+        <MSNBody />
         <Footer />
       </div>
     );

@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Grid, Image } from 'semantic-ui-react';
+import React, { Component } from "react";
+import { Grid, Image } from "semantic-ui-react";
 
 export default class SeasonsDetails extends Component {
   render() {
@@ -13,7 +13,7 @@ export default class SeasonsDetails extends Component {
                 size="tiny"
                 circular
                 src={
-                  'https://sport.nessma.tv/uploads/1/2018-03/b4bb17f318d6f04949c95827a6ae7f91.jpg'
+                  "http://3.bp.blogspot.com/-26CUMGhLqq4/T0xdnioLFcI/AAAAAAAAAJk/c814tyNYh3Y/s1600/MESSI.jpg"
                 }
               />
             </Grid.Column>

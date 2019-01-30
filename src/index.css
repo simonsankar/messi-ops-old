@@ -349,11 +349,6 @@ body::-webkit-scrollbar-thumb {
 .post-img-container {
   overflow: hidden;
   transition: 0.4s ease;
-  padding: 4px;
-}
-.post-img-container:hover {
-  outline: 4px solid #c73d3d;
-  outline-offset: 1rem;
 }
 .post-img {
   filter: grayscale(50%) contrast(90%);
@@ -363,19 +358,7 @@ body::-webkit-scrollbar-thumb {
 .post-img:hover {
   transform: scale(1.08);
 }
-/* .post-img-overlay {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 14px;
-  width: 35%;
-  height: 100%;
-  background-color: rgba(199, 61, 61, 0.8);
-  transition: all 0.1s ease-in-out;
-}
-.post-img:hover + .post-img-overlay {
-  width: 4px;
-} */
+
 .post-title {
   font-family: Univers !important;
   font-size: 36px;
