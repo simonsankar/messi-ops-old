@@ -5,9 +5,9 @@ export default class MSNBody extends Component {
   render() {
     return (
       <div>
-        <MSNSingle />
-        <MSNSingle />
-        <MSNSingle />
+        <MSNSingle img={1} />
+        <MSNSingle img={2} />
+        <MSNSingle img={3} />
       </div>
     );
   }

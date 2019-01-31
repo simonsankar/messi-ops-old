@@ -338,6 +338,12 @@ body::-webkit-scrollbar-thumb {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.msn-single {
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 30px;
+  background: linear-gradient(-45deg, #42464d 50%, #3f434a 50%);
+}
+
 /* NAVIGATION */
 .navbar-mobile.ui.segment {
   background-color: #c73d3d;

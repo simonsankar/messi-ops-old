@@ -2,8 +2,10 @@ import React from "react";
 
 import { Grid, Image, Responsive, List } from "semantic-ui-react";
 import LM from "../../images/Messi.png";
+import NJ from "../../images/Neymar.png";
+import LS from "../../images/Suarez.png";
 
-const MSNSingle = () => {
+const MSNSingle = ({ img }) => {
   return (
     <div className="msn-single">
       <Grid container>
@@ -14,7 +16,11 @@ const MSNSingle = () => {
             computer={3}
             verticalAlign="middle"
           >
-            <Image className="msn-single-img" size="small" src={LM} />
+            <Image
+              className="msn-image"
+              size="small"
+              src={img === 1 ? LM : img === 2 ? NJ : LS}
+            />
           </Responsive>
           <Grid.Column
             computer={10}
