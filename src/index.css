@@ -121,10 +121,10 @@ body::-webkit-scrollbar-thumb {
 .career-type {
   font-family: UniversLT;
   font-size: 15px;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 .career-stats {
-  padding-top: 5px !important;
+  padding: 5px !important;
   font-family: FuturaBook;
 }
 .career-value {
@@ -340,8 +340,35 @@ body::-webkit-scrollbar-thumb {
 
 .msn-single {
   color: rgba(255, 255, 255, 0.8);
-  padding-bottom: 30px;
   background: linear-gradient(-45deg, #42464d 50%, #3f434a 50%);
+  margin: 12px 0;
+}
+.msn-single-img {
+  filter: brightness(150%) grayscale(80%) drop-shadow(-6px -6px 0px #004d98)
+    drop-shadow(-6px -6px 0px #a50044)
+    drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
+  padding: 5px;
+}
+.msn-single-title {
+  color: #222 !important;
+  font-family: PontiacRegular !important;
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 46px;
+}
+.msn-single-title > small {
+  color: rgba(34, 34, 34, 0.25) !important;
+  font-family: Univers !important;
+  position: absolute;
+  top: 20%;
+  right: 0;
+  font-size: 150px;
+}
+.msn-single-subtitle {
+  font-family: Univers !important;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
 }
 
 /* NAVIGATION */
@@ -513,7 +540,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #fcfcfc;
   opacity: 0;
   transition: all 0.3s ease-in-out;
-  font-family: PontiacShadow;
+  font-family: Univers;
   color: #333;
 }
 .seasons-card-overlay > .number {
