@@ -338,6 +338,12 @@ body::-webkit-scrollbar-thumb {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.msn-overall {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #333;
+  margin: 12px 0;
+}
+
 .msn-single {
   color: rgba(255, 255, 255, 0.8);
   background: linear-gradient(-45deg, #42464d 50%, #3f434a 50%);

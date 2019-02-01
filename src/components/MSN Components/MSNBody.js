@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 
 import MSNSingle from "./MSNSingle";
+import MSNOverall from "./MSNOverall";
+
 export default class MSNBody extends Component {
   render() {
     return (
       <div>
-        <MSNSingle img={1} />
-        <MSNSingle img={2} />
-        <MSNSingle img={3} />
+        <MSNOverall />
+        <MSNSingle player={1} />
+        <MSNSingle player={2} />
+        <MSNSingle player={3} />
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Grid, Container, Header } from "semantic-ui-react";
+import { Grid, Header } from "semantic-ui-react";
 
 class SeasonHeader extends Component {
   render() {

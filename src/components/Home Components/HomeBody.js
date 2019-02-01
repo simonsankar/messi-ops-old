@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import { Container, Grid, Embed } from 'semantic-ui-react';
-import HomeCareer from './HomeCareer';
-import PostList from '../Blog Components/PostList';
+import { Container, Grid } from "semantic-ui-react";
+import HomeCareer from "./HomeCareer";
+import PostList from "../Blog Components/PostList";
 
 class HomeBody extends Component {
   render() {
@@ -16,7 +16,7 @@ class HomeBody extends Component {
                   <div className="home-header">Career Numbers</div>
                   <HomeCareer
                     stats={{
-                      title: 'All Time Career',
+                      title: "All Time Career",
                       apps: 786,
                       goals: 639,
                       assists: 264
@@ -24,7 +24,7 @@ class HomeBody extends Component {
                   />
                   <HomeCareer
                     stats={{
-                      title: 'All Time Club',
+                      title: "All Time Club",
                       apps: 658,
                       goals: 574,
                       assists: 224
@@ -32,7 +32,7 @@ class HomeBody extends Component {
                   />
                   <HomeCareer
                     stats={{
-                      title: 'League',
+                      title: "League",
                       apps: 434,
                       goals: 399,
                       assists: 159
@@ -40,7 +40,7 @@ class HomeBody extends Component {
                   />
                   <HomeCareer
                     stats={{
-                      title: 'UEFA Champions League',
+                      title: "UEFA Champions League",
                       apps: 129,
                       goals: 106,
                       assists: 28
@@ -48,7 +48,7 @@ class HomeBody extends Component {
                   />
                   <HomeCareer
                     stats={{
-                      title: 'International',
+                      title: "International",
                       apps: 128,
                       goals: 65,
                       assists: 40
