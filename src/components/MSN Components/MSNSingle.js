@@ -1,9 +1,15 @@
-import React from "react";
+import React from 'react';
 
-import { Grid, Image, Responsive, List, Rating } from "semantic-ui-react";
-import LM from "../../images/Messi.png";
-import LS from "../../images/Suarez.png";
-import NJ from "../../images/Neymar.png";
+import { Grid, Image, Responsive, List, Rating } from 'semantic-ui-react';
+import LM from '../../images/Messi.png';
+import LS from '../../images/Suarez.png';
+import NJ from '../../images/Neymar.png';
+
+const desc = [
+  "Being the superior player he is, Messi moved back out to the RW to facilitate Suarez in the 2014/2015 season. It was because of this the MSN worked so well as a trio as it allowed each of the prones to attack with exteme fluidity where Messi was the gel. His ability to drop deeper and play wide without sacrificing goals is unheard of in the modern game. He was the inital link that helped settled Suarez into the Barca system, along with dictating play to thread Neymar an co in attack. There's simply too much to speak of when it comes to Messi and by extension his role in the MSN ",
+  'Suarez intially, for a brief period found life difficult at the start of his maiden campaign at Barca where he was out on the right side as the current CF was the god king. Luis Enrique moved Messi out on the right and played Suarez through the middle and the rest was history. His elite skillset as a CF, with dribbling, passing,vision etc made it the perfect fit with the Barca system. Not to mention having the greatest player in the world be your best friend. He is the only player to have 2 let alone 1 European Golden Boots within this entire Messi/Ronaldo era [2014(31),2016(40)]. The best striker in the world since 2013.',
+  "That extra bit of flair you need for the recipe of destruction. Neymar blossomed having to play with the best player in the world and the best striker in the world. Technically gifted, deadly skill, with many spells to conjure that would unlock any defence. Neymar became easily the 3rd best player in the world with a comfortable margin. Though his stats are as inflated as the other two, his consistency throughout the attack was key in all of Barca's success within those 3 seasons."
+];
 
 const MSNSingle = ({ player }) => {
   return (
@@ -30,24 +36,16 @@ const MSNSingle = ({ player }) => {
           >
             <h3 className="msn-single-title">
               {player === 1
-                ? "Lionel Messi"
+                ? 'Lionel Messi'
                 : player === 2
-                ? "Luis Suarez"
-                : "Neymar Jr."}
+                ? 'Luis Suarez'
+                : 'Neymar Jr.'}
               <small>
-                {player === 1 ? " 10" : player === 2 ? " 9" : " 11"}
+                {player === 1 ? ' 10' : player === 2 ? ' 9' : ' 11'}
               </small>
             </h3>
             <p className="msn-single-desc">
-              Consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-              Aenean massa. Cum sociis natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Donec quam felis,
-              ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
-              massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
-              vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
-              venenatis vitae, justo. Nullam dictum felis eu pede mollis
-              pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper
-              nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+              {player === 1 ? desc[0] : player === 2 ? desc[1] : desc[2]}
             </p>
           </Grid.Column>
           <Grid.Column
@@ -64,7 +62,7 @@ const MSNSingle = ({ player }) => {
                 animated
                 verticalAlign="middle"
                 inverted
-                size="medium"
+                size="large"
               >
                 <List.Item>
                   <List.Content>
@@ -97,7 +95,7 @@ const MSNSingle = ({ player }) => {
                       defaultRating={5}
                       maxRating={5}
                       disabled
-                    />{" "}
+                    />{' '}
                     5/5
                   </List.Content>
                 </List.Item>
@@ -142,7 +140,7 @@ const MSNSingle = ({ player }) => {
                       defaultRating={5}
                       maxRating={5}
                       disabled
-                    />{" "}
+                    />{' '}
                     5/5
                   </List.Content>
                 </List.Item>
@@ -187,7 +185,7 @@ const MSNSingle = ({ player }) => {
                       defaultRating={5}
                       maxRating={5}
                       disabled
-                    />{" "}
+                    />{' '}
                     5/5
                   </List.Content>
                 </List.Item>

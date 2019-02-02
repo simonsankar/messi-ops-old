@@ -114,7 +114,7 @@ body::-webkit-scrollbar-thumb {
 .career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: "";
+  content: '';
   width: 50%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -340,7 +340,7 @@ body::-webkit-scrollbar-thumb {
 
 .msn-overall {
   color: rgba(255, 255, 255, 0.8);
-  background-color: #333;
+  background-color: #3a3d42;
   margin: 12px 0;
 }
 
@@ -375,6 +375,43 @@ body::-webkit-scrollbar-thumb {
   font-weight: 500;
   font-size: 35px;
   line-height: 35px;
+}
+/* msn career*/
+.msn-career {
+  margin: 20px 0 !important;
+}
+.msn-career-title {
+  font-family: FuturaBook;
+  font-size: 20px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0 !important;
+  color: rgba(255, 255, 255, 0.7);
+}
+.msn-career-title::after {
+  left: 50%;
+  transform: translateX(50%);
+  content: '';
+  width: 50%;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+.msn-career-type {
+  font-family: UniversLT;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 6px;
+}
+.msn-career-stats {
+  /* line-height: 35px; */
+  /* margin: 5px !important; */
+  font-family: FuturaBook;
+}
+.msn-career-value {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* NAVIGATION */
