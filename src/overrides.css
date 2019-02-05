@@ -55,6 +55,10 @@
 .ui.cards > .card > :last-child {
   border-radius: 0 !important;
 }
+.ui.card > :first-child,
+.ui.cards > .card > :first-child {
+  border-radius: 0 !important;
+}
 
 /* slick-carousel */
 .slick-initialized .slick-slide {
