@@ -81,6 +81,7 @@ body::-webkit-scrollbar-thumb {
 /* BLOG */
 .blog-header {
   background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+  margin-bottom: 1rem;
 }
 .blog-header > .container > .column > .header {
   color: rgba(255, 255, 255, 0.5);
@@ -97,6 +98,10 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
   line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
+}
+.blog-item-img {
+  filter: grayscale(50%) contrast(90%);
+  border-radius: 0px;
 }
 
 /* CAREER numbers */
