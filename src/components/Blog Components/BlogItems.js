@@ -50,7 +50,7 @@ export const BlogAlpha2 = ({ blog }) => {
 };
 export const BlogDelta = ({ blog }) => {
   return (
-    <Card fluid className="blog-item">
+    <Card fluid className="blog-item blog-item-delta">
       <Card.Content>
         <Card.Header className="blog-item-header">Medium Title</Card.Header>
         <Card.Meta>
