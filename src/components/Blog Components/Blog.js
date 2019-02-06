@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { Card, Grid } from "semantic-ui-react";
 
 import BlogHeader from "./BlogHeader";
-import { BlogAlpha } from "./BlogItems";
+import { BlogAlpha, BlogOmega } from "./BlogItems";
 
 export default class Blog extends Component {
   render() {
@@ -16,17 +16,14 @@ export default class Blog extends Component {
             <Grid.Column>
               <Card.Group itemsPerRow={4}>
                 <BlogAlpha />
+                <BlogOmega />
+                <BlogOmega />
+                <BlogAlpha />
+                <BlogOmega />
+                <BlogOmega />
                 <BlogAlpha />
                 <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogAlpha />
+                <BlogOmega />
                 <BlogAlpha />
               </Card.Group>
             </Grid.Column>

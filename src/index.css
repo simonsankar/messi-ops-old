@@ -101,15 +101,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blog-item {
-  height: 250px !important;
+  height: calc(25% - 1.5em) !important;
+  max-height: 250px;
 }
-
+.blog-item-img-container {
+  overflow: hidden;
+  height: 6.5rem;
+  overflow: hidden;
+}
 .blog-item-img {
+  max-width: 100%;
+  height: auto;
   filter: grayscale(50%) contrast(90%);
   border-radius: 0px;
 }
 .blog-item-header {
   text-align: left !important;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.blog-item-desc {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
