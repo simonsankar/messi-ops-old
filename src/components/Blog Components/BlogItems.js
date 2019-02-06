@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Card, Image, Icon } from "semantic-ui-react";
+import { Card, Image } from "semantic-ui-react";
 
 export const BlogAlpha = ({ blog }) => {
   return (
-    <Card className="blog-item">
+    <Card fluid className="blog-item">
       <div className="blog-item-img-container">
         <Image
           className="blog-item-img"
@@ -26,9 +26,9 @@ export const BlogAlpha = ({ blog }) => {
     </Card>
   );
 };
-export const BlogOmega = ({ blog }) => {
+export const BlogAlpha2 = ({ blog }) => {
   return (
-    <Card className="blog-item">
+    <Card fluid className="blog-item">
       <div className="blog-item-img-container">
         <Image
           className="blog-item-img"

@@ -38,10 +38,17 @@ const HomeHeader = () => {
                 </Transition>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <div style={{ marginTop: "20px" }}>
-                  <div className="hero-messi hero-messi-mobile">"Messi</div>
-                  <div className="hero-ops hero-ops-mobile">Ops"</div>
-                </div>
+                <Transition
+                  visible="true"
+                  animation="zoom"
+                  duration="700"
+                  transitionOnMount
+                >
+                  <div style={{ marginTop: "20px" }}>
+                    <div className="hero-messi hero-messi-mobile">"Messi</div>
+                    <div className="hero-ops hero-ops-mobile">Ops"</div>
+                  </div>
+                </Transition>
               </Responsive>
             </Grid.Column>
             <Grid.Column computer={8} tablet={8} mobile={16}>

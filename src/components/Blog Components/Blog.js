@@ -1,34 +1,13 @@
 import React, { Component } from "react";
 
-import { Card, Grid } from "semantic-ui-react";
-
 import BlogHeader from "./BlogHeader";
-import { BlogAlpha, BlogOmega } from "./BlogItems";
-
+import BlogBody from "./BlogBody";
 export default class Blog extends Component {
   render() {
     return (
       <div>
         <BlogHeader />
-
-        <Grid container padded="vertically">
-          <Grid.Row>
-            <Grid.Column>
-              <Card.Group itemsPerRow={4}>
-                <BlogAlpha />
-                <BlogOmega />
-                <BlogOmega />
-                <BlogAlpha />
-                <BlogOmega />
-                <BlogOmega />
-                <BlogAlpha />
-                <BlogAlpha />
-                <BlogOmega />
-                <BlogAlpha />
-              </Card.Group>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+        <BlogBody />
       </div>
     );
   }
