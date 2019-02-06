@@ -7,7 +7,8 @@ import {
   List,
   Image,
   Responsive,
-  Rating
+  Rating,
+  Transition
 } from "semantic-ui-react";
 
 const HomeHeader = () => {
@@ -24,10 +25,17 @@ const HomeHeader = () => {
               verticalAlign="middle"
             >
               <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-                <div>
-                  <div className="hero-messi">"Messi</div>
-                  <div className="hero-ops">Ops"</div>
-                </div>
+                <Transition
+                  visible="true"
+                  animation="zoom"
+                  duration="700"
+                  transitionOnMount
+                >
+                  <div>
+                    <div className="hero-messi">"Messi</div>
+                    <div className="hero-ops">Ops"</div>
+                  </div>
+                </Transition>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
                 <div style={{ marginTop: "20px" }}>
@@ -41,7 +49,18 @@ const HomeHeader = () => {
                 <Grid.Row columns={2} verticalAlign="middle">
                   <Grid.Column width={10} textAlign="left">
                     <div className="hero-img">
-                      <Image className="hero-image" src={messi} size="medium" />
+                      <Transition
+                        visible="true"
+                        animation="fade right"
+                        duration="700"
+                        transitionOnMount
+                      >
+                        <Image
+                          className="hero-image"
+                          src={messi}
+                          size="medium"
+                        />
+                      </Transition>
                     </div>
                   </Grid.Column>
                   <Grid.Column width={6} textAlign="left">

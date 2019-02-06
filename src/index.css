@@ -99,9 +99,21 @@ body::-webkit-scrollbar-thumb {
   line-height: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
 }
+
+.blog-item {
+  height: 250px !important;
+}
+
 .blog-item-img {
   filter: grayscale(50%) contrast(90%);
   border-radius: 0px;
+}
+.blog-item-header {
+  text-align: left !important;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* CAREER numbers */
@@ -119,7 +131,7 @@ body::-webkit-scrollbar-thumb {
 .career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: '';
+  content: "";
   width: 50%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -397,7 +409,7 @@ body::-webkit-scrollbar-thumb {
 .msn-career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: '';
+  content: "";
   width: 50%;
   padding-bottom: 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
