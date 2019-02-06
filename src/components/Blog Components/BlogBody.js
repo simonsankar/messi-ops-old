@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Grid } from "semantic-ui-react";
-import { BlogAlpha, BlogAlpha2 } from "./BlogItems";
+import { BlogAlpha, BlogAlpha2, BlogDelta } from "./BlogItems";
 export default class BlogBody extends Component {
   render() {
     return (
@@ -16,10 +16,13 @@ export default class BlogBody extends Component {
             <BlogAlpha2 />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
-            <BlogAlpha />
+            <BlogDelta />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
             <BlogAlpha2 />
+          </Grid.Column>
+          <Grid.Column stretched computer={4} tablet={5} mobile={8}>
+            <BlogDelta />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
             <BlogAlpha />
