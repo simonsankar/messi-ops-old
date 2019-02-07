@@ -100,16 +100,17 @@ body::-webkit-scrollbar-thumb {
   color: rgba(255, 255, 255, 0.7);
 }
 .blog-body {
-  background-color: #454545;
+  /* background-color: rgba(163, 163, 163, 0.1); */
 }
 
 .blog-item {
-  height: calc(25% - 1.5em) !important;
+  min-height: 250px;
   max-height: 250px;
 }
 .blog-item-delta {
-  background-color: #b33a3a !important;
-  color: rgba(255, 255, 255, 0.8) !important;
+  background: linear-gradient(168deg, #eeeeee 50%, #fff 50%) !important;
+}
+.blog-item-omega {
 }
 .blog-item-img-container {
   overflow: hidden;
@@ -129,11 +130,24 @@ body::-webkit-scrollbar-thumb {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.blog-item-header-delta {
+  text-align: left !important;
+}
+.ui.card > .content > .header.blog-item-header-delta,
+.ui.card > .content > .header.blog-item-header-omega {
+  color: rgb(255, 255, 255);
+}
 .blog-item-desc {
   width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: 600;
+  font-size: 14px !important;
+}
+.blog-item-meta-white,
+.blog-item-desc-white {
+  color: rgb(255, 255, 255) !important;
 }
 
 /* CAREER numbers */
@@ -151,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 .career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: "";
+  content: '';
   width: 50%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -429,7 +443,7 @@ body::-webkit-scrollbar-thumb {
 .msn-career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: "";
+  content: '';
   width: 50%;
   padding-bottom: 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);

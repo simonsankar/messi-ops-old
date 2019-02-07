@@ -1,6 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image } from 'semantic-ui-react';
+import { gray } from 'ansi-colors';
 
 export const BlogAlpha = ({ blog }) => {
   return (
@@ -26,60 +27,45 @@ export const BlogAlpha = ({ blog }) => {
     </Card>
   );
 };
-export const BlogAlpha2 = ({ blog }) => {
-  return (
-    <Card fluid className="blog-item">
-      <div className="blog-item-img-container">
-        <Image
-          className="blog-item-img"
-          src="https://static01.nyt.com/images/2015/05/07/sports/07SOCCER/07SOCCER-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
-        />
-      </div>
 
-      <Card.Content>
-        <Card.Header className="blog-item-header">Short Title</Card.Header>
-        <Card.Meta>
-          <span className="date">06/03/18</span>
-        </Card.Meta>
-        <Card.Description className="blog-item-desc">
-          Little back lift
-        </Card.Description>
-      </Card.Content>
-    </Card>
-  );
-};
 export const BlogDelta = ({ blog }) => {
   return (
     <Card fluid className="blog-item blog-item-delta">
       <Card.Content>
-        <Card.Header className="blog-item-header">Medium Title</Card.Header>
+        <Card.Header>Medium Title Lorem oper dome avia cal tanai</Card.Header>
         <Card.Meta>
           <span className="date">12/02/18</span>
         </Card.Meta>
-        <Card.Description className="blog-item-desc">
-          Some beautiful text for nothing
-        </Card.Description>
+        <Card.Description>Some beautiful text for nothing</Card.Description>
       </Card.Content>
+      <Card.Content extra>I know more</Card.Content>
     </Card>
   );
 };
-export const BlogOmgea = ({ blog }) => {
+export const BlogOmega = ({ blog }) => {
   return (
-    <Card fluid className="blog-item">
-      <div className="blog-item-img-container">
-        <Image
-          className="blog-item-img"
-          src="https://static01.nyt.com/images/2015/05/07/sports/07SOCCER/07SOCCER-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
-        />
-      </div>
-
+    <Card
+      fluid
+      className="blog-item blog-item-omega"
+      style={{
+        backgroundImage: `url('https://gq-images.condecdn.net/image/wzkxZ5zwLK1/crop/1620/f/lionel-messi-gq-14feb18_getty_b.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        filter: 'grayscale(60%)'
+      }}
+    >
       <Card.Content>
-        <Card.Header className="blog-item-header">Short Title</Card.Header>
-        <Card.Meta>
-          <span className="date">06/03/18</span>
+        <Card.Header className="blog-item-header blog-item-header-omega">
+          The title
+        </Card.Header>
+        <Card.Meta className="blog-item-meta-white">
+          <span className="date">29/02/19</span>
         </Card.Meta>
-        <Card.Description className="blog-item-desc">
-          Little back lift
+        <Card.Description className="blog-item-desc-white">
+          Something special Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Quo quod voluptate molestiae adipisci. Dolorum culpa perferendis
+          ea tempora. Vitae autem tempora magnam similique odio soluta doloribus
+          enim placeat temporibus neque!
         </Card.Description>
       </Card.Content>
     </Card>

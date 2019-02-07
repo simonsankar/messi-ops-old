@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Grid, Image, Responsive, List } from "semantic-ui-react";
+import { Grid, Image, Responsive, List } from 'semantic-ui-react';
 
 export const RecordItem = () => {
   return (
@@ -18,7 +18,7 @@ export const RecordItem = () => {
               circular
               size="small"
               src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
               }
             />
           </Responsive>
@@ -159,7 +159,7 @@ export const RecordItemAlt = () => {
               circular
               size="small"
               src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
               }
             />
           </Responsive>

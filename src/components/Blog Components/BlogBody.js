@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Grid } from "semantic-ui-react";
-import { BlogAlpha, BlogAlpha2, BlogDelta } from "./BlogItems";
+import React, { Component } from 'react';
+import { Grid } from 'semantic-ui-react';
+import { BlogAlpha, BlogOmega, BlogDelta } from './BlogItems';
 export default class BlogBody extends Component {
   render() {
     return (
@@ -10,22 +10,28 @@ export default class BlogBody extends Component {
             <BlogAlpha />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
-            <BlogAlpha2 />
+            <BlogOmega />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
-            <BlogAlpha2 />
+            <BlogOmega />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
-            <BlogDelta />
+            <BlogAlpha />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
-            <BlogAlpha2 />
+            <BlogOmega />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
             <BlogDelta />
           </Grid.Column>
           <Grid.Column stretched computer={4} tablet={5} mobile={8}>
             <BlogAlpha />
+          </Grid.Column>
+          <Grid.Column stretched computer={4} tablet={5} mobile={8}>
+            <BlogDelta />
+          </Grid.Column>
+          <Grid.Column stretched computer={4} tablet={5} mobile={8}>
+            <BlogOmega />
           </Grid.Column>
         </Grid>
       </div>
