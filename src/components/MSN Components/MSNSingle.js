@@ -62,7 +62,7 @@ const MSNSingle = ({ player }) => {
                 animated
                 verticalAlign="middle"
                 inverted
-                size="large"
+                size="medium"
               >
                 <List.Item>
                   <List.Content>

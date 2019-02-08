@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Card, Image } from "semantic-ui-react";
+import { Card, Image } from 'semantic-ui-react';
 
 export const BlogAlpha = ({ blog }) => {
   return (
@@ -44,9 +44,9 @@ export const BlogOmega = ({ blog }) => {
       className="blog-item blog-item-omega"
       style={{
         backgroundImage: `url(${blog.img})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        filter: "grayscale(70%)"
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        filter: 'grayscale(70%)'
       }}
     >
       <Card.Content>
