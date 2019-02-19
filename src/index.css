@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .blog-item {
-  min-height: 250px;
+  /* min-height: 250px; */
   max-height: 250px;
 }
 .blog-item-delta {
