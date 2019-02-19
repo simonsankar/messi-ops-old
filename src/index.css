@@ -418,7 +418,7 @@ body::-webkit-scrollbar-thumb {
   font-family: Univers !important;
   position: absolute;
   top: 20%;
-  right: 0;
+  right: 1rem;
   font-size: 150px;
 }
 .msn-single-subtitle {
