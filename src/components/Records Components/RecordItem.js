@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { Grid, Image, Responsive, List } from 'semantic-ui-react';
+import { Grid, Image, Responsive, List } from "semantic-ui-react";
 
 export const RecordItem = () => {
   return (
@@ -18,7 +18,7 @@ export const RecordItem = () => {
               circular
               size="small"
               src={
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
               }
             />
           </Responsive>
@@ -47,7 +47,7 @@ export const RecordItem = () => {
               <List.Item as="li">
                 <List.Content>
                   <List.Header className="record-list-first">
-                    Lionel Messi ♔<span className="record-list-value">91</span>
+                    Lionel Messi 🜲<span className="record-list-value">91</span>
                   </List.Header>
                 </List.Content>
               </List.Item>
@@ -101,7 +101,7 @@ export const RecordItemAlt = () => {
               <List.Item as="li">
                 <List.Content>
                   <List.Header className="record-list-first">
-                    Lionel Messi ♔<span className="record-list-value">91</span>
+                    Lionel Messi 🜲<span className="record-list-value">91</span>
                   </List.Header>
                 </List.Content>
               </List.Item>
@@ -159,7 +159,7 @@ export const RecordItemAlt = () => {
               circular
               size="small"
               src={
-                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
+                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
               }
             />
           </Responsive>
