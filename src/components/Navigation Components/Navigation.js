@@ -1,40 +1,48 @@
-import React, { Component } from "react";
-import { withRouter, Link } from "react-router-dom";
+import React, { Component } from 'react';
+import { withRouter, Link } from 'react-router-dom';
 import {
   Button,
   Menu,
   Segment,
   Container,
   Responsive
-} from "semantic-ui-react";
+} from 'semantic-ui-react';
 const paths = [
   {
-    name: "home",
-    path: "/"
+    name: 'home',
+    path: '/'
   },
   {
-    name: "blog",
-    path: "/blog"
+    name: 'blog',
+    path: '/blog'
   },
   {
-    name: "seasons",
-    path: "/seasons"
+    name: 'seasons',
+    path: '/seasons'
   },
   {
-    name: "records",
-    path: "/records"
+    name: 'records',
+    path: '/records'
   },
   {
-    name: "arguments against",
-    path: "/args"
+    name: 'arguments against',
+    path: '/args'
   },
   {
-    name: "abilities",
-    path: "/abilities"
+    name: 'abilities',
+    path: '/abilities'
   },
   {
-    name: "msn",
-    path: "/msn"
+    name: 'quotes',
+    path: '/quotes'
+  },
+  {
+    name: 'comps',
+    path: '/comps'
+  },
+  {
+    name: 'msn',
+    path: '/msn'
   }
 ];
 class Naviagtion extends Component {
@@ -93,7 +101,7 @@ class Naviagtion extends Component {
   }
   render() {
     const { pathname } = this.props.location;
-    if (pathname === "/msn") {
+    if (pathname === '/msn') {
       return (
         <Segment.Group size="mini" className="squared-msn">
           {/* Desktop */}
