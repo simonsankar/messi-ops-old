@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import { Grid, Image, Responsive, List } from "semantic-ui-react";
+import { Grid, Image, Responsive, List } from 'semantic-ui-react';
 
 export const RecordItem = () => {
   return (
@@ -18,7 +18,7 @@ export const RecordItem = () => {
               circular
               size="small"
               src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
+                'https://static.lexpress.fr/medias_2376/w_600,h_600,c_fill,g_north/v1382711302/lionel-messi-barcelone_1216698.jpg'
               }
             />
           </Responsive>
@@ -30,15 +30,12 @@ export const RecordItem = () => {
           >
             <h3 className="record-title">Title of the record</h3>
             <p className="record-desc">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
+              As Messi maintained his goalscoring form into the second half of
+              the season, the year 2012 saw him break several longstanding
+              records. On 7 March, two weeks after scoring four goals in a
+              league fixture against Valencia, he scored five times in a
+              Champions League last 16-round match against Bayer Leverkusen, an
+              unprecedented achievement in the history of the competition.
             </p>
           </Grid.Column>
           <Grid.Column computer={3} tablet={4} mobile={16}>
@@ -159,7 +156,7 @@ export const RecordItemAlt = () => {
               circular
               size="small"
               src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw'
               }
             />
           </Responsive>

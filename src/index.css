@@ -80,7 +80,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* BLOG */
 .blog-header {
-  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+  background: linear-gradient(-45deg, #454545 50%, #333 50%);
   margin-bottom: 1rem;
 }
 .blog-header > .container > .column > .header {
@@ -100,7 +100,7 @@ body::-webkit-scrollbar-thumb {
   color: rgba(255, 255, 255, 0.7);
 }
 .blog-body {
-  /* background-color: rgba(163, 163, 163, 0.1); */
+  background-color: #f9f9f9;
 }
 
 .blog-item {
@@ -108,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   max-height: 250px;
 }
 .blog-item-delta {
-  background: linear-gradient(168deg, #fbfbfb 50%, #fff 50%) !important;
+  background: linear-gradient(168deg, #fafafa 50%, #ffffff 50%) !important;
 }
 .blog-item-omega {
 }
@@ -165,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 .career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: "";
+  content: '';
   width: 50%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -443,7 +443,7 @@ body::-webkit-scrollbar-thumb {
 .msn-career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: "";
+  content: '';
   width: 50%;
   padding-bottom: 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -517,7 +517,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .records-header {
-  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+  background: linear-gradient(-45deg, #c73d3d 30%, #333 30%);
 }
 .records-header > .container > .column > .header {
   color: rgba(255, 255, 255, 0.5);
@@ -538,21 +538,20 @@ body::-webkit-scrollbar-thumb {
 .record-item {
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 30px;
-  background: linear-gradient(-45deg, #454545 5%, rgba(0, 0, 0, 0) 5%),
-    linear-gradient(-45deg, #c73d3d 5.5%, #454545 5.5%);
+  background: #454545;
 }
 
 .record-details {
   border-left: rgba(255, 255, 255, 0.1) 2px solid;
 }
 .record-desc {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
   font-size: 15px !important;
+  font-family: FuturaBook;
 }
 
 .record-item-alt {
-  background: linear-gradient(-45deg, #333 95%, rgba(0, 0, 0, 0) 95%),
-    linear-gradient(-45deg, #c73d3d 95.5%, #333 95.5%);
+  background: #333;
 }
 .record-item-alt > .record-title {
   float: left;
@@ -596,7 +595,7 @@ body::-webkit-scrollbar-thumb {
 .seasons-bar {
   height: 55%;
   width: 100%;
-  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+  background-color: #333333;
 }
 .seasons-container {
   margin-top: -40px !important;
@@ -621,6 +620,7 @@ body::-webkit-scrollbar-thumb {
 /* Season Card */
 .seasons-card {
   cursor: pointer;
+  filter: grayscale(50%) contrast(90%);
 }
 .seasons-card:hover > .seasons-card-overlay {
   opacity: 1;
