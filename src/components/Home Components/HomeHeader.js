@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import messi from '../../images/messi-home.png';
+import messi from "../../images/messi-home.png";
 import {
   Container,
   Grid,
@@ -9,7 +9,7 @@ import {
   Responsive,
   Rating,
   Transition
-} from 'semantic-ui-react';
+} from "semantic-ui-react";
 
 const HomeHeader = () => {
   return (
@@ -44,7 +44,7 @@ const HomeHeader = () => {
                   duration="700"
                   transitionOnMount
                 >
-                  <div style={{ marginTop: '20px' }}>
+                  <div style={{ marginTop: "20px" }}>
                     <div className="hero-messi hero-messi-mobile">"Messi</div>
                     <div className="hero-ops hero-ops-mobile">Ops"</div>
                   </div>
@@ -85,18 +85,18 @@ const HomeHeader = () => {
 
                       <List.Item>
                         <List.Content>
-                          <List.Header>Goals</List.Header>33
+                          <List.Header>Goals</List.Header>36
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <List.Content>
-                          <List.Header>Assists</List.Header>12
+                          <List.Header>Assists</List.Header>13
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <List.Content>
                           <List.Header>Appearances</List.Header>
-                          27(3)
+                          33(3)
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -121,7 +121,7 @@ const HomeHeader = () => {
                             defaultRating={5}
                             maxRating={5}
                             disabled
-                          />{' '}
+                          />{" "}
                           5/5
                         </List.Content>
                       </List.Item>
