@@ -13,7 +13,7 @@ export default class SeasonsDetails extends Component {
                 size="tiny"
                 circular
                 src={
-                  "http://3.bp.blogspot.com/-26CUMGhLqq4/T0xdnioLFcI/AAAAAAAAAJk/c814tyNYh3Y/s1600/MESSI.jpg"
+                  "https://i.pinimg.com/736x/d7/60/fb/d760fbc1a6bf51234fd2fa5365f0ec81--messi-leo-lionel-messi.jpg"
                 }
               />
             </Grid.Column>

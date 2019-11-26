@@ -1,5 +1,4 @@
 import React from "react";
-
 import messi from "../../images/messi-home.png";
 import {
   Container,
@@ -11,7 +10,8 @@ import {
   Transition
 } from "semantic-ui-react";
 
-const HomeHeader = () => {
+const HomeHeader = ({ currentSeason }) => {
+  console.log(currentSeason);
   return (
     <div className="hero">
       <Container>
@@ -25,12 +25,7 @@ const HomeHeader = () => {
               verticalAlign="middle"
             >
               <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-                <Transition
-                  visible="true"
-                  animation="zoom"
-                  duration="700"
-                  transitionOnMount
-                >
+                <Transition animation="zoom" duration="700" transitionOnMount>
                   <div>
                     <div className="hero-messi">"Messi</div>
                     <div className="hero-ops">Ops"</div>
@@ -38,12 +33,7 @@ const HomeHeader = () => {
                 </Transition>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <Transition
-                  visible="true"
-                  animation="zoom"
-                  duration="700"
-                  transitionOnMount
-                >
+                <Transition animation="zoom" duration="700" transitionOnMount>
                   <div style={{ marginTop: "20px" }}>
                     <div className="hero-messi hero-messi-mobile">"Messi</div>
                     <div className="hero-ops hero-ops-mobile">Ops"</div>
@@ -57,7 +47,6 @@ const HomeHeader = () => {
                   <Grid.Column width={10} textAlign="left">
                     <div className="hero-img">
                       <Transition
-                        visible="true"
                         animation="fade right"
                         duration="700"
                         transitionOnMount
@@ -79,24 +68,23 @@ const HomeHeader = () => {
                       size="large"
                     >
                       <span>
-                        <strong>2018/2019</strong> - La Liga
+                        <strong>2019/2020</strong> - La Liga
                       </span>
                       <div className="hero-list-dash hero-list-dash-long" />
 
                       <List.Item>
                         <List.Content>
-                          <List.Header>Goals</List.Header>36
+                          <List.Header>Goals</List.Header>0
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <List.Content>
-                          <List.Header>Assists</List.Header>13
+                          <List.Header>Assists</List.Header>0
                         </List.Content>
                       </List.Item>
                       <List.Item>
                         <List.Content>
-                          <List.Header>Appearances</List.Header>
-                          33(3)
+                          <List.Header>Appearances</List.Header>0
                         </List.Content>
                       </List.Item>
                       <List.Item>
@@ -109,7 +97,7 @@ const HomeHeader = () => {
                       <List.Item>
                         <List.Content>
                           <List.Header>Years</List.Header>
-                          31
+                          32
                         </List.Content>
                       </List.Item>
                       <div className="hero-list-dash" />

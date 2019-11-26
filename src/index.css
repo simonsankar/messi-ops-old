@@ -30,10 +30,6 @@
   font-family: PontiacRegular;
   src: url(./fonts/PontiacInlineRegular.ttf);
 }
-@font-face {
-  font-family: LaLiga;
-  src: url(./fonts/laliga1819.ttf);
-}
 
 html,
 body {
@@ -80,7 +76,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* BLOG */
 .blog-header {
-  background: linear-gradient(-45deg, #454545 50%, #333 50%);
+  background: linear-gradient(-45deg, #3c3c3c 50%, #333 50%);
   margin-bottom: 1rem;
 }
 .blog-header > .container > .column > .header {
@@ -165,7 +161,7 @@ body::-webkit-scrollbar-thumb {
 .career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: '';
+  content: "";
   width: 50%;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
@@ -237,8 +233,8 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: white;
   transform: rotate(-13deg) skew(-13deg, 0);
-  text-shadow: 2px 2px 3px #454545, 3px 3px 3px #454545, 4px 4px 3px #454545,
-    5px 5px 3px #454545, 8px 8px 3px #454545;
+  text-shadow: 2px 2px 3px #3c3c3c, 3px 3px 3px #3c3c3c, 4px 4px 3px #3c3c3c,
+    5px 5px 3px #3c3c3c, 8px 8px 3px #3c3c3c;
 }
 /* small */
 .hero-messi-mobile,
@@ -284,7 +280,7 @@ body::-webkit-scrollbar-thumb {
 /* Home container */
 .home {
   margin-bottom: 13px;
-  background-color: #454545;
+  background-color: #3c3c3c;
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
@@ -328,8 +324,8 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: white;
   transform: rotate(-13deg) skew(-13deg, 0);
-  text-shadow: 2px 2px 3px #454545, 3px 3px 3px #454545, 4px 4px 3px #454545,
-    5px 5px 3px #454545, 8px 8px 3px #454545;
+  text-shadow: 2px 2px 3px #3c3c3c, 3px 3px 3px #3c3c3c, 4px 4px 3px #3c3c3c,
+    5px 5px 3px #3c3c3c, 8px 8px 3px #3c3c3c;
 }
 /* small */
 .msn-title {
@@ -443,7 +439,7 @@ body::-webkit-scrollbar-thumb {
 .msn-career-title::after {
   left: 50%;
   transform: translateX(50%);
-  content: '';
+  content: "";
   width: 50%;
   padding-bottom: 5px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -538,7 +534,7 @@ body::-webkit-scrollbar-thumb {
 .record-item {
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 30px;
-  background: #454545;
+  background: #3c3c3c;
 }
 
 .record-details {
@@ -615,7 +611,7 @@ body::-webkit-scrollbar-thumb {
   padding-top: 25px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
-  background: #454545;
+  background: #3c3c3c;
 }
 /* Season Card */
 .seasons-card {
@@ -661,7 +657,7 @@ body::-webkit-scrollbar-thumb {
   transform: translate(-50%, -50%);
 }
 .seasons-img {
-  /* border: 3px rgba(255, 255, 255, 0.7) solid; */
+  filter: grayscale(50%);
 }
 .squared,
 .squared > .segment {

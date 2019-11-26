@@ -24,7 +24,7 @@ const HomeHeader = () => {
             >
               <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
                 <Transition
-                  visible="true"
+                  visible
                   animation="zoom"
                   duration="700"
                   transitionOnMount
@@ -32,14 +32,14 @@ const HomeHeader = () => {
                   <div>
                     <div className="msn-title ">"Messi. Suarez. Neymar.</div>
                     <div className="msn-sub">
-                      ..spells danger ..spells goals"
+                      ..spells danger ..spells goal"
                     </div>
                   </div>
                 </Transition>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
                 <Transition
-                  visible="true"
+                  visible
                   animation="zoom"
                   duration="700"
                   transitionOnMount
@@ -58,7 +58,7 @@ const HomeHeader = () => {
             <Grid.Column computer={8} tablet={8} mobile={16}>
               <div className="msn-img">
                 <Transition
-                  visible="true"
+                  visible
                   animation="fade up"
                   duration="700"
                   transitionOnMount

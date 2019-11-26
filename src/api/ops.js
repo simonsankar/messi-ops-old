@@ -1,18 +1,23 @@
-// import axios from "axios";
-const axios = require("axios");
+import axios from "axios";
+import moment from "moment";
 
 // URLs
+const CORS = "https://secret-ocean-49799.herokuapp.com/";
+const CORSX = "https://cors-anywhere.herokuapp.com/";
+// Stats
 const CURR_SEASON =
-  "https://www.whoscored.com/StatisticsFeed/1/GetPlayerStatistics?category=summary&subcategory=all&statsAccumulationType=0&isCurrent=true&playerId=11119&teamIds=&matchId=&stageId=&tournamentOptions=&sortBy=Rating&sortAscending=&age=&ageComparisonType=&appearances=&appearancesComparisonType=&field=Overall&nationality=&positionOptions=&timeOfTheGameEnd=&timeOfTheGameStart=&isMinApp=false&page=&includeZeroValues=true&numberOfPlayersToPick=";
+  "https://www.transfermarkt.com/lionel-messi/leistungsdaten/spieler/28003/plus/0?saison=";
+const CAREER =
+  "https://www.transfermarkt.com/lionel-messi/leistungsdaten/spieler/28003";
+
 const EURO_BOOT = "";
 const TOP_ASSISTS = "";
 
 const ops = {
   async getCurrSeason() {
-    const { data } = await axios.get(CURR_SEASON);
+    const { data } = await axios.get(`${CORSX}${CURR_SEASON}`);
     console.log(data);
     return data;
   }
 };
 export default ops;
-ops.getCurrSeason();

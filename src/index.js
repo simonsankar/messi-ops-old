@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
 import ReactDOM from "react-dom";
 import "semantic-ui-css/semantic.min.css";
 import "slick-carousel/slick/slick.css";
@@ -8,11 +7,25 @@ import "./index.css";
 import "./overrides.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+// React router
+import { BrowserRouter } from "react-router-dom";
+// Redux state management
+import { applyMiddleware, createStore } from "redux";
+import { Provider } from "react-redux";
+// Middlewares
+import ReduxPromise from "redux-promise";
+// Root reducer
+import rootReducer from "./reducers/index";
+
+const storeWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
 ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+  <Provider store={storeWithMiddleware(rootReducer)}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
+
   document.getElementById("root")
 );
 

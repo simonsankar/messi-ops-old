@@ -5,6 +5,22 @@ import Slider from "react-slick";
 import SeasonsHeader from "./SeasonsHeader";
 import SeasonsDetails from "./SeasonsDetails";
 import Footer from "../Footer Components/Footer";
+import season0405 from "../../images/seasons/04-05.png";
+import season0506 from "../../images/seasons/05-06.png";
+import season0607 from "../../images/seasons/06-07.png";
+import season0708 from "../../images/seasons/07-08.png";
+import season0809 from "../../images/seasons/08-09.png";
+import season0910 from "../../images/seasons/09-10.png";
+import season1011 from "../../images/seasons/10-11.png";
+import season1112 from "../../images/seasons/11-12.png";
+import season1213 from "../../images/seasons/12-13.png";
+import season1314 from "../../images/seasons/13-14.png";
+import season1415 from "../../images/seasons/14-15.png";
+import season1516 from "../../images/seasons/15-16.png";
+import season1617 from "../../images/seasons/16-17.png";
+import season1718 from "../../images/seasons/17-18.png";
+import season1819 from "../../images/seasons/18-19.png";
+import season1920 from "../../images/seasons/19-20.png";
 
 class Seasons extends Component {
   render() {
@@ -55,7 +71,7 @@ class Seasons extends Component {
                 <Grid.Column width={16}>
                   <Slider {...settings}>
                     <Card className="seasons-card">
-                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Image src={season0405} />
                       <Card.Content>
                         <Card.Header>2004/2005</Card.Header>
                       </Card.Content>
@@ -66,7 +82,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Image src={season0506} />
                       <Card.Content>
                         <Card.Header>2005/2006</Card.Header>
                       </Card.Content>
@@ -77,7 +93,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Image src={season0607} />
                       <Card.Content>
                         <Card.Header>2006/2007</Card.Header>
                       </Card.Content>
@@ -88,7 +104,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="http://4.bp.blogspot.com/_stB8Rdvhe_c/TUMEz-ruIwI/AAAAAAAAAAo/crBshPCWsPE/s1600/leo-messi-20%255B1%255D.jpg" />
+                      <Image src={season0708} />
                       <Card.Content>
                         <Card.Header>2007/2008</Card.Header>
                       </Card.Content>
@@ -99,7 +115,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="http://cdn23.us1.fansshare.com/photos/lionelmessi/face-668379736.jpg" />
+                      <Image src={season0809} />
                       <Card.Content>
                         <Card.Header>2008/2009</Card.Header>
                       </Card.Content>
@@ -110,10 +126,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image
-                        size="small"
-                        src="http://4.bp.blogspot.com/-WLU9wazmHo8/T2nKt7WJtlI/AAAAAAAABFk/1XEz4RsMFHw/s1600/messi2.jpg"
-                      />
+                      <Image src={season0910} />
                       <Card.Content>
                         <Card.Header>2009/2010</Card.Header>
                       </Card.Content>
@@ -124,7 +137,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="http://3.bp.blogspot.com/-26CUMGhLqq4/T0xdnioLFcI/AAAAAAAAAJk/c814tyNYh3Y/s1600/MESSI.jpg" />
+                      <Image src={season1011} />
                       <Card.Content>
                         <Card.Header>2010/2011</Card.Header>
                       </Card.Content>
@@ -135,7 +148,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://www.centrocampista.com/wp-content/uploads/2011/07/95803.jpg" />
+                      <Image src={season1112} />
                       <Card.Content>
                         <Card.Header>2011/2012</Card.Header>
                       </Card.Content>
@@ -146,7 +159,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Image src={season1213} />
                       <Card.Content>
                         <Card.Header>2012/2013</Card.Header>
                       </Card.Content>
@@ -157,7 +170,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://i.pinimg.com/236x/85/1c/06/851c06c393f320792e6330dfb01d4bf8--lionel-messi.jpg" />
+                      <Image src={season1314} />
                       <Card.Content>
                         <Card.Header>2013/2014</Card.Header>
                       </Card.Content>
@@ -168,7 +181,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://drive.google.com/open?id=18ZBUvjF3gQrWz1htuljWVHBW3LAMjvi8" />
+                      <Image src={season1415} />
                       <Card.Content>
                         <Card.Header>2014/2014</Card.Header>
                       </Card.Content>
@@ -179,7 +192,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://lh3.googleusercontent.com/-MzSmwHaoAnU/Vcore42VwkI/AAAAAAAAA2k/AVJfrOmpcsE/w530-h596-n-rw/Leo%2BMessi%2Bofficial%2Bphoto%2Bfor%2B201516.png" />
+                      <Image src={season1516} />
                       <Card.Content>
                         <Card.Header>2015/2016</Card.Header>
                       </Card.Content>
@@ -190,7 +203,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://i.pinimg.com/736x/c7/3d/64/c73d64ebc3ea7ec4a46938eb149c4316--messi--lionel-messi.jpg" />
+                      <Image src={season1617} />
                       <Card.Content>
                         <Card.Header>2016/2017</Card.Header>
                       </Card.Content>
@@ -201,7 +214,7 @@ class Seasons extends Component {
                       </div>
                     </Card>
                     <Card className="seasons-card">
-                      <Image src="https://sortitoutsi.net/uploads/images/W6Fjsv63CAEimRVRmh2FvK9bvLx69RGJ.jpg" />
+                      <Image src={season1718} />
                       <Card.Content>
                         <Card.Header>2017/2018</Card.Header>
                       </Card.Content>
@@ -209,6 +222,28 @@ class Seasons extends Component {
                         <span className="number">10</span>
                         <span className="name">Messi</span>
                         <span className="year">17/18</span>
+                      </div>
+                    </Card>
+                    <Card className="seasons-card">
+                      <Image src={season1819} />
+                      <Card.Content>
+                        <Card.Header>2018/2019</Card.Header>
+                      </Card.Content>
+                      <div className="seasons-card-overlay">
+                        <span className="number">10</span>
+                        <span className="name">Messi</span>
+                        <span className="year">18/19</span>
+                      </div>
+                    </Card>
+                    <Card className="seasons-card">
+                      <Image src={season1920} />
+                      <Card.Content>
+                        <Card.Header>2019/2020</Card.Header>
+                      </Card.Content>
+                      <div className="seasons-card-overlay">
+                        <span className="number">10</span>
+                        <span className="name">Messi</span>
+                        <span className="year">19/20</span>
                       </div>
                     </Card>
                   </Slider>
