@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import RecordsHeader from "./RecordsHeader";
 import RecordsBody from "./RecordsBody";
-import Footer from "../Footer Components/Footer";
+import Footer from "../Footer/Footer";
 
 class Records extends Component {
   render() {

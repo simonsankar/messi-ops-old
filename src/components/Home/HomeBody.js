@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import { Container, Grid } from "semantic-ui-react";
 import HomeCareer from "./HomeCareer";
-import PostList from "../Blog Components/PostList";
+import PostList from "../Blog/PostList";
 
 class HomeBody extends Component {
   render() {

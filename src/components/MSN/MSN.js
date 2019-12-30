@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import MSNHeader from "./MSNHeader";
 import MSNBody from "./MSNBody";
-import Footer from "../Footer Components/Footer";
+import Footer from "../Footer/Footer";
 
 class MSN extends Component {
   render() {

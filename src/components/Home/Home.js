@@ -5,7 +5,7 @@ import { getCurrentSeason } from "../../actions/getCurrentSeason";
 
 import HomeHeader from "./HomeHeader";
 import HomeBody from "./HomeBody";
-import Footer from "../Footer Components/Footer";
+import Footer from "../Footer/Footer";
 
 class Home extends Component {
   componentDidMount() {

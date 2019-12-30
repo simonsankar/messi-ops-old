@@ -104,7 +104,7 @@ body::-webkit-scrollbar-thumb {
   max-height: 250px;
 }
 .blog-item-delta {
-  background: linear-gradient(168deg, #fafafa 50%, #ffffff 50%) !important;
+  background: linear-gradient(168deg, #f7f7f7 50%, #ffffff 50%) !important;
 }
 .blog-item-omega {
 }
@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
   min-height: calc(50vh);
 }
 .home-header {
-  font-family: PontiacShadow;
+  font-family: PontiacRegular;
   font-size: 25px;
   line-height: 40px;
   text-transform: uppercase;
@@ -513,7 +513,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .records-header {
-  background: linear-gradient(-45deg, #c73d3d 30%, #333 30%);
+  background: linear-gradient(-45deg, #b33a3a 30%, #333 30%);
 }
 .records-header > .container > .column > .header {
   color: rgba(255, 255, 255, 0.5);
@@ -543,7 +543,7 @@ body::-webkit-scrollbar-thumb {
 .record-desc {
   color: rgba(255, 255, 255, 0.6) !important;
   font-size: 15px !important;
-  font-family: FuturaBook;
+  font-family: UniversLT;
 }
 
 .record-item-alt {
@@ -636,7 +636,7 @@ body::-webkit-scrollbar-thumb {
 .seasons-card-overlay > .number {
   font-size: 7vw;
   position: absolute;
-  top: 55%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -650,9 +650,9 @@ body::-webkit-scrollbar-thumb {
 }
 .seasons-card-overlay > .year {
   position: absolute;
-  bottom: 0px;
+  bottom: 5%;
   left: 50%;
-  font-size: 14px;
+  font-size: 2vw;
   text-transform: uppercase;
   transform: translate(-50%, -50%);
 }
