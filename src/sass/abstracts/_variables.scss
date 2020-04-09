@@ -1,0 +1,47 @@
+// Colours
+$PRIMARY_COLOUR: #ff4c55;
+$SECONDARY_COLOUR: #e94850;
+$TERTIARY_COLOUR: #004d98;
+$QUATERNARY: #a50044;
+
+$LIGHT_GREY: #efefef;
+$GREY: #696969;
+$DARK_GREY: #515151;
+
+$BLACK: #343233;
+
+$WHITE: #fff;
+
+// Fonts
+@font-face {
+  font-family: HeroicCondensed;
+  src: url(../fonts/HeroicCondensed-Regular.otf);
+}
+@font-face {
+  font-family: HeroicCondensedBold;
+  src: url(../fonts/HeroicCondensed-Bold.otf);
+}
+@font-face {
+  font-family: FuturaMed;
+  src: url(../fonts/FuturaMedium.ttf);
+}
+@font-face {
+  font-family: FuturaBook;
+  src: url(../fonts/FuturaBook.ttf);
+}
+@font-face {
+  font-family: Univers;
+  src: url(../fonts/Univers.woff);
+}
+@font-face {
+  font-family: UniversLT;
+  src: url(../fonts/UniversLT.woff);
+}
+@font-face {
+  font-family: PontiacShadow;
+  src: url(../fonts/PontiacInlineShadow.ttf);
+}
+@font-face {
+  font-family: PontiacRegular;
+  src: url(../fonts/PontiacInlineRegular.ttf);
+}

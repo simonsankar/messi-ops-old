@@ -7,7 +7,7 @@ import {
   Image,
   Responsive,
   Rating,
-  Transition
+  Transition,
 } from "semantic-ui-react";
 
 const HomeHeader = ({ currentSeason }) => {
@@ -65,7 +65,7 @@ const HomeHeader = ({ currentSeason }) => {
                       animated
                       verticalAlign="middle"
                       inverted
-                      size="large"
+                      size="huge"
                     >
                       <span>
                         <strong>2019/2020</strong> - La Liga

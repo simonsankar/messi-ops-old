@@ -56,7 +56,7 @@ body::-webkit-scrollbar-thumb {
 }
 /* Arguments */
 .args-header {
-  background: linear-gradient(-45deg, #b33a3a 50%, #333 50%);
+  background: linear-gradient(-45deg, #e94850 50%, #333 50%);
 }
 .args-header > .container > .column > .header {
   color: rgba(255, 255, 255, 0.5);
@@ -76,11 +76,11 @@ body::-webkit-scrollbar-thumb {
 }
 /* BLOG */
 .blog-header {
-  background: linear-gradient(-45deg, #3c3c3c 50%, #333 50%);
+  background: #efefef;
   margin-bottom: 1rem;
 }
 .blog-header > .container > .column > .header {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(0, 0, 0, 0.5);
   background-color: transparent;
   font-family: PontiacRegular;
   font-weight: 500;
@@ -191,10 +191,10 @@ body::-webkit-scrollbar-thumb {
   color: rgba(255, 255, 255, 0.5);
 }
 .footer-link {
-  color: #c73d3d;
+  color: #ff4c55;
 }
 .footer-link:hover {
-  color: #b33a3a;
+  color: #e94850;
 }
 .footer-container {
   height: auto;
@@ -216,7 +216,7 @@ body::-webkit-scrollbar-thumb {
 /* Hero container */
 .hero {
   margin-bottom: 13px;
-  background: linear-gradient(168deg, #c73d3d 50%, #b33a3a 50%);
+  background: linear-gradient(168deg, #ff4c55 50%, #e94850 50%);
   background-repeat: no-repeat;
 }
 .hero-container {
@@ -231,10 +231,10 @@ body::-webkit-scrollbar-thumb {
   line-height: 13vw;
   font-weight: 500;
   text-transform: uppercase;
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   transform: rotate(-13deg) skew(-13deg, 0);
-  text-shadow: 2px 2px 3px #3c3c3c, 3px 3px 3px #3c3c3c, 4px 4px 3px #3c3c3c,
-    5px 5px 3px #3c3c3c, 8px 8px 3px #3c3c3c;
+  text-shadow: 2px 2px 3px #343233, 3px 3px 3px #343233, 4px 4px 3px #343233,
+    5px 5px 3px #343233, 8px 8px 3px #343233;
 }
 /* small */
 .hero-messi-mobile,
@@ -248,8 +248,8 @@ body::-webkit-scrollbar-thumb {
   padding: 10px;
 }
 .hero-image {
-  filter: grayscale(100%) drop-shadow(-6px -6px 0px #b33a3a)
-    drop-shadow(-6px -6px 0px #c73d3d)
+  filter: grayscale(100%) drop-shadow(-6px -6px 0px #e94850)
+    drop-shadow(-6px -6px 0px #ff4c55)
     drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
 }
 /* Hero list */
@@ -280,7 +280,7 @@ body::-webkit-scrollbar-thumb {
 /* Home container */
 .home {
   margin-bottom: 13px;
-  background-color: #3c3c3c;
+  background-color: #343233;
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
@@ -290,7 +290,7 @@ body::-webkit-scrollbar-thumb {
   min-height: calc(50vh);
 }
 .home-header {
-  font-family: PontiacRegular;
+  font-family: PontiacShadow;
   font-size: 25px;
   line-height: 40px;
   text-transform: uppercase;
@@ -324,8 +324,8 @@ body::-webkit-scrollbar-thumb {
   text-transform: uppercase;
   color: white;
   transform: rotate(-13deg) skew(-13deg, 0);
-  text-shadow: 2px 2px 3px #3c3c3c, 3px 3px 3px #3c3c3c, 4px 4px 3px #3c3c3c,
-    5px 5px 3px #3c3c3c, 8px 8px 3px #3c3c3c;
+  text-shadow: 2px 2px 3px #343233, 3px 3px 3px #343233, 4px 4px 3px #343233,
+    5px 5px 3px #343233, 8px 8px 3px #343233;
 }
 /* small */
 .msn-title {
@@ -403,7 +403,7 @@ body::-webkit-scrollbar-thumb {
   padding: 5px;
 }
 .msn-single-title {
-  color: #222 !important;
+  color: rgba(255, 255, 255, 0.2) !important;
   font-family: PontiacRegular !important;
   font-size: 45px;
   font-weight: 500;
@@ -463,7 +463,7 @@ body::-webkit-scrollbar-thumb {
 
 /* NAVIGATION */
 .navbar-mobile.ui.segment {
-  background-color: #c73d3d;
+  background-color: #ff4c55;
 }
 .navbar-msn {
   background-color: #004d98 !important;
@@ -505,7 +505,7 @@ body::-webkit-scrollbar-thumb {
 }
 .post-readmore:hover {
   text-decoration: underline;
-  color: #b33a3a;
+  color: #e94850;
 }
 
 /* RECORDS */
@@ -513,7 +513,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .records-header {
-  background: linear-gradient(-45deg, #b33a3a 30%, #333 30%);
+  background: linear-gradient(-45deg, #e94850 30%, #333 30%);
 }
 .records-header > .container > .column > .header {
   color: rgba(255, 255, 255, 0.5);
@@ -534,7 +534,7 @@ body::-webkit-scrollbar-thumb {
 .record-item {
   color: rgba(255, 255, 255, 0.8);
   padding-bottom: 30px;
-  background: #3c3c3c;
+  background: #343233;
 }
 
 .record-details {
@@ -611,7 +611,7 @@ body::-webkit-scrollbar-thumb {
   padding-top: 25px;
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
-  background: #3c3c3c;
+  background: #343233;
 }
 /* Season Card */
 .seasons-card {
@@ -663,7 +663,7 @@ body::-webkit-scrollbar-thumb {
 .squared > .segment {
   z-index: 10;
   border-radius: 0 !important;
-  border: 1px solid #c73d3d !important;
+  border: 1px solid #ff4c55 !important;
 }
 .squared-msn,
 .squared-msn > .segment {
