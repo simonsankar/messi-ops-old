@@ -3,9 +3,9 @@ import ReactDOM from "react-dom";
 import "semantic-ui-css/semantic.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./sass/index.scss";
 import "./index.css";
 import "./overrides.css";
+import "./sass/index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 // React router
@@ -14,11 +14,11 @@ import { BrowserRouter } from "react-router-dom";
 import { applyMiddleware, createStore } from "redux";
 import { Provider } from "react-redux";
 // Middlewares
-import ReduxPromise from "redux-promise";
+import thunk from "redux-thunk";
 // Root reducer
 import rootReducer from "./reducers/index";
 
-const storeWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
+const storeWithMiddleware = applyMiddleware(thunk)(createStore);
 
 ReactDOM.render(
   <Provider store={storeWithMiddleware(rootReducer)}>

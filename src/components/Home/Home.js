@@ -18,18 +18,18 @@ class Home extends Component {
     }
   }
   render() {
-    const { currentSeason } = this.props;
+    // const { currentSeason } = this.props;
     return (
-      <div>
+      <>
         <HomeHeader />
         <HomeBody />
         <Footer />
-      </div>
+      </>
     );
   }
 }
 
 const mapStateToProps = ({ currentSeason }) => ({ currentSeason });
-const mapDispatchToProps = dispatch =>
+const mapDispatchToProps = (dispatch) =>
   bindActionCreators({ getCurrentSeason }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

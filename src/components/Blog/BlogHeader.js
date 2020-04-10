@@ -5,11 +5,11 @@ import { Grid, Header } from "semantic-ui-react";
 class BlogHeader extends Component {
   render() {
     return (
-      <div className="blog-header">
+      <div className="blog__header">
         <Grid container>
           <Grid.Column>
             <Header>blog</Header>
-            <div className="blog-content">
+            <div className="blog__content">
               Anecdotes of Lionel Messi.Te vel eruditi alienum ponderum. Nibh
               quaeque deseruisse an his, quo ne scripta mandamus. An primis
               voluptaria ius, has cu vide meis principes, vitae commodo

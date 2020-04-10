@@ -26,6 +26,7 @@ class Footer extends Component {
                       className="footer-link"
                       href="http://github.com/simonsankar/messi-ops"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Repository
                     </a>
@@ -38,6 +39,7 @@ class Footer extends Component {
                       className="footer-link"
                       href="http://github.com/simonsankar"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Github
                     </a>
@@ -50,6 +52,7 @@ class Footer extends Component {
                       className="footer-link"
                       href="mailto:sjsankar10@gmail.com"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Email
                     </a>
@@ -88,6 +91,7 @@ class Footer extends Component {
                       className="footer-link"
                       href="https://reactjs.org/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       ReactJS
                     </a>
@@ -101,6 +105,7 @@ class Footer extends Component {
                       className="footer-link"
                       href="https://react.semantic-ui.com/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       SemanticUI
                     </a>
@@ -113,6 +118,7 @@ class Footer extends Component {
                       className="footer-link"
                       href="https://firebase.google.com/"
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Firebase
                     </a>

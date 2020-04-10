@@ -1,0 +1,24 @@
+.home {
+  margin-bottom: 13px;
+  background-color: #343233;
+  background-repeat: no-repeat;
+  color: rgba($WHITE, 0.5);
+  font-size: 18px;
+  line-height: 25px;
+  &__container {
+    min-height: calc(50vh);
+  }
+  &__header {
+    font-family: PontiacShadow;
+    font-size: 25px;
+    line-height: 40px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 5px;
+    z-index: 10;
+    padding-right: 10px;
+    &--right {
+      text-align: right;
+    }
+  }
+}

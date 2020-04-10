@@ -1,0 +1,68 @@
+.hero {
+  margin-bottom: 13px;
+  background: linear-gradient(168deg, #ff4c55 50%, #e94850 50%);
+  background-repeat: no-repeat;
+
+  //   Container
+  &__container {
+    min-height: calc(100vh - 60px);
+  }
+
+  //Text
+  &__messi,
+  &__ops {
+    text-align: center;
+    font-family: HeroicCondensedBold;
+    font-size: 15vw;
+    line-height: 13vw;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+    transform: rotate(-13deg) skew(-13deg, 0);
+    text-shadow: 2px 2px 3px $BLACK, 3px 3px 3px $BLACK, 4px 4px 3px $BLACK,
+      5px 5px 3px $BLACK, 8px 8px 3px $BLACK;
+  }
+  &__messi--mobile,
+  &__ops--mobile {
+    line-height: 8rem;
+    font-size: 8rem;
+  }
+
+  // Image
+  &__img {
+    padding: 10px;
+  }
+  &__image {
+    filter: grayscale(100%) drop-shadow(-6px -6px 0px $PRIMARY_COLOUR)
+      drop-shadow(-6px -6px 0px $SECONDARY_COLOUR)
+      drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
+  }
+
+  // List
+  &__list,
+  .ui.list > .item .header {
+    color: rgba($WHITE, 0.5);
+    font-family: UniversLT !important;
+    padding-bottom: 5px;
+    &__content {
+      color: $WHITE !important;
+    }
+    &--dash {
+      width: 10%;
+      height: 2px;
+      background-color: $WHITE;
+      margin: 4px 0;
+    }
+    &--dash-long {
+      width: 90%;
+    }
+    &--bar {
+      height: 7rem;
+      margin-left: 2px;
+      border-left: 2px solid $WHITE;
+    }
+    &__skills.ui.rating .active.icon {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

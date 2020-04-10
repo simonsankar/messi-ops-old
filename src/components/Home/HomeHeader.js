@@ -15,28 +15,40 @@ const HomeHeader = ({ currentSeason }) => {
   return (
     <div className="hero">
       <Container>
-        <Grid className="hero-container">
+        <Grid className="hero__container">
           <Grid.Row verticalAlign="middle">
             <Grid.Column
-              className="hero-column"
+              className="hero__column"
               computer={8}
               tablet={8}
               mobile={16}
               verticalAlign="middle"
             >
               <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
-                <Transition animation="zoom" duration="700" transitionOnMount>
+                <Transition
+                  visible={true}
+                  animation="zoom"
+                  duration="700"
+                  transitionOnMount
+                >
                   <div>
-                    <div className="hero-messi">"Messi</div>
-                    <div className="hero-ops">Ops"</div>
+                    <div className="hero__messi">"Messi</div>
+                    <div className="hero__ops">Ops"</div>
                   </div>
                 </Transition>
               </Responsive>
               <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
-                <Transition animation="zoom" duration="700" transitionOnMount>
+                <Transition
+                  visible={true}
+                  animation="zoom"
+                  duration="700"
+                  transitionOnMount
+                >
                   <div style={{ marginTop: "20px" }}>
-                    <div className="hero-messi hero-messi-mobile">"Messi</div>
-                    <div className="hero-ops hero-ops-mobile">Ops"</div>
+                    <div className="hero__messi hero__messi--mobile">
+                      "Messi
+                    </div>
+                    <div className="hero__ops hero__ops--mobile">Ops"</div>
                   </div>
                 </Transition>
               </Responsive>
@@ -45,14 +57,15 @@ const HomeHeader = ({ currentSeason }) => {
               <Grid>
                 <Grid.Row columns={2} verticalAlign="middle">
                   <Grid.Column width={10} textAlign="left">
-                    <div className="hero-img">
+                    <div className="hero__img">
                       <Transition
+                        visible={true}
                         animation="fade right"
                         duration="700"
                         transitionOnMount
                       >
                         <Image
-                          className="hero-image"
+                          className="hero__image"
                           src={messi}
                           size="medium"
                         />
@@ -61,7 +74,7 @@ const HomeHeader = ({ currentSeason }) => {
                   </Grid.Column>
                   <Grid.Column width={6} textAlign="left">
                     <List
-                      className="hero-list"
+                      className="hero__list"
                       animated
                       verticalAlign="middle"
                       inverted
@@ -70,42 +83,42 @@ const HomeHeader = ({ currentSeason }) => {
                       <span>
                         <strong>2019/2020</strong> - La Liga
                       </span>
-                      <div className="hero-list-dash hero-list-dash-long" />
+                      <div className="hero__list--dash hero__list--dash-long" />
 
                       <List.Item>
-                        <List.Content>
+                        <List.Content className="hero__list__content">
                           <List.Header>Goals</List.Header>0
                         </List.Content>
                       </List.Item>
                       <List.Item>
-                        <List.Content>
+                        <List.Content className="hero__list__content">
                           <List.Header>Assists</List.Header>0
                         </List.Content>
                       </List.Item>
                       <List.Item>
-                        <List.Content>
+                        <List.Content className="hero__list__content">
                           <List.Header>Appearances</List.Header>0
                         </List.Content>
                       </List.Item>
                       <List.Item>
-                        <List.Content>
+                        <List.Content className="hero__list__content">
                           <List.Header>Positions</List.Header>
                           RW/CF/CAM
                         </List.Content>
                       </List.Item>
-                      <div className="hero-list-bar" />
+                      <div className="hero__list--bar" />
                       <List.Item>
-                        <List.Content>
+                        <List.Content className="hero__list__content">
                           <List.Header>Years</List.Header>
                           32
                         </List.Content>
                       </List.Item>
-                      <div className="hero-list-dash" />
+                      <div className="hero__list--dash" />
                       <List.Item>
-                        <List.Content>
+                        <List.Content className="hero__list__content">
                           <List.Header>Skills</List.Header>
                           <Rating
-                            className="hero-skills"
+                            className="hero__list__skills"
                             defaultRating={5}
                             maxRating={5}
                             disabled

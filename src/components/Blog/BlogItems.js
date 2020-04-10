@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 
-import { Card, Image } from 'semantic-ui-react';
+import { Card, Image } from "semantic-ui-react";
 
 export const BlogAlpha = ({ blog }) => {
   return (
-    <Card fluid className="blog-item">
-      <div className="blog-item-img-container">
-        <Image className="blog-item-img" src={blog.img} />
+    <Card fluid className="blog__item">
+      <div className="blog__item__img__container">
+        <Image className="blog__item__img" src={blog.img} />
       </div>
       <Card.Content>
-        <Card.Header className="blog-item-header">{blog.title}</Card.Header>
+        <Card.Header className="blog__item__header">{blog.title}</Card.Header>
         <Card.Meta>
-          <span className="date">{blog.date}</span>
+          <span className="blog__item__date">{blog.date}</span>
         </Card.Meta>
-        <Card.Description className="blog-item-desc">
+        <Card.Description className="blog__item__desc">
           {blog.desc}
         </Card.Description>
       </Card.Content>
@@ -23,15 +23,17 @@ export const BlogAlpha = ({ blog }) => {
 
 export const BlogDelta = ({ blog }) => {
   return (
-    <Card fluid className="blog-item blog-item-delta">
+    <Card fluid className="blog__item blog__item--delta">
       <Card.Content>
-        <Card.Header className="blog-item-header-delta">
+        <Card.Header className="blog__item__header--delta">
           {blog.title}
         </Card.Header>
         <Card.Meta>
-          <span className="date">{blog.date}</span>
+          <span className="blog__item__date">{blog.date}</span>
         </Card.Meta>
-        <Card.Description>{blog.desc}</Card.Description>
+        <Card.Description className="blog__item__desc">
+          {blog.desc}
+        </Card.Description>
       </Card.Content>
       <Card.Content extra>I know more</Card.Content>
     </Card>
@@ -41,22 +43,22 @@ export const BlogOmega = ({ blog }) => {
   return (
     <Card
       fluid
-      className="blog-item blog-item-omega"
+      className="blog__item blog__item--omega"
       style={{
         backgroundImage: `url(${blog.img})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        filter: 'grayscale(70%) contrast(90%)'
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        filter: "grayscale(70%) contrast(90%)",
       }}
     >
       <Card.Content>
-        <Card.Header className="blog-item-header blog-item-header-omega">
+        <Card.Header className="blog__item__header blog__item__header--omega">
           {blog.title}
         </Card.Header>
-        <Card.Meta className="blog-item-meta-white">
-          <span className="date">{blog.date}</span>
+        <Card.Meta className="blog__item__meta blog__item__meta--white">
+          <span className="blog__item__date">{blog.date}</span>
         </Card.Meta>
-        <Card.Description className="blog-item-desc-white">
+        <Card.Description className="blog__item__desc blog__item__desc--white">
           {blog.desc}
         </Card.Description>
       </Card.Content>
