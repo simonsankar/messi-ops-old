@@ -5,7 +5,6 @@ import { getCurrentSeason } from "../../actions/getCurrentSeason";
 
 import HomeHeader from "./HomeHeader";
 import HomeBody from "./HomeBody";
-import Footer from "../Footer/Footer";
 
 class Home extends Component {
   componentDidMount() {
@@ -23,13 +22,12 @@ class Home extends Component {
       <>
         <HomeHeader />
         <HomeBody />
-        <Footer />
       </>
     );
   }
 }
 
 const mapStateToProps = ({ currentSeason }) => ({ currentSeason });
-const mapDispatchToProps = (dispatch) =>
+const mapDispatchToProps = dispatch =>
   bindActionCreators({ getCurrentSeason }, dispatch);
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

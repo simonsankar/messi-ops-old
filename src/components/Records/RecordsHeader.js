@@ -5,11 +5,11 @@ import { Grid, Header } from "semantic-ui-react";
 class RecordsHeader extends Component {
   render() {
     return (
-      <div className="records-header">
-        <Grid container>
-          <Grid.Column>
+      <div className="records__header">
+        <Grid container padded="vertically">
+          <Grid.Column stretched>
             <Header>Records</Header>
-            <div className="records-content">
+            <div className="records__content">
               Messi has lots of records. Te vel eruditi alienum ponderum. Nibh
               quaeque deseruisse an his, quo ne scripta mandamus. An primis
               voluptaria ius, has cu vide meis principes, vitae commodo

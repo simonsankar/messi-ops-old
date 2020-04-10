@@ -1,0 +1,106 @@
+.records {
+  background-color: $LIGHT_GREY;
+
+  // Header
+  &__header {
+    background: $BLACK;
+    margin-top: -1rem;
+    & > .container > .column > .header {
+      color: rgba($WHITE, 0.8);
+      background-color: transparent;
+      font-family: PontiacRegular;
+      font-weight: 500;
+      font-size: 5rem;
+      line-height: 5rem;
+      padding: 1rem 0;
+      margin-bottom: 1rem;
+    }
+  }
+  // Content
+  &__content {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: rgba($WHITE, 0.8);
+    border-bottom: 2px solid rgba($WHITE, 0.1);
+  }
+
+  // Item
+  &__item {
+    color: rgba($WHITE, 0.8);
+    padding-bottom: 30px;
+    background: linear-gradient(
+      -45deg,
+      rgba($BLACK, 0.99) 50%,
+      rgba($BLACK, 0.98) 50%
+    );
+
+    // Title
+    &__title {
+      color: rgba($WHITE, 0.8) !important;
+      font-family: Univers !important;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+    // Subtitle
+    &__subtitle {
+      color: rgba($WHITE, 0.7) !important;
+      font-family: Univers !important;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: 36px;
+    }
+    // Image
+    &__img {
+      filter: grayscale(60%);
+      border: 2px solid $PRIMARY_COLOUR;
+    }
+    &__details {
+      border-left: rgba($WHITE, 0.1) 2px solid;
+    }
+    &__desc {
+      color: rgba($WHITE, 0.6) !important;
+      font-size: 15px !important;
+      font-family: UniversLT;
+    }
+    // List
+    &__list {
+      &__value {
+        float: right;
+        font-size: 16px;
+        &--first {
+          background: #ff4c55;
+          padding: 1px 3px;
+        }
+      }
+      &--first {
+        color: rgba($WHITE, 0.9);
+
+        font-weight: 600;
+        padding-bottom: 20px;
+        // border-bottom: $PRIMARY_COLOUR 2px solid;
+        ::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: "";
+          height: 20px;
+          width: 2px;
+          background-color: rgba($WHITE, 0.1);
+        }
+      }
+    }
+
+    &--alt {
+      background: linear-gradient(
+        -45deg,
+        rgba($BLACK, 0.99) 50%,
+        rgba($BLACK, 0.98) 50%
+      );
+      & > .records__item__title {
+        float: left;
+      }
+    }
+  }
+}

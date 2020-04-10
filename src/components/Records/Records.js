@@ -2,7 +2,6 @@ import React, { Component } from "react";
 
 import RecordsHeader from "./RecordsHeader";
 import RecordsBody from "./RecordsBody";
-import Footer from "../Footer/Footer";
 
 class Records extends Component {
   render() {
@@ -10,7 +9,6 @@ class Records extends Component {
       <div className="records">
         <RecordsHeader />
         <RecordsBody />
-        <Footer />
       </div>
     );
   }

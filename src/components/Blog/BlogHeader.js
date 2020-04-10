@@ -6,7 +6,7 @@ class BlogHeader extends Component {
   render() {
     return (
       <div className="blog__header">
-        <Grid container>
+        <Grid container padded="vertically">
           <Grid.Column>
             <Header>blog</Header>
             <div className="blog__content">

@@ -58,7 +58,7 @@ const MSNSingle = ({ player }) => {
             {player === 1 ? (
               <List
                 horizontal
-                className="hero-list"
+                className="hero__list"
                 animated
                 verticalAlign="middle"
                 inverted
@@ -91,7 +91,7 @@ const MSNSingle = ({ player }) => {
                   <List.Content>
                     <List.Header>Skills</List.Header>
                     <Rating
-                      className="hero-skills"
+                      className="hero__list__skills"
                       defaultRating={5}
                       maxRating={5}
                       disabled
@@ -103,7 +103,7 @@ const MSNSingle = ({ player }) => {
             ) : player === 2 ? (
               <List
                 horizontal
-                className="hero-list"
+                className="hero__list"
                 animated
                 verticalAlign="middle"
                 inverted
@@ -136,7 +136,7 @@ const MSNSingle = ({ player }) => {
                   <List.Content>
                     <List.Header>Skills</List.Header>
                     <Rating
-                      className="hero-skills"
+                      className="hero__list__skills"
                       defaultRating={5}
                       maxRating={5}
                       disabled
@@ -148,7 +148,7 @@ const MSNSingle = ({ player }) => {
             ) : (
               <List
                 horizontal
-                className="hero-list"
+                className="hero__list"
                 animated
                 verticalAlign="middle"
                 inverted
@@ -181,7 +181,7 @@ const MSNSingle = ({ player }) => {
                   <List.Content>
                     <List.Header>Skills</List.Header>
                     <Rating
-                      className="hero-skills"
+                      className="hero__list__skills"
                       defaultRating={5}
                       maxRating={5}
                       disabled

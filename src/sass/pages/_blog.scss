@@ -4,7 +4,7 @@
   // Header
   &__header {
     background: $LIGHT_GREY;
-    margin-bottom: 1rem;
+    margin-top: -1rem;
     & > .container > .column > .header {
       color: rgba($BLACK, 0.8);
       background-color: transparent;
@@ -13,7 +13,7 @@
       font-size: 5rem;
       line-height: 5rem;
       padding: 1rem 0;
-      margin-bottom: 14px;
+      margin-bottom: 1rem;
     }
   }
   // Content

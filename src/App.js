@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Route, Switch } from "react-router-dom";
 
 import Navigation from "./components/Navigation/Navigation";
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import Seasons from "./components/Seasons/Seasons";
@@ -12,7 +13,7 @@ import MSN from "./components/MSN/MSN";
 class App extends Component {
   render() {
     return (
-      <div>
+      <>
         <Navigation />
         <Switch>
           <Route exact path="/" component={Home} />
@@ -22,7 +23,8 @@ class App extends Component {
           <Route path="/args" component={ArgumentsAgainst} />
           <Route path="/msn" component={MSN} />
         </Switch>
-      </div>
+        <Footer />
+      </>
     );
   }
 }

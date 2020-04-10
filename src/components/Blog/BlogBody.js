@@ -136,7 +136,9 @@ export default class BlogBody extends Component {
   render() {
     return (
       <div className="blog">
-        <Grid container>{this.renderBlogItems()}</Grid>
+        <Grid container padded="vertically">
+          {this.renderBlogItems()}
+        </Grid>
       </div>
     );
   }
