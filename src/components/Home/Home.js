@@ -9,13 +9,13 @@ import Footer from "../Footer/Footer";
 
 class Home extends Component {
   componentDidMount() {
-    this.props.getCurrentSeason();
-    console.log("current season", this.props.currentSeason);
+    // this.props.getCurrentSeason();
+    // console.log("current season", this.props.currentSeason);
   }
   componentDidUpdate(prevProps) {
-    if (prevProps.currentSeason !== this.props.currentSeason) {
-      console.log(this.props.currentSeason);
-    }
+    // if (prevProps.currentSeason !== this.props.currentSeason) {
+    // console.log(this.props.currentSeason);
+    // }
   }
   render() {
     // const { currentSeason } = this.props;
