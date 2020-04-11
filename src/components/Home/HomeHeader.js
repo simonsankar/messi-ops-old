@@ -20,11 +20,11 @@ const HomeHeader = ({ currentSeason }) => {
             <Grid.Column
               className="hero__column"
               computer={8}
-              tablet={8}
+              tablet={16}
               mobile={16}
               verticalAlign="middle"
             >
-              <Responsive minWidth={Responsive.onlyMobile.maxWidth}>
+              <Responsive minWidth={Responsive.onlyTablet.minWidth}>
                 <Transition animation="zoom" duration="700" transitionOnMount>
                   <div>
                     <div className="hero__messi">"Messi</div>
@@ -32,7 +32,7 @@ const HomeHeader = ({ currentSeason }) => {
                   </div>
                 </Transition>
               </Responsive>
-              <Responsive maxWidth={Responsive.onlyTablet.minWidth}>
+              <Responsive maxWidth={Responsive.onlyMobile.maxWidth}>
                 <Transition animation="zoom" duration="700" transitionOnMount>
                   <div style={{ marginTop: "20px" }}>
                     <div className="hero__messi hero__messi--mobile">
@@ -43,7 +43,7 @@ const HomeHeader = ({ currentSeason }) => {
                 </Transition>
               </Responsive>
             </Grid.Column>
-            <Grid.Column computer={8} tablet={8} mobile={16}>
+            <Grid.Column computer={8} tablet={16} mobile={16}>
               <Grid>
                 <Grid.Row columns={2} verticalAlign="middle">
                   <Grid.Column width={10} textAlign="left">

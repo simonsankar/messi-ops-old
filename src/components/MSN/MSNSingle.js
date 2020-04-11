@@ -13,8 +13,8 @@ const desc = [
 
 const MSNSingle = ({ player }) => {
   return (
-    <div className="msn-single">
-      <Grid container stackable>
+    <div className="msn__single">
+      <Grid container stackable padded="vertically">
         <Grid.Row divided>
           <Responsive
             minWidth={Responsive.onlyComputer.minWidth}
@@ -23,7 +23,7 @@ const MSNSingle = ({ player }) => {
             verticalAlign="middle"
           >
             <Image
-              className="msn-single-img"
+              className="msn__single__img"
               size="small"
               src={player === 1 ? LM : player === 2 ? LS : NJ}
             />
@@ -32,9 +32,9 @@ const MSNSingle = ({ player }) => {
             computer={7}
             tablet={10}
             mobile={16}
-            className="msn-single-details"
+            className="msn__single__details"
           >
-            <h3 className="msn-single-title">
+            <h3 className="msn__single__title">
               {player === 1
                 ? "Lionel Messi"
                 : player === 2
@@ -44,7 +44,7 @@ const MSNSingle = ({ player }) => {
                 {player === 1 ? " 10" : player === 2 ? " 9" : " 11"}
               </small>
             </h3>
-            <p className="msn-single-desc">
+            <p className="msn__single__desc">
               {player === 1 ? desc[0] : player === 2 ? desc[1] : desc[2]}
             </p>
           </Grid.Column>

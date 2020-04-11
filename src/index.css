@@ -72,165 +72,6 @@
   color: #c70053;
 }
 
-/* MSN */
-/* HERO */
-/* Hero container */
-.msn {
-  margin-bottom: 13px;
-  background: linear-gradient(168deg, #004d98 50%, #a50044 50%);
-  background-repeat: no-repeat;
-}
-.msn-container {
-  min-height: calc(100vh - 60px);
-}
-/* Hero text */
-.msn-title,
-.msn-sub {
-  text-align: center;
-  font-family: HeroicCondensedBold;
-  font-size: 15vw;
-  line-height: 13vw;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: white;
-  transform: rotate(-13deg) skew(-13deg, 0);
-  text-shadow: 2px 2px 3px #343233, 3px 3px 3px #343233, 4px 4px 3px #343233,
-    5px 5px 3px #343233, 8px 8px 3px #343233;
-}
-/* small */
-.msn-title {
-  line-height: 9.6rem;
-  font-size: 9.6rem;
-}
-.msn-sub {
-  line-height: 3rem;
-  font-size: 3rem;
-}
-.msn-title-mobile {
-  line-height: 5rem !important;
-  font-size: 5rem !important;
-}
-.msn-sub-mobile {
-  line-height: 2rem !important;
-  font-size: 2rem !important;
-}
-
-.msn-title-mobile,
-.msn-sub-mobile {
-  line-height: 6rem;
-  font-size: 6rem;
-}
-/* Hero image */
-/*Hero image container*/
-.msn-img {
-  padding: 10px;
-}
-.msn-image {
-  filter: brightness(150%) grayscale(80%) drop-shadow(-6px -6px 0px #004d98)
-    drop-shadow(-6px -6px 0px #a50044)
-    drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
-}
-/* Hero list */
-.msn-list,
-.ui.list > .item .header {
-  color: rgba(255, 255, 255, 0.5);
-  font-family: UniversLT !important;
-  padding-bottom: 5px;
-}
-.msn-list-dash {
-  width: 10%;
-  height: 2px;
-  background-color: #fff;
-  margin: 4px 0;
-}
-.msn-list-dash-long {
-  width: 90%;
-}
-.msn-list-bar {
-  height: 7rem;
-  margin-left: 2px;
-  border-left: 2px solid #fff;
-}
-.msn-skills.ui.rating .active.icon {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.msn-overall {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: #3a3d42;
-  margin: 12px 0;
-}
-
-.msn-single {
-  color: rgba(255, 255, 255, 0.8);
-  background: linear-gradient(-45deg, #42464d 50%, #3f434a 50%);
-  margin: 12px 0;
-}
-.msn-single-img {
-  filter: brightness(150%) grayscale(80%) drop-shadow(-6px -6px 0px #004d98)
-    drop-shadow(-6px -6px 0px #a50044)
-    drop-shadow(-6px -6px 0px rgba(255, 255, 255, 0.1));
-  padding: 5px;
-}
-.msn-single-title {
-  color: rgba(255, 255, 255, 0.2) !important;
-  font-family: PontiacRegular !important;
-  font-size: 45px;
-  font-weight: 500;
-  line-height: 46px;
-}
-.msn-single-title > small {
-  color: rgba(34, 34, 34, 0.25) !important;
-  font-family: Univers !important;
-  position: absolute;
-  top: 20%;
-  right: 1rem;
-  font-size: 150px;
-}
-.msn-single-subtitle {
-  font-family: Univers !important;
-  font-weight: 500;
-  font-size: 35px;
-  line-height: 35px;
-}
-/* msn career*/
-.msn-career {
-  margin: 20px 0 !important;
-}
-.msn-career-title {
-  font-family: FuturaBook;
-  font-size: 20px;
-  line-height: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-bottom: 0 !important;
-  color: rgba(255, 255, 255, 0.7);
-}
-.msn-career-title::after {
-  left: 50%;
-  transform: translateX(50%);
-  content: "";
-  width: 50%;
-  padding-bottom: 5px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-}
-.msn-career-type {
-  font-family: UniversLT;
-  font-size: 15px;
-  line-height: 25px;
-  margin-bottom: 6px;
-}
-.msn-career-stats {
-  /* line-height: 35px; */
-  /* margin: 5px !important; */
-  font-family: FuturaBook;
-}
-.msn-career-value {
-  font-size: 30px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
-}
-
 /* NAVIGATION */
 .navbar-mobile.ui.segment {
   background-color: #ff4c55;
@@ -278,7 +119,7 @@
   color: #e94850;
 }
 
-/* SEASONS */
+/* SEASONS
 .seasons {
   position: relative;
   margin-top: -13px;
@@ -311,7 +152,7 @@
   background: #343233;
 }
 /* Season Card */
-.seasons-card {
+/* .seasons-card {
   cursor: pointer;
   filter: grayscale(50%) contrast(90%);
 }
@@ -355,7 +196,8 @@
 }
 .seasons-img {
   filter: grayscale(50%);
-}
+} */
+
 .squared,
 .squared > .segment {
   z-index: 10;

@@ -5,9 +5,9 @@ import MSNCareer from "./MSNCareer";
 export default class MSNOverall extends Component {
   render() {
     return (
-      <div className="msn-overall">
+      <div className="msn__overall">
         <Grid container centered stackable>
-          <Grid.Column computer={4} tablet={4} mobile={16}>
+          <Grid.Column computer={4} tablet={16} mobile={16}>
             <MSNCareer
               stats={{
                 title: "All Competitions",
@@ -17,7 +17,7 @@ export default class MSNOverall extends Component {
               }}
             />
           </Grid.Column>
-          <Grid.Column computer={4} tablet={4} mobile={16}>
+          <Grid.Column computer={4} tablet={5} mobile={16}>
             <MSNCareer
               stats={{
                 title: "La Liga",
@@ -27,7 +27,7 @@ export default class MSNOverall extends Component {
               }}
             />
           </Grid.Column>
-          <Grid.Column computer={4} tablet={4} mobile={16}>
+          <Grid.Column computer={4} tablet={5} mobile={16}>
             <MSNCareer
               stats={{
                 title: "Champions League",
@@ -37,7 +37,7 @@ export default class MSNOverall extends Component {
               }}
             />
           </Grid.Column>
-          <Grid.Column computer={4} tablet={4} mobile={16}>
+          <Grid.Column computer={4} tablet={5} mobile={16}>
             <MSNCareer
               stats={{
                 title: "Other Cups",

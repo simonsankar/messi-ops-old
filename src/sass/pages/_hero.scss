@@ -40,6 +40,7 @@
 
   // List
   &__list,
+  &__list > .item .header,
   .ui.list > .item .header {
     color: rgba($WHITE, 0.5);
     font-family: UniversLT !important;

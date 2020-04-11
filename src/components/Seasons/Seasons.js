@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Container, Grid, Card, Image } from "semantic-ui-react";
+import { Grid, Card, Image } from "semantic-ui-react";
 import Slider from "react-slick";
 import SeasonsHeader from "./SeasonsHeader";
 import SeasonsDetails from "./SeasonsDetails";
@@ -62,194 +62,290 @@ class Seasons extends Component {
     };
     return (
       <div className="seasons">
-        <div className="seasons-bar">
+        <div className="seasons__bar">
           <SeasonsHeader />
-          <Container className="seasons-container">
-            <Grid>
+          <div className="seasons__container">
+            <Grid container padding="vertically">
               <Grid.Row>
                 <Grid.Column width={16}>
                   <Slider {...settings}>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season0405} />
                       <Card.Content>
                         <Card.Header>2004/2005</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">04/05</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          30
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          04/05
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season0506} />
                       <Card.Content>
                         <Card.Header>2005/2006</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">05/06</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          30
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          05/06
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season0607} />
                       <Card.Content>
                         <Card.Header>2006/2007</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">06/07</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          19
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          06/07
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season0708} />
                       <Card.Content>
                         <Card.Header>2007/2008</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">07/08</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          19
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          07/08
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season0809} />
                       <Card.Content>
                         <Card.Header>2008/2009</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">08/09</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          08/09
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season0910} />
                       <Card.Content>
                         <Card.Header>2009/2010</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">09/10</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          09/10
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1011} />
                       <Card.Content>
                         <Card.Header>2010/2011</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">10/11</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          10/11
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1112} />
                       <Card.Content>
                         <Card.Header>2011/2012</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">11/12</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          11/12
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1213} />
                       <Card.Content>
                         <Card.Header>2012/2013</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">12/13</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          12/13
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1314} />
                       <Card.Content>
                         <Card.Header>2013/2014</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">13/14</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          13/14
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1415} />
                       <Card.Content>
                         <Card.Header>2014/2014</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">14/15</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          14/15
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1516} />
                       <Card.Content>
                         <Card.Header>2015/2016</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">15/16</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          15/16
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1617} />
                       <Card.Content>
                         <Card.Header>2016/2017</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">16/17</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          16/17
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1718} />
                       <Card.Content>
                         <Card.Header>2017/2018</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">17/18</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          17/18
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1819} />
                       <Card.Content>
                         <Card.Header>2018/2019</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">18/19</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          18/19
+                        </span>
                       </div>
                     </Card>
-                    <Card className="seasons-card">
+                    <Card className="seasons__card">
                       <Image src={season1920} />
                       <Card.Content>
                         <Card.Header>2019/2020</Card.Header>
                       </Card.Content>
-                      <div className="seasons-card-overlay">
-                        <span className="number">10</span>
-                        <span className="name">Messi</span>
-                        <span className="year">19/20</span>
+                      <div className="seasons__card__overlay">
+                        <span className="seasons__card__overlay__number">
+                          10
+                        </span>
+                        <span className="seasons__card__overlay__name">
+                          Messi
+                        </span>
+                        <span className="seasons__card__overlay__year">
+                          19/20
+                        </span>
                       </div>
                     </Card>
                   </Slider>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
-          </Container>
+          </div>
         </div>
         <SeasonsDetails />
       </div>

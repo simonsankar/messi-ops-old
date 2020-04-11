@@ -4,12 +4,12 @@ import { Grid, Image } from "semantic-ui-react";
 export default class SeasonsDetails extends Component {
   render() {
     return (
-      <div className="seasons-details">
+      <div className="seasons__details">
         <Grid container>
           <Grid.Row>
             <Grid.Column mobile={16} tablet={8} computer={6}>
               <Image
-                className="seasons-img"
+                className="seasons__details__img"
                 size="tiny"
                 circular
                 src={

@@ -1,0 +1,95 @@
+.seasons {
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  min-height: calc(100vh - 64px);
+  margin-top: -1rem;
+  // Bar
+  &__bar {
+    height: 55%;
+    width: 100%;
+    background-color: #333333;
+  }
+  // Container
+  &__container {
+    margin-top: -40px !important;
+    background: transparent;
+  }
+  // Header
+  &__header > .container > .column > .header {
+    color: rgba(255, 255, 255, 0.5);
+    font-family: PontiacRegular;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 5rem;
+    padding: 1rem 0;
+    margin-bottom: 14px;
+  }
+  // Details
+  &__details {
+    width: 100%;
+    padding-top: 25px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0;
+    background: #343233;
+    &__img {
+      filter: grayscale(50%);
+    }
+  }
+
+  // Card
+  &__card {
+    cursor: pointer;
+    filter: grayscale(50%) contrast(90%);
+    &:hover > &__overlay {
+      opacity: 1;
+    }
+
+    // Image
+    &__img {
+      filter: grayscale(50%);
+    }
+
+    // Overlay
+    &__overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: #fcfcfc;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      font-family: Univers;
+      color: #333;
+
+      // Overlay number
+      &__number {
+        font-size: 7vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      // Overlay name
+      &__name {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        font-size: 2.5vw;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+      }
+
+      // Overlay year
+      &__year {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        font-size: 2vw;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

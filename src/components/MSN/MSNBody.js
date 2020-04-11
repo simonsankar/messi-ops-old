@@ -6,12 +6,12 @@ import MSNOverall from "./MSNOverall";
 export default class MSNBody extends Component {
   render() {
     return (
-      <div>
+      <>
         <MSNOverall />
         <MSNSingle player={1} />
         <MSNSingle player={2} />
         <MSNSingle player={3} />
-      </div>
+      </>
     );
   }
 }
