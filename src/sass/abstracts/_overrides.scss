@@ -40,9 +40,13 @@
 /* card */
 .ui.card > .content > .header,
 .ui.cards > .card > .content > .header {
-  font-family: FuturaBook;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  font-family: Univers;
   text-align: center;
-  color: rgba($BLACK, 0.8);
+  color: rgba($WHITE, 0.5);
 }
 .ui.card > .content,
 .ui.cards > .card > .content {

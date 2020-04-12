@@ -5,7 +5,7 @@ export default class SeasonsDetails extends Component {
   render() {
     return (
       <div className="seasons__details">
-        <Grid container>
+        <Grid container padded="vertically">
           <Grid.Row>
             <Grid.Column mobile={16} tablet={8} computer={6}>
               <Image
