@@ -10,7 +10,7 @@ const Seasons = () => {
     <div className="seasons">
       <Suspense
         fallback={
-          <Dimmer active style={{ marginTop: "-1rem" }}>
+          <Dimmer active>
             <Loader size="large" content="Loading..." />
           </Dimmer>
         }

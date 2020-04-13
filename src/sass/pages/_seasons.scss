@@ -3,7 +3,7 @@
   position: relative;
   color: rgba(255, 255, 255, 0.5);
   min-height: calc(100vh - 64px);
-  // margin-top: -1rem;
+  margin-top: -1rem;
 
   // Bar
   &__bar {
@@ -22,7 +22,6 @@
   }
   // Header
   &__header {
-    margin-top: -1rem;
     > .container > .column > .header {
       color: rgba($WHITE, 0.8);
       font-family: PontiacRegular;
