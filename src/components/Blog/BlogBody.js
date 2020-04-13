@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import _ from "lodash";
+import React from "react";
+import { random } from "lodash";
 
 import { Grid } from "semantic-ui-react";
 import { BlogAlpha, BlogOmega, BlogDelta } from "./BlogItems";
@@ -114,32 +114,32 @@ const blogs = [
     desc: "What a great partnership, trying not to sound emotional."
   }
 ];
-
-export default class BlogBody extends Component {
-  renderBlogItems() {
-    return blogs.map((el, index) => {
-      let r = _.random(1, 5);
-      let ran = (index + r) % 3;
-      return (
-        <Grid.Column stretched computer={4} tablet={5} mobile={16} key={index}>
-          {ran === 1 ? (
-            <BlogAlpha blog={el} />
-          ) : ran === 2 ? (
-            <BlogDelta blog={el} />
-          ) : (
-            <BlogOmega blog={el} />
-          )}
-        </Grid.Column>
-      );
-    });
-  }
-  render() {
+const renderBlogItems = () => {
+  return blogs.map((el, index) => {
+    let r = random(1, 5);
+    let ran = (index + r) % 3;
     return (
-      <div className="blog">
-        <Grid container padded="vertically">
-          {this.renderBlogItems()}
-        </Grid>
-      </div>
+      <Grid.Column stretched computer={4} tablet={5} mobile={16} key={index}>
+        {ran === 1 ? (
+          <BlogAlpha blog={el} />
+        ) : ran === 2 ? (
+          <BlogDelta blog={el} />
+        ) : (
+          <BlogOmega blog={el} />
+        )}
+      </Grid.Column>
     );
-  }
-}
+  });
+};
+
+const BlogBody = () => {
+  return (
+    <div className="blog">
+      <Grid container padded="vertically">
+        {renderBlogItems()}
+      </Grid>
+    </div>
+  );
+};
+
+export default BlogBody;

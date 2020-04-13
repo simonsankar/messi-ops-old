@@ -1,15 +1,16 @@
-import React, { Component } from "react";
+import React from "react";
 
 import { RecordItem, RecordItemAlt } from "./RecordItem";
-export default class RecordsBody extends Component {
-  render() {
-    return (
-      <>
-        <RecordItem />
-        <RecordItemAlt />
-        <RecordItem />
-        <RecordItemAlt />
-      </>
-    );
-  }
-}
+
+const RecordsBody = () => {
+  return (
+    <>
+      <RecordItem />
+      <RecordItemAlt />
+      <RecordItem />
+      <RecordItemAlt />
+    </>
+  );
+};
+
+export default RecordsBody;

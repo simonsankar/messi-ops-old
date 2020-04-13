@@ -39,6 +39,7 @@ export const BlogDelta = ({ blog }) => {
     </Card>
   );
 };
+
 export const BlogOmega = ({ blog }) => {
   return (
     <Card
@@ -48,7 +49,7 @@ export const BlogOmega = ({ blog }) => {
         backgroundImage: `url(${blog.img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        filter: "grayscale(70%) contrast(90%)",
+        filter: "grayscale(70%) contrast(90%)"
       }}
     >
       <Card.Content>
