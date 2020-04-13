@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Card, Image } from "semantic-ui-react";
 import Slider from "react-slick";
+import LazyLoad from "react-lazy-load";
 
 // Images
 import season0405 from "../../images/seasons/rsz_04-05.png";
@@ -64,7 +65,9 @@ const SeasonsContent = () => {
         <Grid.Column width={16}>
           <Slider {...settings}>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season0405} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season0405} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2004/2005</Card.Header>
               </Card.Content>
@@ -75,7 +78,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season0506} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season0506} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2005/2006</Card.Header>
               </Card.Content>
@@ -86,7 +91,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season0607} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season0607} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2006/2007</Card.Header>
               </Card.Content>
@@ -97,7 +104,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season0708} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season0708} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2007/2008</Card.Header>
               </Card.Content>
@@ -108,7 +117,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season0809} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season0809} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2008/2009</Card.Header>
               </Card.Content>
@@ -119,7 +130,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season0910} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season0910} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2009/2010</Card.Header>
               </Card.Content>
@@ -130,7 +143,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1011} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1011} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2010/2011</Card.Header>
               </Card.Content>
@@ -141,7 +156,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1112} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1112} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2011/2012</Card.Header>
               </Card.Content>
@@ -152,7 +169,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1213} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1213} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2012/2013</Card.Header>
               </Card.Content>
@@ -163,7 +182,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1314} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1314} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2013/2014</Card.Header>
               </Card.Content>
@@ -174,7 +195,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1415} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1415} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2014/2014</Card.Header>
               </Card.Content>
@@ -185,7 +208,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1516} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1516} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2015/2016</Card.Header>
               </Card.Content>
@@ -196,7 +221,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1617} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1617} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2016/2017</Card.Header>
               </Card.Content>
@@ -207,7 +234,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1718} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1718} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2017/2018</Card.Header>
               </Card.Content>
@@ -218,7 +247,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1819} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1819} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2018/2019</Card.Header>
               </Card.Content>
@@ -229,7 +260,9 @@ const SeasonsContent = () => {
               </div>
             </Card>
             <Card className="seasons__card">
-              <Image className="seasons__card__img" src={season1920} />
+              <LazyLoad>
+                <Image className="seasons__card__img" src={season1920} />
+              </LazyLoad>
               <Card.Content className="seasons__card__content">
                 <Card.Header>2019/2020</Card.Header>
               </Card.Content>
