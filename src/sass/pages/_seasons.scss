@@ -46,6 +46,8 @@
 
   // Card
   &__card {
+    background-color: $LIGHT_GREY;
+    min-height: 188px !important;
     cursor: pointer;
     box-shadow: 0 1px 3px 0 #222, 0 0 0 1px #222 !important;
     &:hover > &__overlay {
