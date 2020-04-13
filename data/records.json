@@ -1,0 +1,30 @@
+{
+  "01": {
+    "id": "01",
+    "name": "Most Goals in a Calendar Year",
+    "title": "Goals are a fraction of the story",
+    "description": "Most goals in a year what can i even say",
+    "list": [
+      {
+        "name": "Lionel Messi 🜲",
+        "amt": "91"
+      },
+      {
+        "name": "Gerd Muller",
+        "amt": "85"
+      },
+      {
+        "name": "Pele",
+        "amt": "75"
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "amt": "69`"
+      },
+      {
+        "name": "Frenc Deak",
+        "amt": "66"
+      }
+    ]
+  }
+}

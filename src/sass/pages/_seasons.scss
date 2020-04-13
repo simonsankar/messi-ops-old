@@ -1,5 +1,5 @@
 .seasons {
-  background-color: $BLACK;
+  background-color: $LIGHT_GREY;
   position: relative;
   color: rgba(255, 255, 255, 0.5);
   min-height: calc(100vh - 64px);
@@ -18,7 +18,7 @@
   // Container
   &__content {
     background: transparent;
-    border-bottom: 2px solid rgba($WHITE, 0.1);
+    // border-bottom: 2px solid rgba($WHITE, 0.1);
   }
   // Header
   &__header {

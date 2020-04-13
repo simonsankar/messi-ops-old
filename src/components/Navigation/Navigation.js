@@ -115,7 +115,7 @@ class Naviagtion extends Component {
                     key="messi-ops"
                     as={Link}
                     to="/"
-                    name="Messi Ops"
+                    name="Messi Ops 🜲"
                   />
                   {this.renderMenuItemList()}
                 </Menu>
@@ -128,7 +128,7 @@ class Naviagtion extends Component {
               <Segment inverted className="squared-msn">
                 <Menu size="mini" inverted secondary pointing>
                   <Menu.Item header color="blue">
-                    Messi Ops
+                    Messi Ops 🜲
                   </Menu.Item>
                   <Menu.Item
                     position="right"
@@ -162,7 +162,7 @@ class Naviagtion extends Component {
                     key="messi-ops"
                     as={Link}
                     to="/"
-                    name="Messi Ops"
+                    name="Messi Ops 🜲"
                   />
                   {this.renderMenuItemList()}
                 </Menu>
