@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 
+import { Dimmer, Loader } from "semantic-ui-react";
 import SeasonsHeader from "./SeasonsHeader";
 const SeasonsContent = React.lazy(() => import("./SeasonsContent"));
 const SeasonsDetails = React.lazy(() => import("./SeasonsDetails"));
@@ -7,13 +8,17 @@ const SeasonsDetails = React.lazy(() => import("./SeasonsDetails"));
 const Seasons = () => {
   return (
     <div className="seasons">
-      <div className="seasons__bar">
-        <SeasonsHeader />
-        <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <Dimmer active style={{ marginTop: "-1rem" }}>
+            <Loader size="large" content="Loading..." />
+          </Dimmer>
+        }
+      >
+        <div className="seasons__bar">
+          <SeasonsHeader />
           <SeasonsContent />
-        </Suspense>
-      </div>
-      <Suspense fallback={<div>Loading...</div>}>
+        </div>
         <SeasonsDetails />
       </Suspense>
     </div>
