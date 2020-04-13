@@ -3,22 +3,22 @@ import { Grid, Card, Image } from "semantic-ui-react";
 import Slider from "react-slick";
 
 // Images
-import season0405 from "../../images/seasons/04-05.png";
-import season0506 from "../../images/seasons/05-06.png";
-import season0607 from "../../images/seasons/06-07.png";
-import season0708 from "../../images/seasons/07-08.png";
-import season0809 from "../../images/seasons/08-09.png";
-import season0910 from "../../images/seasons/09-10.png";
-import season1011 from "../../images/seasons/10-11.png";
-import season1112 from "../../images/seasons/11-12.png";
-import season1213 from "../../images/seasons/12-13.png";
-import season1314 from "../../images/seasons/13-14.png";
-import season1415 from "../../images/seasons/14-15.png";
-import season1516 from "../../images/seasons/15-16.png";
-import season1617 from "../../images/seasons/16-17.png";
-import season1718 from "../../images/seasons/17-18.png";
-import season1819 from "../../images/seasons/18-19.png";
-import season1920 from "../../images/seasons/19-20.png";
+import season0405 from "../../images/seasons/rsz_04-05.png";
+import season0506 from "../../images/seasons/rsz_05-06.png";
+import season0607 from "../../images/seasons/rsz_06-07.png";
+import season0708 from "../../images/seasons/rsz_07-08.png";
+import season0809 from "../../images/seasons/rsz_08-09.png";
+import season0910 from "../../images/seasons/rsz_09-10.png";
+import season1011 from "../../images/seasons/rsz_10-11.png";
+import season1112 from "../../images/seasons/rsz_11-12.png";
+import season1213 from "../../images/seasons/rsz_12-13.png";
+import season1314 from "../../images/seasons/rsz_13-14.png";
+import season1415 from "../../images/seasons/rsz_14-15.png";
+import season1516 from "../../images/seasons/rsz_15-16.png";
+import season1617 from "../../images/seasons/rsz_16-17.png";
+import season1718 from "../../images/seasons/rsz_17-18.png";
+import season1819 from "../../images/seasons/rsz_18-19.png";
+import season1920 from "../../images/seasons/rsz_19-20.png";
 
 const SeasonsContent = () => {
   const settings = {
