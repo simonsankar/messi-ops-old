@@ -59,6 +59,9 @@
       background-color: rgba($BLACK, 0.8) !important;
       border-top: none !important;
       border-bottom: 2px solid $PRIMARY_COLOUR !important;
+      & > .header {
+        color: rgba($WHITE, 0.8) !important;
+      }
     }
 
     // Image
