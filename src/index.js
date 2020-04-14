@@ -9,18 +9,11 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 // React router
 import { BrowserRouter } from "react-router-dom";
-// Redux state management
-import { applyMiddleware, createStore } from "redux";
 import { Provider } from "react-redux";
-// Middlewares
-import thunk from "redux-thunk";
-// Root reducer
-import rootReducer from "./reducers/index";
-
-const storeWithMiddleware = applyMiddleware(thunk)(createStore);
+import { store } from "./state/";
 
 ReactDOM.render(
-  <Provider store={storeWithMiddleware(rootReducer)}>
+  <Provider store={store}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
