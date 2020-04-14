@@ -1,9 +1,9 @@
 import React from "react";
 
 import { Grid, Image, Responsive, List, Rating } from "semantic-ui-react";
-import LM from "../../images/Messi.png";
-import LS from "../../images/Suarez.png";
-import NJ from "../../images/Neymar.png";
+import LM from "../../images/rsz_messi.png";
+import LS from "../../images/rsz_suarez.png";
+import NJ from "../../images/rsz_neymar.png";
 
 const desc = [
   "Being the superior player he is, Messi moved back out to the RW to facilitate Suarez in the 2014/2015 season. It was because of this the MSN worked so well as a trio as it allowed each of the prones to attack with exteme fluidity where Messi was the gel. His ability to drop deeper and play wide without sacrificing goals is unheard of in the modern game. He was the inital link that helped settled Suarez into the Barca system, along with dictating play to thread Neymar an co in attack. There's simply too much to speak of when it comes to Messi and by extension his role in the MSN ",

@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Image, Responsive, Transition } from "semantic-ui-react";
 
-import msn from "../../images/MSN-splash.png";
+import msn from "../../images/rsz_msn-splash.png";
 
 const HomeHeader = () => {
   return (
