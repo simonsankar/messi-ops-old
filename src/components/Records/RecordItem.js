@@ -2,7 +2,32 @@ import React from "react";
 
 import { Grid, Image, Responsive, List } from "semantic-ui-react";
 
-export const RecordItem = () => {
+const renderList = (list) => {
+  return list.map((item, index) => {
+    let highlight =
+      index === 0
+        ? {
+            name: `records__item__list--first`,
+            amt: `records__item__list__value records__item__list__value--first`,
+          }
+        : {
+            header: ``,
+            amt: `records__item__list__value`,
+          };
+    return (
+      <List.Item key={`${item.name}${index}`} as="li">
+        <List.Content>
+          <List.Header className={highlight.name}>
+            {item.name}
+            <span className={highlight.amt}>{item.amt}</span>
+          </List.Header>
+        </List.Content>
+      </List.Item>
+    );
+  });
+};
+
+export const RecordItem = ({ record }) => {
   return (
     <div className="records__item">
       <Grid container padded="vertically">
@@ -28,63 +53,13 @@ export const RecordItem = () => {
             mobile={16}
             className="records__item__details"
           >
-            <h3 className="records__item__title">Title of the record</h3>
-            <p className="records__item__desc">
-              As Messi maintained his goalscoring form into the second half of
-              the season, the year 2012 saw him break several longstanding
-              records. On 7 March, two weeks after scoring four goals in a
-              league fixture against Valencia, he scored five times in a
-              Champions League last 16-round match against Bayer Leverkusen, an
-              unprecedented achievement in the history of the competition.
-            </p>
+            <h3 className="records__item__title">{record.title}</h3>
+            <p className="records__item__desc">{record.description}</p>
           </Grid.Column>
           <Grid.Column computer={3} tablet={4} mobile={16}>
-            <h4 className="records__item__subtitle">
-              Most goals in a Calendar Year
-            </h4>
+            <h4 className="records__item__subtitle">{record.name}</h4>
             <List divided relaxed as="ol" inverted size="large">
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header className="records__item__list--first">
-                    Lionel Messi 🜲
-                    <span className="records__item__list__value records__item__list__value--first">
-                      91
-                    </span>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>
-                    Gerd Muller
-                    <span className="records__item__list__value">85</span>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>
-                    Pele
-                    <span className="records__item__list__value">75</span>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>
-                    Cristiano Ronaldo
-                    <span className="records__item__list__value">69</span>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>
-                    Ferenc Deak
-                    <span className="records__item__list__value">66</span>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
+              {renderList(record.list)}
             </List>
           </Grid.Column>
         </Grid.Row>
@@ -92,46 +67,15 @@ export const RecordItem = () => {
     </div>
   );
 };
-export const RecordItemAlt = () => {
+export const RecordItemAlt = ({ record }) => {
   return (
     <div className="records__item records__item--alt">
       <Grid container padded="vertically">
         <Grid.Row>
           <Grid.Column computer={3} tablet={4} mobile={16}>
-            <h5 className="records__item__subtitle">
-              Most European Golden Shoes
-            </h5>
+            <h5 className="records__item__subtitle">{record.name}</h5>
             <List divided relaxed as="ol" inverted size="large">
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header className="records__item__list--first">
-                    Lionel Messi 🜲
-                    <span className="records__item__list__value records__item__list__value--first">
-                      6
-                    </span>
-                  </List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>Gerd Muller</List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>Pele</List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>Lionel Messi</List.Header>
-                </List.Content>
-              </List.Item>
-              <List.Item as="li">
-                <List.Content>
-                  <List.Header>Lionel Messi</List.Header>
-                </List.Content>
-              </List.Item>
+              {renderList(record.list)}
             </List>
           </Grid.Column>
           <Grid.Column
@@ -140,18 +84,8 @@ export const RecordItemAlt = () => {
             mobile={16}
             className="records__item__details"
           >
-            <h3 className="records__item__title">Title of the record</h3>
-            <p className="records__item__desc">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-              penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-              Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
-              sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
-              vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
-              imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede
-              mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum
-              semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula,
-            </p>
+            <h3 className="records__item__title">{record.title}</h3>
+            <p className="records__item__desc">{record.description}</p>
           </Grid.Column>
           <Responsive
             as={Grid.Column}

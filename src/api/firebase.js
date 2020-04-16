@@ -3,7 +3,6 @@ import "firebase/database";
 import "firebase/storage";
 require("dotenv").config();
 
-console.log(process.env);
 const config = {
   apiKey: process.env.REACT_APP_APIKEY,
   authDomain: process.env.REACT_APP_AUTHDOMAIN,
@@ -15,7 +14,6 @@ const config = {
   measurementId: process.env.REACT_APP_MEASUREMENTID
 };
 
-console.log("Firebase Config", config);
 Firebase.initializeApp(config);
 
 // Database references

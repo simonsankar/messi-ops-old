@@ -5,52 +5,52 @@ import {
   Menu,
   Segment,
   Container,
-  Responsive
+  Responsive,
 } from "semantic-ui-react";
 const paths = [
   {
     name: "home",
-    path: "/"
+    path: "/",
   },
   {
     name: "blog",
-    path: "/blog"
+    path: "/blog",
   },
   {
     name: "seasons",
-    path: "/seasons"
+    path: "/seasons",
   },
   {
     name: "records",
-    path: "/records"
+    path: "/records",
   },
   {
     name: "arguments against",
-    path: "/args"
+    path: "/args",
   },
   {
     name: "abilities",
-    path: "/abilities"
+    path: "/abilities",
   },
   {
     name: "quotes",
-    path: "/quotes"
+    path: "/quotes",
   },
   {
     name: "comps",
-    path: "/comps"
+    path: "/comps",
   },
   {
     name: "msn",
-    path: "/msn"
-  }
+    path: "/msn",
+  },
 ];
 
 class Naviagtion extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      show: false
+      show: false,
     };
   }
   renderMenuItemList() {
@@ -81,7 +81,7 @@ class Naviagtion extends Component {
   }
   renderMenuItemListMobile() {
     const { pathname } = this.props.location;
-    return paths.map(el => {
+    return paths.map((el) => {
       return (
         <Menu.Item
           onClick={() => this.toggleShow()}
@@ -97,7 +97,7 @@ class Naviagtion extends Component {
   toggleShow() {
     const tgl = !this.state.show;
     this.setState({
-      show: tgl
+      show: tgl,
     });
   }
   render() {
@@ -115,7 +115,7 @@ class Naviagtion extends Component {
                     key="messi-ops"
                     as={Link}
                     to="/"
-                    name="Messi Ops 🜲"
+                    name="Messi Ops"
                   />
                   {this.renderMenuItemList()}
                 </Menu>
@@ -128,7 +128,7 @@ class Naviagtion extends Component {
               <Segment inverted className="squared-msn">
                 <Menu size="mini" inverted secondary pointing>
                   <Menu.Item header color="blue">
-                    Messi Ops 🜲
+                    Messi Ops
                   </Menu.Item>
                   <Menu.Item
                     position="right"
@@ -162,7 +162,7 @@ class Naviagtion extends Component {
                     key="messi-ops"
                     as={Link}
                     to="/"
-                    name="Messi Ops 🜲"
+                    name="Messi Ops"
                   />
                   {this.renderMenuItemList()}
                 </Menu>

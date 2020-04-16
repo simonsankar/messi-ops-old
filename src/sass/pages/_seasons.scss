@@ -37,7 +37,7 @@
     padding-top: 25px;
     color: rgba($WHITE, 0.5);
     margin: 0;
-    background: #343233;
+    background: rgba($BLACK, 0.9);
     &__img {
       filter: grayscale(50%);
     }
@@ -46,7 +46,7 @@
   // Card
   &__card {
     cursor: pointer;
-    box-shadow: 0 1px 3px 0 #222, 0 0 0 1px #222 !important;
+    box-shadow: 0 1px 3px 0 #272727, 0 0 0 1px #272727 !important;
     &:hover > &__overlay {
       opacity: 1;
     }

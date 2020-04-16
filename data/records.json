@@ -2,8 +2,8 @@
   "01": {
     "id": "01",
     "name": "Most Goals in a Calendar Year",
-    "title": "Goals are a fraction of the story",
-    "description": "Most goals in a year what can i even say",
+    "title": "A record impossible to break",
+    "description": "91 goals in 69 matches with 29 assists. At the end of 2012, Messi beat the previous all-time best set in 1972 by Germany and Bayern’s Gerd Müller, who got 85. The Argentinian got 79 goals for Barça and another 12 for his national team. This included a record 21 consecutive match scoring streak.",
     "list": [
       {
         "name": "Lionel Messi 🜲",
@@ -24,6 +24,34 @@
       {
         "name": "Frenc Deak",
         "amt": "66"
+      }
+    ]
+  },
+  "02": {
+    "id": "02",
+    "name": "Most European Golden Shoes",
+    "title": "But, I'm not even a striker",
+    "description": "Though playing many various positions, Messi has racked up 6 golden shoes thus far. 3 you can say as a false 9 which is not technically a striker and the other 3 virtually as a CAM which makes this feat stand out even more. He has won boots in 2010/11, 2011/12, 2012/13, 2016/17, 2017/18 and 2018/19 with a minimum winning out put of 34 and high of 50",
+    "list": [
+      {
+        "name": "Lionel Messi 🜲",
+        "amt": "6"
+      },
+      {
+        "name": "Cristiano Ronaldo",
+        "amt": "4"
+      },
+      {
+        "name": "Luis Suarez",
+        "amt": "2"
+      },
+      {
+        "name": "Thierry Henry",
+        "amt": "69`"
+      },
+      {
+        "name": "Gerd Muller & Others",
+        "amt": "2"
       }
     ]
   }
