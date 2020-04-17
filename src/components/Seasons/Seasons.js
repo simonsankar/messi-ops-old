@@ -8,6 +8,18 @@ const SeasonsDetails = React.lazy(() => import("./SeasonsDetails"));
 const Seasons = () => {
   return (
     <div className="seasons">
+      <div className="seasons__bar">
+        <SeasonsHeader />
+        <Suspense
+          fallback={
+            <Dimmer active>
+              <Loader size="large" content="Loading..." />
+            </Dimmer>
+          }
+        >
+          <SeasonsContent />
+        </Suspense>
+      </div>
       <Suspense
         fallback={
           <Dimmer active>
@@ -15,10 +27,6 @@ const Seasons = () => {
           </Dimmer>
         }
       >
-        <div className="seasons__bar">
-          <SeasonsHeader />
-          <SeasonsContent />
-        </div>
         <SeasonsDetails />
       </Suspense>
     </div>

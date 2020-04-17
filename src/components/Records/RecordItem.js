@@ -29,7 +29,7 @@ const renderList = (list) => {
 
 export const RecordItem = ({ record }) => {
   return (
-    <div className="records__item">
+    <div className="fade-in records__item">
       <Grid container padded="vertically">
         <Grid.Row divided>
           <Responsive
@@ -42,9 +42,7 @@ export const RecordItem = ({ record }) => {
               className="records__item__img"
               circular
               size="small"
-              src={
-                "https://static.lexpress.fr/medias_2376/w_600,h_600,c_fill,g_north/v1382711302/lionel-messi-barcelone_1216698.jpg"
-              }
+              src={record.image}
             />
           </Responsive>
           <Grid.Column
@@ -69,7 +67,7 @@ export const RecordItem = ({ record }) => {
 };
 export const RecordItemAlt = ({ record }) => {
   return (
-    <div className="records__item records__item--alt">
+    <div className="fade-in records__item records__item--alt">
       <Grid container padded="vertically">
         <Grid.Row>
           <Grid.Column computer={3} tablet={4} mobile={16}>
@@ -99,9 +97,7 @@ export const RecordItemAlt = ({ record }) => {
               className="records__item__img"
               circular
               size="small"
-              src={
-                "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt265gDR-meyzXdUbLBQIYoP6-EcIx0DpCizAO1jgcxW2Yi_hEgw"
-              }
+              src={record.image}
             />
           </Responsive>
         </Grid.Row>

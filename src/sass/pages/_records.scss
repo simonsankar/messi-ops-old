@@ -1,5 +1,5 @@
 .records {
-  background-color: $LIGHT_GREY;
+  background-color: $BLACK;
   min-height: calc(100vh - 60px);
 
   // Header
@@ -30,11 +30,7 @@
   &__item {
     color: rgba($WHITE, 0.8);
     padding-bottom: 30px;
-    background: linear-gradient(
-      -45deg,
-      rgba($BLACK, 0.98) 50%,
-      rgba($BLACK, 0.97) 50%
-    );
+    background: linear-gradient(-45deg, #3a393a 50%, #3d3c3d 50%);
 
     // Title
     &__title {
@@ -62,8 +58,9 @@
     }
     &__desc {
       color: rgba($WHITE, 0.6) !important;
-      font-size: 15px !important;
+      font-size: 1.4rem !important;
       font-family: UniversLT;
+      line-height: 1.8rem;
     }
     // List
     &__list {
@@ -94,11 +91,11 @@
     }
 
     &--alt {
-      background: linear-gradient(
-        -45deg,
-        rgba($BLACK, 0.98) 50%,
-        rgba($BLACK, 0.97) 50%
-      );
+      // background: linear-gradient(
+      //   -45deg,
+      //      background: linear-gradient(-45deg, #3a393a 50%, #3d3c3d 50%);
+
+      // );
       & > .records__item__title {
         float: left;
       }

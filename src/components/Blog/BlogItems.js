@@ -4,16 +4,18 @@ import { Card, Image } from "semantic-ui-react";
 
 export const BlogAlpha = ({ blog }) => {
   return (
-    <Card fluid className="blog__item">
-      <div className="blog__item__img__container">
-        <Image className="blog__item__img" src={blog.img} />
+    <Card fluid className="fade-in blog__item">
+      <div className="fade-in blog__item__img__container">
+        <Image className="fade-in blog__item__img" src={blog.img} />
       </div>
       <Card.Content>
-        <Card.Header className="blog__item__header">{blog.title}</Card.Header>
+        <Card.Header className="fade-in blog__item__header">
+          {blog.title}
+        </Card.Header>
         <Card.Meta>
-          <span className="blog__item__date">{blog.date}</span>
+          <span className="fade-in blog__item__date">{blog.date}</span>
         </Card.Meta>
-        <Card.Description className="blog__item__desc">
+        <Card.Description className="fade-in blog__item__desc">
           {blog.desc}
         </Card.Description>
       </Card.Content>
@@ -23,15 +25,15 @@ export const BlogAlpha = ({ blog }) => {
 
 export const BlogDelta = ({ blog }) => {
   return (
-    <Card fluid className="blog__item blog__item--delta">
+    <Card fluid className="fade-in blog__item blog__item--delta">
       <Card.Content>
-        <Card.Header className="blog__item__header--delta">
+        <Card.Header className="fade-in blog__item__header--delta">
           {blog.title}
         </Card.Header>
         <Card.Meta>
-          <span className="blog__item__date">{blog.date}</span>
+          <span className="fade-in blog__item__date">{blog.date}</span>
         </Card.Meta>
-        <Card.Description className="blog__item__desc">
+        <Card.Description className="fade-in blog__item__desc">
           {blog.desc}
         </Card.Description>
       </Card.Content>
@@ -44,22 +46,22 @@ export const BlogOmega = ({ blog }) => {
   return (
     <Card
       fluid
-      className="blog__item blog__item--omega"
+      className="fade-in blog__item blog__item--omega"
       style={{
         backgroundImage: `url(${blog.img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        filter: "grayscale(70%) contrast(90%)"
+        filter: "grayscale(70%) contrast(90%)",
       }}
     >
       <Card.Content>
-        <Card.Header className="blog__item__header blog__item__header--omega">
+        <Card.Header className="fade-in blog__item__header blog__item__header--omega">
           {blog.title}
         </Card.Header>
-        <Card.Meta className="blog__item__meta blog__item__meta--white">
-          <span className="blog__item__date">{blog.date}</span>
+        <Card.Meta className="fade-in blog__item__meta blog__item__meta--white">
+          <span className="fade-in blog__item__date">{blog.date}</span>
         </Card.Meta>
-        <Card.Description className="blog__item__desc blog__item__desc--white">
+        <Card.Description className="fade-in blog__item__desc blog__item__desc--white">
           {blog.desc}
         </Card.Description>
       </Card.Content>
