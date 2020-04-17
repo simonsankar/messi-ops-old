@@ -65,5 +65,10 @@
     &__skills.ui.rating .active.icon {
       color: rgba(255, 255, 255, 0.5);
     }
+
+    &--big > .item .header,
+    &--big > .item .content {
+      font-size: 1.2rem;
+    }
   }
 }

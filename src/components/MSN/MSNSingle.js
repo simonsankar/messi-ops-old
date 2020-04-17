@@ -8,7 +8,7 @@ import NJ from "../../images/rsz_neymar.png";
 const desc = [
   "Being the superior player he is, Messi moved back out to the RW to facilitate Suarez in the 2014/2015 season. It was because of this the MSN worked so well as a trio as it allowed each of the prones to attack with exteme fluidity where Messi was the gel. His ability to drop deeper and play wide without sacrificing goals is unheard of in the modern game. He was the inital link that helped settled Suarez into the Barca system, along with dictating play to thread Neymar an co in attack. There's simply too much to speak of when it comes to Messi and by extension his role in the MSN ",
   "Suarez intially, for a brief period found life difficult at the start of his maiden campaign at Barca where he was out on the right side as the current CF was the god king. Luis Enrique moved Messi out on the right and played Suarez through the middle and the rest was history. His elite skillset as a CF, with dribbling, passing,vision etc made it the perfect fit with the Barca system. Not to mention having the greatest player in the world be your best friend. He is the only player to have 2 let alone 1 European Golden Boots within this entire Messi/Ronaldo era [2014(31),2016(40)]. The best striker in the world since 2013.",
-  "That extra bit of flair you need for the recipe of destruction. Neymar blossomed having to play with the best player in the world and the best striker in the world. Technically gifted, deadly skill, with many spells to conjure that would unlock any defence. Neymar became easily the 3rd best player in the world with a comfortable margin. Though his stats are as inflated as the other two, his consistency throughout the attack was key in all of Barca's success within those 3 seasons."
+  "That extra bit of flair you need for the recipe of destruction. Neymar blossomed having to play with the best player in the world and the best striker in the world. Technically gifted, deadly skill, with many spells to conjure that would unlock any defence. Neymar became easily the 3rd best player in the world with a comfortable margin. Though his stats are as inflated as the other two, his consistency throughout the attack was key in all of Barca's success within those 3 seasons.",
 ];
 
 const MSNSingle = ({ player }) => {
@@ -29,7 +29,7 @@ const MSNSingle = ({ player }) => {
             />
           </Responsive>
           <Grid.Column
-            computer={7}
+            computer={8}
             tablet={10}
             mobile={16}
             className="msn__single__details"
@@ -49,8 +49,8 @@ const MSNSingle = ({ player }) => {
             </p>
           </Grid.Column>
           <Grid.Column
-            computer={6}
-            tablet={6}
+            computer={5}
+            tablet={5}
             mobile={16}
             verticalAlign="middle"
             textAlign="center"
@@ -58,7 +58,7 @@ const MSNSingle = ({ player }) => {
             {player === 1 ? (
               <List
                 horizontal
-                className="hero__list"
+                className="hero__list hero__list--big"
                 animated
                 verticalAlign="middle"
                 inverted
@@ -103,7 +103,7 @@ const MSNSingle = ({ player }) => {
             ) : player === 2 ? (
               <List
                 horizontal
-                className="hero__list"
+                className="hero__list hero__list--big"
                 animated
                 verticalAlign="middle"
                 inverted
@@ -148,7 +148,7 @@ const MSNSingle = ({ player }) => {
             ) : (
               <List
                 horizontal
-                className="hero__list"
+                className="hero__list hero__list--big"
                 animated
                 verticalAlign="middle"
                 inverted
