@@ -51,7 +51,7 @@ export const BlogOmega = ({ blog }) => {
         backgroundImage: `url(${blog.img})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        filter: "grayscale(70%) contrast(90%)",
+        filter: "grayscale(50%) contrast(90%)",
       }}
     >
       <Card.Content>

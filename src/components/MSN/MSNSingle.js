@@ -62,7 +62,7 @@ const MSNSingle = ({ player }) => {
                 animated
                 verticalAlign="middle"
                 inverted
-                size="medium"
+                size="large"
               >
                 <List.Item>
                   <List.Content>
@@ -107,7 +107,7 @@ const MSNSingle = ({ player }) => {
                 animated
                 verticalAlign="middle"
                 inverted
-                size="medium"
+                size="large"
               >
                 <List.Item>
                   <List.Content>
@@ -152,7 +152,7 @@ const MSNSingle = ({ player }) => {
                 animated
                 verticalAlign="middle"
                 inverted
-                size="medium"
+                size="large"
               >
                 <List.Item>
                   <List.Content>

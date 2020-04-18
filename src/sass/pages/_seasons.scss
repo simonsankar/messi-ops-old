@@ -1,7 +1,7 @@
 .seasons {
   background-color: $LIGHT_GREY;
   position: relative;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba($WHITE, 0.5);
   min-height: calc(100vh - 64px);
   margin-top: -1rem;
 
@@ -39,7 +39,7 @@
     margin: 0;
     background: rgba($BLACK, 0.9);
     &__img {
-      filter: grayscale(50%);
+      filter: grayscale(50%) contrast(90%);
     }
   }
 
@@ -65,7 +65,7 @@
 
     // Image
     &__img {
-      filter: grayscale(50%);
+      filter: grayscale(50%) contrast(90%);
     }
 
     // Overlay

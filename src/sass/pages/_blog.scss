@@ -43,8 +43,8 @@
     &__img {
       max-width: 100%;
       height: auto;
-      filter: grayscale(50%) contrast(90%);
       border-radius: 0px;
+      filter: grayscale(50%) contrast(90%);
       // Item image container
       &__container {
         overflow: hidden;
