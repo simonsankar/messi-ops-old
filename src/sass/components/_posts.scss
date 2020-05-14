@@ -1,0 +1,40 @@
+.post {
+  &__img-container {
+    overflow: hidden;
+    transition: 0.4s ease;
+  }
+  &__img {
+    filter: grayscale(50%) contrast(90%);
+    border-radius: 0px;
+    transition: 0.4s ease;
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+
+  &__title {
+    font-family: Univers !important;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba($WHITE, 0.7) !important;
+    transition: all 0.1s ease-in-out;
+    &:hover {
+      text-decoration: underline;
+      color: rgba($WHITE, 0.8) !important;
+    }
+  }
+
+  &__blurb {
+    color: rgba($WHITE, 0.5) !important;
+    padding-bottom: 5px;
+  }
+  &__readmore {
+    color: rgba($WHITE, 0.5);
+    transition: all 0.1s ease-in;
+    &:hover {
+      text-decoration: underline;
+      color: #e94850;
+    }
+  }
+}

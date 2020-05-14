@@ -29,6 +29,16 @@
       font-size: 5rem;
       line-height: 5rem;
       padding: 1rem 0;
+      & > .icon {
+        cursor: pointer;
+        margin-left: 2rem;
+        margin-right: 0;
+        color: rgba($WHITE, 0.8);
+        font-size: 1rem;
+        border: 2px rgba($WHITE, 0.8) solid;
+        padding-bottom: 50px;
+        line-height: 0.75rem !important;
+      }
     }
   }
   // Details
@@ -49,6 +59,10 @@
     box-shadow: 0 1px 3px 0 #272727, 0 0 0 1px #272727 !important;
     &:hover > &__overlay {
       opacity: 1;
+    }
+    &:focus {
+      outline-color: $WHITE;
+      outline-style: auto;
     }
     &__content {
       position: absolute;

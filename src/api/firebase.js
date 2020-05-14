@@ -1,7 +1,6 @@
 import Firebase from "firebase/app";
 import "firebase/database";
 import "firebase/storage";
-require("dotenv").config();
 
 const config = {
   apiKey: process.env.REACT_APP_APIKEY,
@@ -11,7 +10,7 @@ const config = {
   storageBucket: process.env.REACT_APP_STORAGEBUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
   appId: process.env.REACT_APP_APPID,
-  measurementId: process.env.REACT_APP_MEASUREMENTID
+  measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 Firebase.initializeApp(config);

@@ -50,3 +50,21 @@
     opacity: 1;
   }
 }
+
+// Pulse
+.pulse {
+  animation: pulse 1.8s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba($WHITE, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 5px rgba($WHITE, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba($WHITE, 0);
+  }
+}

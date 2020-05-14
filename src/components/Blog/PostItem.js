@@ -14,19 +14,19 @@ const PostItem = ({ post }) => {
               width={6}
               minWidth={Responsive.onlyComputer.minWidth}
             >
-              <div className="post-img-container">
-                <Image className="post-img" src={post.img} fluid />
+              <div className="post__img-container">
+                <Image className="post__img" src={post.img} fluid />
               </div>
-              <span className="post-img-overlay" />
+              <span className="post__img-overlay" />
             </Responsive>
             <Grid.Column computer={10} tablet={16} mobile={16}>
-              <Link className="post-title" to="/">
+              <Link className="post__title" to="/">
                 {post.title}
               </Link>
-              <List.Description className="post-blurb">
+              <List.Description className="post__blurb">
                 {post.blurb}
                 <div>
-                  <Link to="/" className="post-readmore">
+                  <Link to="/" className="post__readmore">
                     Read More
                   </Link>
                 </div>
